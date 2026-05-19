@@ -1,4 +1,4 @@
-﻿Public Class Form10
+﻿Public Class Transaction
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
 
     End Sub

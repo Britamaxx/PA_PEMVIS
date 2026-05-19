@@ -4,7 +4,7 @@ Module KaryawanModule
     Public Function GetAllKaryawan() As DataTable
         Dim dt As New DataTable()
         Try
-            Dim query As String = "SELECT * FROM Karyawan ORDER BY ID_Karyawan ASC"
+            Dim query As String = "SELECT * FROM tbkaryawan ORDER BY ID_Karyawan ASC"
             Using conn As MySqlConnection = GetConnection()
                 Using da As New MySqlDataAdapter(query, conn)
                     da.Fill(dt)
@@ -19,7 +19,7 @@ Module KaryawanModule
     Public Function SearchKaryawan(keyword As String) As DataTable
         Dim dt As New DataTable()
         Try
-            Dim query As String = "SELECT * FROM Karyawan WHERE Nama_Karyawan LIKE @keyword OR Jabatan LIKE @keyword OR Username LIKE @keyword ORDER BY ID_Karyawan ASC"
+            Dim query As String = "SELECT * FROM tbkaryawan WHERE Nama_Karyawan LIKE @keyword OR Jabatan LIKE @keyword OR Username LIKE @keyword ORDER BY ID_Karyawan ASC"
             Using conn As MySqlConnection = GetConnection()
                 Using da As New MySqlDataAdapter(query, conn)
                     da.SelectCommand.Parameters.AddWithValue("@keyword", "%" & keyword & "%")
@@ -35,7 +35,7 @@ Module KaryawanModule
     Public Function GetKaryawanByID(id As String) As DataTable
         Dim dt As New DataTable()
         Try
-            Dim query As String = "SELECT * FROM Karyawan WHERE ID_Karyawan = @id"
+            Dim query As String = "SELECT * FROM tbkaryawan WHERE ID_Karyawan = @id"
             Using conn As MySqlConnection = GetConnection()
                 Using da As New MySqlDataAdapter(query, conn)
                     da.SelectCommand.Parameters.AddWithValue("@id", id)
@@ -51,7 +51,7 @@ Module KaryawanModule
     Public Function LoginKaryawan(username As String, password As String) As DataTable
         Dim dt As New DataTable()
         Try
-            Dim query As String = "SELECT * FROM Karyawan WHERE Username = @username AND Password = @password"
+            Dim query As String = "SELECT * FROM tbkaryawan WHERE Username = @username AND Password = @password"
             Using conn As MySqlConnection = GetConnection()
                 Using da As New MySqlDataAdapter(query, conn)
                     da.SelectCommand.Parameters.AddWithValue("@username", username)
@@ -67,7 +67,7 @@ Module KaryawanModule
 
     Public Function SimpanKaryawan(id As String, nama As String, username As String, password As String, jabatan As String, telepon As String) As Boolean
         Try
-            Dim query As String = "INSERT INTO Karyawan (ID_Karyawan, Nama_Karyawan, Username, Password, Jabatan, Telepon_Karyawan) " &
+            Dim query As String = "INSERT INTO tbkaryawan (ID_Karyawan, Nama_Karyawan, Username, Password, Jabatan, Telepon_Karyawan) " &
                                   "VALUES (@id, @nama, @username, @password, @jabatan, @telepon)"
             Using conn As MySqlConnection = GetConnection()
                 conn.Open()
@@ -90,7 +90,7 @@ Module KaryawanModule
 
     Public Function UbahKaryawan(id As String, nama As String, username As String, password As String, jabatan As String, telepon As String) As Boolean
         Try
-            Dim query As String = "UPDATE Karyawan SET Nama_Karyawan=@nama, Username=@username, Password=@password, " &
+            Dim query As String = "UPDATE tbkaryawan SET Nama_Karyawan=@nama, Username=@username, Password=@password, " &
                                   "Jabatan=@jabatan, Telepon_Karyawan=@telepon WHERE ID_Karyawan=@id"
             Using conn As MySqlConnection = GetConnection()
                 conn.Open()
@@ -112,7 +112,7 @@ Module KaryawanModule
 
     Public Function HapusKaryawan(id As String) As Boolean
         Try
-            Dim query As String = "DELETE FROM Karyawan WHERE ID_Karyawan = @id"
+            Dim query As String = "DELETE FROM tbkaryawan WHERE ID_Karyawan = @id"
             Using conn As MySqlConnection = GetConnection()
                 conn.Open()
                 Using cmd As New MySqlCommand(query, conn)

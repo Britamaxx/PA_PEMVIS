@@ -1,4 +1,4 @@
-﻿Public Class Form6
+﻿Public Class StaffDialog
     Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
 
     End Sub
