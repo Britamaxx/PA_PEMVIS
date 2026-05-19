@@ -27,17 +27,13 @@ Partial Class DialogStaff
         Label2 = New Label()
         TextBox2 = New TextBox()
         MaskedTextBox1 = New MaskedTextBox()
-        ComboBox1 = New ComboBox()
         TextBox3 = New TextBox()
-        TextBox5 = New TextBox()
         Label3 = New Label()
-        Label4 = New Label()
         Label5 = New Label()
         Label6 = New Label()
         RadioButton1 = New RadioButton()
         RadioButton2 = New RadioButton()
         RadioButton3 = New RadioButton()
-        Label7 = New Label()
         Button1 = New Button()
         Button2 = New Button()
         SuspendLayout()
@@ -46,99 +42,80 @@ Partial Class DialogStaff
         ' 
         Label1.AutoSize = True
         Label1.Font = New Font("Segoe UI", 10.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label1.Location = New Point(12, 15)
+        Label1.Location = New Point(10, 12)
+        Label1.Margin = New Padding(2, 0, 2, 0)
         Label1.Name = "Label1"
-        Label1.Size = New Size(75, 28)
+        Label1.Size = New Size(65, 23)
         Label1.TabIndex = 1
         Label1.Text = "Staff ID"
         ' 
         ' TextBox1
         ' 
         TextBox1.Font = New Font("Segoe UI", 10.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox1.Location = New Point(196, 12)
+        TextBox1.Location = New Point(157, 10)
+        TextBox1.Margin = New Padding(2)
         TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(320, 34)
+        TextBox1.Size = New Size(257, 30)
         TextBox1.TabIndex = 2
         ' 
         ' Label2
         ' 
         Label2.AutoSize = True
         Label2.Font = New Font("Segoe UI", 10.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label2.Location = New Point(12, 55)
+        Label2.Location = New Point(10, 44)
+        Label2.Margin = New Padding(2, 0, 2, 0)
         Label2.Name = "Label2"
-        Label2.Size = New Size(108, 28)
+        Label2.Size = New Size(94, 23)
         Label2.TabIndex = 3
         Label2.Text = "Staff Name"
         ' 
         ' TextBox2
         ' 
         TextBox2.Font = New Font("Segoe UI", 10.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox2.Location = New Point(196, 52)
+        TextBox2.Location = New Point(157, 42)
+        TextBox2.Margin = New Padding(2)
         TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(320, 34)
+        TextBox2.Size = New Size(257, 30)
         TextBox2.TabIndex = 4
         ' 
         ' MaskedTextBox1
         ' 
         MaskedTextBox1.Font = New Font("Segoe UI", 10.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        MaskedTextBox1.Location = New Point(196, 92)
+        MaskedTextBox1.Location = New Point(157, 74)
+        MaskedTextBox1.Margin = New Padding(2)
         MaskedTextBox1.Mask = "____-____-____"
         MaskedTextBox1.Name = "MaskedTextBox1"
-        MaskedTextBox1.Size = New Size(320, 34)
+        MaskedTextBox1.Size = New Size(257, 30)
         MaskedTextBox1.TabIndex = 7
-        ' 
-        ' ComboBox1
-        ' 
-        ComboBox1.Font = New Font("Segoe UI", 10.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        ComboBox1.FormattingEnabled = True
-        ComboBox1.Location = New Point(196, 132)
-        ComboBox1.Name = "ComboBox1"
-        ComboBox1.Size = New Size(320, 36)
-        ComboBox1.TabIndex = 8
         ' 
         ' TextBox3
         ' 
         TextBox3.Font = New Font("Segoe UI", 10.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox3.Location = New Point(196, 174)
+        TextBox3.Location = New Point(157, 108)
+        TextBox3.Margin = New Padding(2)
         TextBox3.Name = "TextBox3"
-        TextBox3.Size = New Size(320, 34)
+        TextBox3.Size = New Size(257, 30)
         TextBox3.TabIndex = 9
-        ' 
-        ' TextBox5
-        ' 
-        TextBox5.Font = New Font("Segoe UI", 10.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox5.Location = New Point(196, 254)
-        TextBox5.Name = "TextBox5"
-        TextBox5.Size = New Size(320, 34)
-        TextBox5.TabIndex = 11
         ' 
         ' Label3
         ' 
         Label3.AutoSize = True
         Label3.Font = New Font("Segoe UI", 10.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label3.Location = New Point(12, 95)
+        Label3.Location = New Point(10, 76)
+        Label3.Margin = New Padding(2, 0, 2, 0)
         Label3.Name = "Label3"
-        Label3.Size = New Size(111, 28)
+        Label3.Size = New Size(97, 23)
         Label3.TabIndex = 12
         Label3.Text = "Staff Phone"
-        ' 
-        ' Label4
-        ' 
-        Label4.AutoSize = True
-        Label4.Font = New Font("Segoe UI", 10.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label4.Location = New Point(12, 135)
-        Label4.Name = "Label4"
-        Label4.Size = New Size(82, 28)
-        Label4.TabIndex = 13
-        Label4.Text = "Position"
         ' 
         ' Label5
         ' 
         Label5.AutoSize = True
         Label5.Font = New Font("Segoe UI", 10.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label5.Location = New Point(12, 177)
+        Label5.Location = New Point(10, 111)
+        Label5.Margin = New Padding(2, 0, 2, 0)
         Label5.Name = "Label5"
-        Label5.Size = New Size(102, 28)
+        Label5.Size = New Size(88, 23)
         Label5.TabIndex = 14
         Label5.Text = "Net Salary"
         ' 
@@ -146,18 +123,20 @@ Partial Class DialogStaff
         ' 
         Label6.AutoSize = True
         Label6.Font = New Font("Segoe UI", 10.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label6.Location = New Point(12, 217)
+        Label6.Location = New Point(10, 143)
+        Label6.Margin = New Padding(2, 0, 2, 0)
         Label6.Name = "Label6"
-        Label6.Size = New Size(52, 28)
+        Label6.Size = New Size(44, 23)
         Label6.TabIndex = 15
         Label6.Text = "Shift"
         ' 
         ' RadioButton1
         ' 
         RadioButton1.AutoSize = True
-        RadioButton1.Location = New Point(196, 218)
+        RadioButton1.Location = New Point(157, 143)
+        RadioButton1.Margin = New Padding(2)
         RadioButton1.Name = "RadioButton1"
-        RadioButton1.Size = New Size(105, 29)
+        RadioButton1.Size = New Size(86, 24)
         RadioButton1.TabIndex = 16
         RadioButton1.TabStop = True
         RadioButton1.Text = "Morning"
@@ -166,9 +145,10 @@ Partial Class DialogStaff
         ' RadioButton2
         ' 
         RadioButton2.AutoSize = True
-        RadioButton2.Location = New Point(307, 218)
+        RadioButton2.Location = New Point(246, 143)
+        RadioButton2.Margin = New Padding(2)
         RadioButton2.Name = "RadioButton2"
-        RadioButton2.Size = New Size(118, 29)
+        RadioButton2.Size = New Size(97, 24)
         RadioButton2.TabIndex = 17
         RadioButton2.TabStop = True
         RadioButton2.Text = "Afternoon"
@@ -177,32 +157,24 @@ Partial Class DialogStaff
         ' RadioButton3
         ' 
         RadioButton3.AutoSize = True
-        RadioButton3.Location = New Point(435, 218)
+        RadioButton3.Location = New Point(348, 143)
+        RadioButton3.Margin = New Padding(2)
         RadioButton3.Name = "RadioButton3"
-        RadioButton3.Size = New Size(81, 29)
+        RadioButton3.Size = New Size(67, 24)
         RadioButton3.TabIndex = 18
         RadioButton3.TabStop = True
         RadioButton3.Text = "Night"
         RadioButton3.UseVisualStyleBackColor = True
-        ' 
-        ' Label7
-        ' 
-        Label7.AutoSize = True
-        Label7.Font = New Font("Segoe UI", 10.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label7.Location = New Point(12, 257)
-        Label7.Name = "Label7"
-        Label7.Size = New Size(65, 28)
-        Label7.TabIndex = 19
-        Label7.Text = "Bonus"
         ' 
         ' Button1
         ' 
         Button1.BackColor = Color.LimeGreen
         Button1.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Button1.ForeColor = Color.White
-        Button1.Location = New Point(361, 294)
+        Button1.Location = New Point(290, 180)
+        Button1.Margin = New Padding(2)
         Button1.Name = "Button1"
-        Button1.Size = New Size(155, 34)
+        Button1.Size = New Size(124, 27)
         Button1.TabIndex = 20
         Button1.Text = "Konfirmasi"
         Button1.UseVisualStyleBackColor = False
@@ -212,36 +184,34 @@ Partial Class DialogStaff
         Button2.BackColor = Color.Red
         Button2.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Button2.ForeColor = Color.White
-        Button2.Location = New Point(196, 294)
+        Button2.Location = New Point(157, 180)
+        Button2.Margin = New Padding(2)
         Button2.Name = "Button2"
-        Button2.Size = New Size(155, 34)
+        Button2.Size = New Size(124, 27)
         Button2.TabIndex = 21
         Button2.Text = "Batal"
         Button2.UseVisualStyleBackColor = False
         ' 
         ' DialogStaff
         ' 
-        AutoScaleDimensions = New SizeF(10.0F, 25.0F)
+        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(528, 344)
+        ClientSize = New Size(422, 217)
         Controls.Add(Button2)
         Controls.Add(Button1)
-        Controls.Add(Label7)
         Controls.Add(RadioButton3)
         Controls.Add(RadioButton2)
         Controls.Add(RadioButton1)
         Controls.Add(Label6)
         Controls.Add(Label5)
-        Controls.Add(Label4)
         Controls.Add(Label3)
-        Controls.Add(TextBox5)
         Controls.Add(TextBox3)
-        Controls.Add(ComboBox1)
         Controls.Add(MaskedTextBox1)
         Controls.Add(TextBox2)
         Controls.Add(Label2)
         Controls.Add(TextBox1)
         Controls.Add(Label1)
+        Margin = New Padding(2)
         Name = "DialogStaff"
         Text = "DialogStaff"
         ResumeLayout(False)
@@ -253,17 +223,13 @@ Partial Class DialogStaff
     Friend WithEvents Label2 As Label
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents MaskedTextBox1 As MaskedTextBox
-    Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox5 As TextBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents RadioButton1 As RadioButton
     Friend WithEvents RadioButton2 As RadioButton
     Friend WithEvents RadioButton3 As RadioButton
-    Friend WithEvents Label7 As Label
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
 End Class
