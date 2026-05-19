@@ -47,7 +47,7 @@ Module ProductModule
         Return dt
     End Function
 
-    Public Function SimpanProduk(id As String, idSupplier As String, nama As String, stok As Integer, stokMin As Integer, hargaBeli As Long, hargaJual As Long, kategori As String) As Boolean
+    Public Function SimpanProduk(id As String, idSupplier As String, nama As String, stok As Integer, stokMin As Integer, hargaBeli As Decimal, hargaJual As Decimal, kategori As String) As Boolean
         Try
             Dim query As String = "INSERT INTO tbproduk (id_produk, id_supplier, nama_produk, stok, stok_minimum, harga_beli, harga_jual, kategori) " &
                                   "VALUES (@id, @idSupplier, @nama, @stok, @stokMin, @hargaBeli, @hargaJual, @kategori)"
@@ -72,7 +72,7 @@ Module ProductModule
         End Try
     End Function
 
-    Public Function UbahProduk(id As String, idSupplier As String, nama As String, stok As Integer, stokMin As Integer, hargaBeli As Long, hargaJual As Long, kategori As String) As Boolean
+    Public Function UbahProduk(id As String, idSupplier As String, nama As String, stok As Integer, stokMin As Integer, hargaBeli As Decimal, hargaJual As Decimal, kategori As String) As Boolean
         Try
             Dim query As String = "UPDATE tbproduk SET id_supplier=@idSupplier, nama_produk=@nama, stok=@stok, " &
                                   "stok_minimum=@stokMin, harga_beli=@hargaBeli, harga_jual=@hargaJual, kategori=@kategori " &
@@ -109,6 +109,57 @@ Module ProductModule
             End Using
         Catch ex As Exception
             MessageBox.Show("Gagal menghapus data produk: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            Return False
+        End Try
+    End Function
+
+    Public Function CekStokCukup(idProduk As String, jumlah As Integer) As Boolean
+            Try
+                Dim query As String = "SELECT stok FROM tbproduk WHERE id_produk = @id"
+                Using conn As MySqlConnection = GetConnection()
+                    conn.Open()
+                    Using cmd As New MySqlCommand(query, conn)
+                        cmd.Parameters.AddWithValue("@id", idProduk)
+                        Dim stokSekarang As Integer = Convert.ToInt32(cmd.ExecuteScalar())
+                        Return stokSekarang >= jumlah
+                    End Using
+                End Using
+            Catch ex As Exception
+                MessageBox.Show("Gagal cek stok: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                Return False
+            End Try
+        End Function
+
+        Public Function TambahStok(idProduk As String, jumlah As Integer) As Boolean
+            Try
+                Dim query As String = "UPDATE tbproduk SET stok = stok + @jumlah WHERE id_produk = @id"
+                Using conn As MySqlConnection = GetConnection()
+                    conn.Open()
+                    Using cmd As New MySqlCommand(query, conn)
+                        cmd.Parameters.AddWithValue("@jumlah", jumlah)
+                        cmd.Parameters.AddWithValue("@id", idProduk)
+                        Return cmd.ExecuteNonQuery() > 0
+                    End Using
+                End Using
+            Catch ex As Exception
+                MessageBox.Show("Gagal menambah stok: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                Return False
+            End Try
+        End Function
+
+    Public Function KurangiStok(idProduk As String, jumlah As Integer) As Boolean
+        Try
+            Dim query As String = "UPDATE tbproduk SET stok = stok - @jumlah WHERE id_produk = @id"
+            Using conn As MySqlConnection = GetConnection()
+                conn.Open()
+                Using cmd As New MySqlCommand(query, conn)
+                    cmd.Parameters.AddWithValue("@jumlah", jumlah)
+                    cmd.Parameters.AddWithValue("@id", idProduk)
+                    Return cmd.ExecuteNonQuery() > 0
+                End Using
+            End Using
+        Catch ex As Exception
+            MessageBox.Show("Gagal mengurangi stok: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Return False
         End Try
     End Function
