@@ -43,15 +43,16 @@ Partial Class StaffManagement
         PictureBox2 = New PictureBox()
         Label1 = New Label()
         PictureBox1 = New PictureBox()
-        DataGridView2 = New DataGridView()
-        Button1 = New Button()
-        Button2 = New Button()
-        Button3 = New Button()
-        Button4 = New Button()
-        TextBox1 = New TextBox()
+        dgvStaff = New DataGridView()
+        btnAddStaff = New Button()
+        btnEdit = New Button()
+        btnDelete = New Button()
+        btnSearch = New Button()
+        txtSearch = New TextBox()
         PictureBox11 = New PictureBox()
         Label7 = New Label()
         Label8 = New Label()
+        colIDKaryawan = New DataGridViewTextBoxColumn()
         Panel1.SuspendLayout()
         Panel7.SuspendLayout()
         CType(PictureBox7, ComponentModel.ISupportInitialize).BeginInit()
@@ -66,7 +67,7 @@ Partial Class StaffManagement
         Panel2.SuspendLayout()
         CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
-        CType(DataGridView2, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dgvStaff, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox11, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
@@ -275,73 +276,74 @@ Partial Class StaffManagement
         PictureBox1.TabIndex = 0
         PictureBox1.TabStop = False
         ' 
-        ' DataGridView2
+        ' dgvStaff
         ' 
-        DataGridView2.BackgroundColor = Color.White
-        DataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridView2.Location = New Point(317, 137)
-        DataGridView2.Name = "DataGridView2"
-        DataGridView2.RowHeadersWidth = 62
-        DataGridView2.Size = New Size(1049, 695)
-        DataGridView2.TabIndex = 5
+        dgvStaff.BackgroundColor = Color.White
+        dgvStaff.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        dgvStaff.Columns.AddRange(New DataGridViewColumn() {colIDKaryawan})
+        dgvStaff.Location = New Point(317, 137)
+        dgvStaff.Name = "dgvStaff"
+        dgvStaff.RowHeadersWidth = 62
+        dgvStaff.Size = New Size(1049, 695)
+        dgvStaff.TabIndex = 5
         ' 
-        ' Button1
+        ' btnAddStaff
         ' 
-        Button1.BackColor = Color.LimeGreen
-        Button1.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button1.ForeColor = Color.White
-        Button1.Location = New Point(1220, 91)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(146, 40)
-        Button1.TabIndex = 8
-        Button1.Text = "+ Add Product"
-        Button1.UseVisualStyleBackColor = False
+        btnAddStaff.BackColor = Color.LimeGreen
+        btnAddStaff.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnAddStaff.ForeColor = Color.White
+        btnAddStaff.Location = New Point(1220, 91)
+        btnAddStaff.Name = "btnAddStaff"
+        btnAddStaff.Size = New Size(146, 40)
+        btnAddStaff.TabIndex = 8
+        btnAddStaff.Text = "+ Add Product"
+        btnAddStaff.UseVisualStyleBackColor = False
         ' 
-        ' Button2
+        ' btnEdit
         ' 
-        Button2.BackColor = Color.CornflowerBlue
-        Button2.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button2.ForeColor = Color.White
-        Button2.Location = New Point(1129, 91)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(85, 40)
-        Button2.TabIndex = 9
-        Button2.Text = "Edit"
-        Button2.UseVisualStyleBackColor = False
+        btnEdit.BackColor = Color.CornflowerBlue
+        btnEdit.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnEdit.ForeColor = Color.White
+        btnEdit.Location = New Point(1129, 91)
+        btnEdit.Name = "btnEdit"
+        btnEdit.Size = New Size(85, 40)
+        btnEdit.TabIndex = 9
+        btnEdit.Text = "Edit"
+        btnEdit.UseVisualStyleBackColor = False
         ' 
-        ' Button3
+        ' btnDelete
         ' 
-        Button3.BackColor = Color.Red
-        Button3.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button3.ForeColor = Color.White
-        Button3.Location = New Point(1038, 91)
-        Button3.Name = "Button3"
-        Button3.Size = New Size(85, 40)
-        Button3.TabIndex = 11
-        Button3.Text = "Delete"
-        Button3.UseVisualStyleBackColor = False
+        btnDelete.BackColor = Color.Red
+        btnDelete.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnDelete.ForeColor = Color.White
+        btnDelete.Location = New Point(1038, 91)
+        btnDelete.Name = "btnDelete"
+        btnDelete.Size = New Size(85, 40)
+        btnDelete.TabIndex = 11
+        btnDelete.Text = "Delete"
+        btnDelete.UseVisualStyleBackColor = False
         ' 
-        ' Button4
+        ' btnSearch
         ' 
-        Button4.BackColor = Color.FromArgb(CByte(3), CByte(118), CByte(87))
-        Button4.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button4.ForeColor = Color.White
-        Button4.Location = New Point(947, 91)
-        Button4.Name = "Button4"
-        Button4.Size = New Size(85, 40)
-        Button4.TabIndex = 12
-        Button4.Text = "Search"
-        Button4.UseVisualStyleBackColor = False
+        btnSearch.BackColor = Color.FromArgb(CByte(3), CByte(118), CByte(87))
+        btnSearch.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnSearch.ForeColor = Color.White
+        btnSearch.Location = New Point(947, 91)
+        btnSearch.Name = "btnSearch"
+        btnSearch.Size = New Size(85, 40)
+        btnSearch.TabIndex = 12
+        btnSearch.Text = "Search"
+        btnSearch.UseVisualStyleBackColor = False
         ' 
-        ' TextBox1
+        ' txtSearch
         ' 
-        TextBox1.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox1.ForeColor = SystemColors.ControlDark
-        TextBox1.Location = New Point(357, 92)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(584, 39)
-        TextBox1.TabIndex = 13
-        TextBox1.Text = "Search..."
+        txtSearch.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        txtSearch.ForeColor = SystemColors.ControlDark
+        txtSearch.Location = New Point(357, 92)
+        txtSearch.Name = "txtSearch"
+        txtSearch.Size = New Size(584, 39)
+        txtSearch.TabIndex = 13
+        txtSearch.Text = "Search..."
         ' 
         ' PictureBox11
         ' 
@@ -374,7 +376,15 @@ Partial Class StaffManagement
         Label8.TabIndex = 16
         Label8.Text = "Staff Management"
         ' 
-        ' Form5
+        ' colIDKaryawan
+        ' 
+        colIDKaryawan.DataPropertyName = "id_karyawan"
+        colIDKaryawan.HeaderText = ""
+        colIDKaryawan.MinimumWidth = 8
+        colIDKaryawan.Name = "colIDKaryawan"
+        colIDKaryawan.Width = 150
+        ' 
+        ' StaffManagement
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
@@ -382,14 +392,14 @@ Partial Class StaffManagement
         Controls.Add(Label8)
         Controls.Add(Label7)
         Controls.Add(PictureBox11)
-        Controls.Add(TextBox1)
-        Controls.Add(Button4)
-        Controls.Add(Button3)
-        Controls.Add(Button2)
-        Controls.Add(Button1)
-        Controls.Add(DataGridView2)
+        Controls.Add(txtSearch)
+        Controls.Add(btnSearch)
+        Controls.Add(btnDelete)
+        Controls.Add(btnEdit)
+        Controls.Add(btnAddStaff)
+        Controls.Add(dgvStaff)
         Controls.Add(Panel1)
-        Name = "Form5"
+        Name = "StaffManagement"
         Text = "Form5"
         Panel1.ResumeLayout(False)
         Panel7.ResumeLayout(False)
@@ -411,7 +421,7 @@ Partial Class StaffManagement
         Panel2.PerformLayout()
         CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
-        CType(DataGridView2, ComponentModel.ISupportInitialize).EndInit()
+        CType(dgvStaff, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox11, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
@@ -437,13 +447,14 @@ Partial Class StaffManagement
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents Label1 As Label
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents DataGridView2 As DataGridView
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button4 As Button
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents dgvStaff As DataGridView
+    Friend WithEvents btnAddStaff As Button
+    Friend WithEvents btnEdit As Button
+    Friend WithEvents btnDelete As Button
+    Friend WithEvents btnSearch As Button
+    Friend WithEvents txtSearch As TextBox
     Friend WithEvents PictureBox11 As PictureBox
     Friend WithEvents Label7 As Label
     Friend WithEvents Label8 As Label
+    Friend WithEvents colIDKaryawan As DataGridViewTextBoxColumn
 End Class
