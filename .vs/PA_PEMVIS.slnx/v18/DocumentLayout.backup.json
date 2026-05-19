@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "D:\\PA_PEMVIS\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|d:\\pa_pemvis\\datamodule\\detailpembelianmodule.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:datamodule\\detailpembelianmodule.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|d:\\pa_pemvis\\datamodule\\transaksipembelianmodule.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:datamodule\\transaksipembelianmodule.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|d:\\pa_pemvis\\datamodule\\karyawanmodule.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:datamodule\\karyawanmodule.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|d:\\pa_pemvis\\form10.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:form10.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
@@ -86,7 +98,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -98,7 +110,46 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DetailPembelianModule.vb",
+              "DocumentMoniker": "D:\\PA_PEMVIS\\DataModule\\DetailPembelianModule.vb",
+              "RelativeDocumentMoniker": "DataModule\\DetailPembelianModule.vb",
+              "ToolTip": "D:\\PA_PEMVIS\\DataModule\\DetailPembelianModule.vb",
+              "RelativeToolTip": "DataModule\\DetailPembelianModule.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-18T06:47:50.2Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "TransaksiPembelianModule.vb",
+              "DocumentMoniker": "D:\\PA_PEMVIS\\DataModule\\TransaksiPembelianModule.vb",
+              "RelativeDocumentMoniker": "DataModule\\TransaksiPembelianModule.vb",
+              "ToolTip": "D:\\PA_PEMVIS\\DataModule\\TransaksiPembelianModule.vb",
+              "RelativeToolTip": "DataModule\\TransaksiPembelianModule.vb",
+              "ViewState": "AgIAACwAAAAAAAAAAAAgwEYAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-18T06:41:21.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "KaryawanModule.vb",
+              "DocumentMoniker": "D:\\PA_PEMVIS\\DataModule\\KaryawanModule.vb",
+              "RelativeDocumentMoniker": "DataModule\\KaryawanModule.vb",
+              "ToolTip": "D:\\PA_PEMVIS\\DataModule\\KaryawanModule.vb",
+              "RelativeToolTip": "DataModule\\KaryawanModule.vb",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAuwG0AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-18T06:34:51.603Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "ConnectionModule.vb",
               "DocumentMoniker": "D:\\PA_PEMVIS\\DataModule\\ConnectionModule.vb",
               "RelativeDocumentMoniker": "DataModule\\ConnectionModule.vb",
@@ -111,7 +162,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "Form10.vb",
               "DocumentMoniker": "D:\\PA_PEMVIS\\Form10.vb",
               "RelativeDocumentMoniker": "Form10.vb",
@@ -124,7 +175,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Form10.vb [Design]",
               "DocumentMoniker": "D:\\PA_PEMVIS\\Form10.vb",
               "RelativeDocumentMoniker": "Form10.vb",
@@ -136,7 +187,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "Form9.vb",
               "DocumentMoniker": "D:\\PA_PEMVIS\\Form9.vb",
               "RelativeDocumentMoniker": "Form9.vb",
@@ -149,7 +200,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "Form9.vb [Design]",
               "DocumentMoniker": "D:\\PA_PEMVIS\\Form9.vb",
               "RelativeDocumentMoniker": "Form9.vb",
@@ -161,7 +212,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "Form8.vb [Design]",
               "DocumentMoniker": "D:\\PA_PEMVIS\\Form8.vb",
               "RelativeDocumentMoniker": "Form8.vb",
@@ -173,7 +224,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Form1.vb [Design]",
               "DocumentMoniker": "D:\\PA_PEMVIS\\Form1.vb",
               "RelativeDocumentMoniker": "Form1.vb",
@@ -185,7 +236,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "Form11.vb [Design]",
               "DocumentMoniker": "D:\\PA_PEMVIS\\Form11.vb",
               "RelativeDocumentMoniker": "Form11.vb",
@@ -197,7 +248,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "Form7.vb",
               "DocumentMoniker": "D:\\PA_PEMVIS\\Form7.vb",
               "RelativeDocumentMoniker": "Form7.vb",
@@ -210,7 +261,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "Form7.vb [Design]",
               "DocumentMoniker": "D:\\PA_PEMVIS\\Form7.vb",
               "RelativeDocumentMoniker": "Form7.vb",
@@ -222,7 +273,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "Form6.vb",
               "DocumentMoniker": "D:\\PA_PEMVIS\\Form6.vb",
               "RelativeDocumentMoniker": "Form6.vb",
@@ -235,7 +286,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "Form6.vb [Design]",
               "DocumentMoniker": "D:\\PA_PEMVIS\\Form6.vb",
               "RelativeDocumentMoniker": "Form6.vb",
@@ -247,7 +298,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "Form5.vb [Design]",
               "DocumentMoniker": "D:\\PA_PEMVIS\\Form5.vb",
               "RelativeDocumentMoniker": "Form5.vb",
@@ -259,7 +310,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "Form4.vb [Design]",
               "DocumentMoniker": "D:\\PA_PEMVIS\\Form4.vb",
               "RelativeDocumentMoniker": "Form4.vb",
@@ -271,7 +322,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "Form3.vb",
               "DocumentMoniker": "D:\\PA_PEMVIS\\Form3.vb",
               "RelativeDocumentMoniker": "Form3.vb",
@@ -284,7 +335,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Form3.vb [Design]",
               "DocumentMoniker": "D:\\PA_PEMVIS\\Form3.vb",
               "RelativeDocumentMoniker": "Form3.vb",
@@ -296,7 +347,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 21,
               "Title": "Form2.vb",
               "DocumentMoniker": "D:\\PA_PEMVIS\\Form2.vb",
               "RelativeDocumentMoniker": "Form2.vb",
@@ -309,7 +360,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Form2.vb [Design]",
               "DocumentMoniker": "D:\\PA_PEMVIS\\Form2.vb",
               "RelativeDocumentMoniker": "Form2.vb",
@@ -321,7 +372,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 20,
               "Title": "Form1.vb",
               "DocumentMoniker": "D:\\PA_PEMVIS\\Form1.vb",
               "RelativeDocumentMoniker": "Form1.vb",
