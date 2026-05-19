@@ -47,17 +47,16 @@ Module ProductModule
         Return dt
     End Function
 
-    Public Function SimpanProduk(id As String, idSupplier As String, nama As String, stok As Integer, stokMin As Integer, hargaBeli As Decimal, hargaJual As Decimal, kategori As String) As Boolean
+    Public Function SimpanProduk(id As String, idSupplier As String, nama As String, stokMin As Integer, hargaBeli As Long, hargaJual As Long, kategori As String) As Boolean
         Try
             Dim query As String = "INSERT INTO tbproduk (id_produk, id_supplier, nama_produk, stok, stok_minimum, harga_beli, harga_jual, kategori) " &
-                                  "VALUES (@id, @idSupplier, @nama, @stok, @stokMin, @hargaBeli, @hargaJual, @kategori)"
+                              "VALUES (@id, @idSupplier, @nama, 0, @stokMin, @hargaBeli, @hargaJual, @kategori)"
             Using conn As MySqlConnection = GetConnection()
                 conn.Open()
                 Using cmd As New MySqlCommand(query, conn)
                     cmd.Parameters.AddWithValue("@id", id)
                     cmd.Parameters.AddWithValue("@idSupplier", idSupplier)
                     cmd.Parameters.AddWithValue("@nama", nama)
-                    cmd.Parameters.AddWithValue("@stok", stok)
                     cmd.Parameters.AddWithValue("@stokMin", stokMin)
                     cmd.Parameters.AddWithValue("@hargaBeli", hargaBeli)
                     cmd.Parameters.AddWithValue("@hargaJual", hargaJual)
@@ -72,18 +71,16 @@ Module ProductModule
         End Try
     End Function
 
-    Public Function UbahProduk(id As String, idSupplier As String, nama As String, stok As Integer, stokMin As Integer, hargaBeli As Decimal, hargaJual As Decimal, kategori As String) As Boolean
+    Public Function UbahProduk(id As String, nama As String, stokMin As Integer, hargaBeli As Long, hargaJual As Long, kategori As String) As Boolean
         Try
-            Dim query As String = "UPDATE tbproduk SET id_supplier=@idSupplier, nama_produk=@nama, stok=@stok, " &
-                                  "stok_minimum=@stokMin, harga_beli=@hargaBeli, harga_jual=@hargaJual, kategori=@kategori " &
-                                  "WHERE id_produk=@id"
+            Dim query As String = "UPDATE tbproduk SET nama_produk=@nama, stok_minimum=@stokMin, " &
+                              "harga_beli=@hargaBeli, harga_jual=@hargaJual, kategori=@kategori " &
+                              "WHERE id_produk=@id"
             Using conn As MySqlConnection = GetConnection()
                 conn.Open()
                 Using cmd As New MySqlCommand(query, conn)
                     cmd.Parameters.AddWithValue("@id", id)
-                    cmd.Parameters.AddWithValue("@idSupplier", idSupplier)
                     cmd.Parameters.AddWithValue("@nama", nama)
-                    cmd.Parameters.AddWithValue("@stok", stok)
                     cmd.Parameters.AddWithValue("@stokMin", stokMin)
                     cmd.Parameters.AddWithValue("@hargaBeli", hargaBeli)
                     cmd.Parameters.AddWithValue("@hargaJual", hargaJual)
