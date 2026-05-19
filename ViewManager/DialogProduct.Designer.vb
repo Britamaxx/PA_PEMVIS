@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form4
+Partial Class DialogProduct
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.

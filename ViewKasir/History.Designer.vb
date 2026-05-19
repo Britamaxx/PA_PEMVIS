@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form10
+Partial Class History
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,7 +22,7 @@ Partial Class Form10
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form10))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(History))
         Panel1 = New Panel()
         Panel7 = New Panel()
         PictureBox7 = New PictureBox()
@@ -37,14 +37,10 @@ Partial Class Form10
         Label7 = New Label()
         Label8 = New Label()
         DataGridView1 = New DataGridView()
-        Label3 = New Label()
+        PictureBox11 = New PictureBox()
         TextBox1 = New TextBox()
-        TextBox2 = New TextBox()
-        Label4 = New Label()
+        Button4 = New Button()
         Button1 = New Button()
-        Button2 = New Button()
-        Button3 = New Button()
-        Button5 = New Button()
         Panel1.SuspendLayout()
         Panel7.SuspendLayout()
         CType(PictureBox7, ComponentModel.ISupportInitialize).BeginInit()
@@ -54,6 +50,7 @@ Partial Class Form10
         CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox11, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Panel1
@@ -66,7 +63,7 @@ Partial Class Form10
         Panel1.Location = New Point(0, 0)
         Panel1.Name = "Panel1"
         Panel1.Size = New Size(300, 850)
-        Panel1.TabIndex = 6
+        Panel1.TabIndex = 7
         ' 
         ' Panel7
         ' 
@@ -175,7 +172,7 @@ Partial Class Form10
         Label7.Location = New Point(315, 12)
         Label7.Name = "Label7"
         Label7.Size = New Size(116, 25)
-        Label7.TabIndex = 18
+        Label7.TabIndex = 19
         Label7.Text = "17 May 2026"
         ' 
         ' Label8
@@ -185,123 +182,79 @@ Partial Class Form10
         Label8.ForeColor = Color.FromArgb(CByte(3), CByte(118), CByte(87))
         Label8.Location = New Point(315, 37)
         Label8.Name = "Label8"
-        Label8.Size = New Size(146, 32)
-        Label8.TabIndex = 19
-        Label8.Text = "Transaction"
+        Label8.Size = New Size(98, 32)
+        Label8.TabIndex = 20
+        Label8.Text = "History"
         ' 
         ' DataGridView1
         ' 
         DataGridView1.BackgroundColor = Color.White
         DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridView1.Location = New Point(315, 91)
+        DataGridView1.Location = New Point(317, 137)
         DataGridView1.Name = "DataGridView1"
         DataGridView1.RowHeadersWidth = 62
-        DataGridView1.Size = New Size(1051, 550)
-        DataGridView1.TabIndex = 27
+        DataGridView1.Size = New Size(1049, 695)
+        DataGridView1.TabIndex = 21
         ' 
-        ' Label3
+        ' PictureBox11
         ' 
-        Label3.AutoSize = True
-        Label3.Font = New Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label3.Location = New Point(315, 669)
-        Label3.Name = "Label3"
-        Label3.Size = New Size(105, 28)
-        Label3.TabIndex = 28
-        Label3.Text = "Product ID"
+        PictureBox11.Image = CType(resources.GetObject("PictureBox11.Image"), Image)
+        PictureBox11.Location = New Point(317, 96)
+        PictureBox11.Name = "PictureBox11"
+        PictureBox11.Size = New Size(35, 35)
+        PictureBox11.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox11.TabIndex = 22
+        PictureBox11.TabStop = False
         ' 
         ' TextBox1
         ' 
-        TextBox1.Font = New Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox1.Location = New Point(448, 666)
+        TextBox1.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        TextBox1.ForeColor = SystemColors.ControlDark
+        TextBox1.Location = New Point(358, 92)
         TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(918, 34)
-        TextBox1.TabIndex = 29
+        TextBox1.Size = New Size(584, 39)
+        TextBox1.TabIndex = 23
+        TextBox1.Text = "Search..."
         ' 
-        ' TextBox2
+        ' Button4
         ' 
-        TextBox2.Font = New Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox2.Location = New Point(448, 706)
-        TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(918, 34)
-        TextBox2.TabIndex = 30
-        ' 
-        ' Label4
-        ' 
-        Label4.AutoSize = True
-        Label4.Font = New Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label4.Location = New Point(315, 709)
-        Label4.Name = "Label4"
-        Label4.Size = New Size(127, 28)
-        Label4.TabIndex = 31
-        Label4.Text = "Item Amount"
+        Button4.BackColor = Color.FromArgb(CByte(3), CByte(118), CByte(87))
+        Button4.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button4.ForeColor = Color.White
+        Button4.Location = New Point(948, 91)
+        Button4.Name = "Button4"
+        Button4.Size = New Size(85, 40)
+        Button4.TabIndex = 24
+        Button4.Text = "Search"
+        Button4.UseVisualStyleBackColor = False
         ' 
         ' Button1
         ' 
-        Button1.BackColor = Color.LimeGreen
+        Button1.BackColor = Color.FromArgb(CByte(3), CByte(118), CByte(87))
         Button1.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Button1.ForeColor = Color.White
-        Button1.Location = New Point(1220, 746)
+        Button1.Location = New Point(1039, 91)
         Button1.Name = "Button1"
-        Button1.Size = New Size(146, 40)
-        Button1.TabIndex = 32
-        Button1.Text = "+ Add Item"
+        Button1.Size = New Size(327, 40)
+        Button1.TabIndex = 25
+        Button1.Text = "See Details"
         Button1.UseVisualStyleBackColor = False
         ' 
-        ' Button2
-        ' 
-        Button2.BackColor = Color.CornflowerBlue
-        Button2.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button2.ForeColor = Color.White
-        Button2.Location = New Point(1129, 746)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(85, 40)
-        Button2.TabIndex = 33
-        Button2.Text = "Edit"
-        Button2.UseVisualStyleBackColor = False
-        ' 
-        ' Button3
-        ' 
-        Button3.BackColor = Color.Red
-        Button3.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button3.ForeColor = Color.White
-        Button3.Location = New Point(1038, 746)
-        Button3.Name = "Button3"
-        Button3.Size = New Size(85, 40)
-        Button3.TabIndex = 34
-        Button3.Text = "Delete"
-        Button3.UseVisualStyleBackColor = False
-        ' 
-        ' Button5
-        ' 
-        Button5.BackColor = Color.FromArgb(CByte(3), CByte(118), CByte(87))
-        Button5.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button5.ForeColor = Color.White
-        Button5.Location = New Point(315, 792)
-        Button5.Name = "Button5"
-        Button5.Size = New Size(1051, 40)
-        Button5.TabIndex = 35
-        Button5.Text = "Confirm Transaction"
-        Button5.UseVisualStyleBackColor = False
-        ' 
-        ' Form10
+        ' Form11
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1378, 844)
-        Controls.Add(Button5)
-        Controls.Add(Button3)
-        Controls.Add(Button2)
         Controls.Add(Button1)
-        Controls.Add(Label4)
-        Controls.Add(TextBox2)
+        Controls.Add(Button4)
         Controls.Add(TextBox1)
-        Controls.Add(Label3)
+        Controls.Add(PictureBox11)
         Controls.Add(DataGridView1)
         Controls.Add(Label8)
         Controls.Add(Label7)
         Controls.Add(Panel1)
-        Name = "Form10"
-        Text = "Form10"
+        Name = "Form11"
+        Text = "Form11"
         Panel1.ResumeLayout(False)
         Panel7.ResumeLayout(False)
         Panel7.PerformLayout()
@@ -314,6 +267,7 @@ Partial Class Form10
         CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         CType(DataGridView1, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox11, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -332,12 +286,8 @@ Partial Class Form10
     Friend WithEvents Label7 As Label
     Friend WithEvents Label8 As Label
     Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents Label3 As Label
+    Friend WithEvents PictureBox11 As PictureBox
     Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents Label4 As Label
+    Friend WithEvents Button4 As Button
     Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button5 As Button
 End Class

@@ -1,4 +1,4 @@
-﻿Public Class Form9
+﻿Public Class StockSupplying
     Private Sub Label10_Click(sender As Object, e As EventArgs) Handles Label10.Click
 
     End Sub

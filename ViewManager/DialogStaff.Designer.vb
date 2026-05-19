@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form6
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+Partial Class DialogStaff
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Form6
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Label1 = New Label()
         TextBox1 = New TextBox()
@@ -45,7 +45,7 @@ Partial Class Form6
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Font = New Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label1.Font = New Font("Segoe UI", 10.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label1.Location = New Point(12, 15)
         Label1.Name = "Label1"
         Label1.Size = New Size(75, 28)
@@ -54,7 +54,7 @@ Partial Class Form6
         ' 
         ' TextBox1
         ' 
-        TextBox1.Font = New Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        TextBox1.Font = New Font("Segoe UI", 10.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         TextBox1.Location = New Point(196, 12)
         TextBox1.Name = "TextBox1"
         TextBox1.Size = New Size(320, 34)
@@ -63,7 +63,7 @@ Partial Class Form6
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Font = New Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label2.Font = New Font("Segoe UI", 10.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label2.Location = New Point(12, 55)
         Label2.Name = "Label2"
         Label2.Size = New Size(108, 28)
@@ -72,7 +72,7 @@ Partial Class Form6
         ' 
         ' TextBox2
         ' 
-        TextBox2.Font = New Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        TextBox2.Font = New Font("Segoe UI", 10.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         TextBox2.Location = New Point(196, 52)
         TextBox2.Name = "TextBox2"
         TextBox2.Size = New Size(320, 34)
@@ -80,7 +80,7 @@ Partial Class Form6
         ' 
         ' MaskedTextBox1
         ' 
-        MaskedTextBox1.Font = New Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        MaskedTextBox1.Font = New Font("Segoe UI", 10.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         MaskedTextBox1.Location = New Point(196, 92)
         MaskedTextBox1.Mask = "____-____-____"
         MaskedTextBox1.Name = "MaskedTextBox1"
@@ -89,7 +89,7 @@ Partial Class Form6
         ' 
         ' ComboBox1
         ' 
-        ComboBox1.Font = New Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        ComboBox1.Font = New Font("Segoe UI", 10.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         ComboBox1.FormattingEnabled = True
         ComboBox1.Location = New Point(196, 132)
         ComboBox1.Name = "ComboBox1"
@@ -98,7 +98,7 @@ Partial Class Form6
         ' 
         ' TextBox3
         ' 
-        TextBox3.Font = New Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        TextBox3.Font = New Font("Segoe UI", 10.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         TextBox3.Location = New Point(196, 174)
         TextBox3.Name = "TextBox3"
         TextBox3.Size = New Size(320, 34)
@@ -106,7 +106,7 @@ Partial Class Form6
         ' 
         ' TextBox5
         ' 
-        TextBox5.Font = New Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        TextBox5.Font = New Font("Segoe UI", 10.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         TextBox5.Location = New Point(196, 254)
         TextBox5.Name = "TextBox5"
         TextBox5.Size = New Size(320, 34)
@@ -115,7 +115,7 @@ Partial Class Form6
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Font = New Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label3.Font = New Font("Segoe UI", 10.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label3.Location = New Point(12, 95)
         Label3.Name = "Label3"
         Label3.Size = New Size(111, 28)
@@ -125,7 +125,7 @@ Partial Class Form6
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Font = New Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label4.Font = New Font("Segoe UI", 10.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label4.Location = New Point(12, 135)
         Label4.Name = "Label4"
         Label4.Size = New Size(82, 28)
@@ -135,7 +135,7 @@ Partial Class Form6
         ' Label5
         ' 
         Label5.AutoSize = True
-        Label5.Font = New Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label5.Font = New Font("Segoe UI", 10.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label5.Location = New Point(12, 177)
         Label5.Name = "Label5"
         Label5.Size = New Size(102, 28)
@@ -145,7 +145,7 @@ Partial Class Form6
         ' Label6
         ' 
         Label6.AutoSize = True
-        Label6.Font = New Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label6.Font = New Font("Segoe UI", 10.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label6.Location = New Point(12, 217)
         Label6.Name = "Label6"
         Label6.Size = New Size(52, 28)
@@ -188,7 +188,7 @@ Partial Class Form6
         ' Label7
         ' 
         Label7.AutoSize = True
-        Label7.Font = New Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label7.Font = New Font("Segoe UI", 10.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label7.Location = New Point(12, 257)
         Label7.Name = "Label7"
         Label7.Size = New Size(65, 28)
@@ -198,7 +198,7 @@ Partial Class Form6
         ' Button1
         ' 
         Button1.BackColor = Color.LimeGreen
-        Button1.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button1.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Button1.ForeColor = Color.White
         Button1.Location = New Point(361, 294)
         Button1.Name = "Button1"
@@ -210,7 +210,7 @@ Partial Class Form6
         ' Button2
         ' 
         Button2.BackColor = Color.Red
-        Button2.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button2.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Button2.ForeColor = Color.White
         Button2.Location = New Point(196, 294)
         Button2.Name = "Button2"
@@ -219,9 +219,9 @@ Partial Class Form6
         Button2.Text = "Batal"
         Button2.UseVisualStyleBackColor = False
         ' 
-        ' Form6
+        ' DialogStaff
         ' 
-        AutoScaleDimensions = New SizeF(10F, 25F)
+        AutoScaleDimensions = New SizeF(10.0F, 25.0F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(528, 344)
         Controls.Add(Button2)
@@ -242,8 +242,8 @@ Partial Class Form6
         Controls.Add(Label2)
         Controls.Add(TextBox1)
         Controls.Add(Label1)
-        Name = "Form6"
-        Text = "Form6"
+        Name = "DialogStaff"
+        Text = "DialogStaff"
         ResumeLayout(False)
         PerformLayout()
     End Sub
