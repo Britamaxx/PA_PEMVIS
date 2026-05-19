@@ -1,29 +1,77 @@
-﻿Public Class ProductManagement
-    Private Sub Label8_Click(sender As Object, e As EventArgs) Handles Label8.Click
+﻿Imports System.Windows
 
+Public Class ProductManagement
+    Private idTerpilih As String = ""
+
+    Private Sub TampilData()
+        dgvProduk.DataSource = GetAllProduk()
+        dgvProduk.Columns("id_produk").Visible = False
     End Sub
 
-    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
-
+    Private Sub ProductManagement_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        dgvProduk.AutoGenerateColumns = True
+        TampilData()
     End Sub
 
-    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
-
+    Private Sub btnSearch_Click(sender As Object, e As EventArgs) Handles btnSearch.Click
+        If txtSearch.Text.Trim() = "" Then
+            TampilData()
+            Exit Sub
+        End If
+        dgvProduk.DataSource = SearchProduk(txtSearch.Text.Trim())
+        dgvProduk.Columns("id_produk").Visible = False
+        If dgvProduk.RowCount = 0 Then
+            MessageBox.Show("Data tidak ditemukan", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            TampilData()
+        End If
     End Sub
 
-    Private Sub PictureBox11_Click(sender As Object, e As EventArgs) Handles PictureBox11.Click
-
+    Private Sub btnAddProduct_Click(sender As Object, e As EventArgs) Handles btnAddProduct.Click
+        Dim f4 As New DialogProduct()
+        f4.Mode = "Tambah"
+        If f4.ShowDialog() = DialogResult.OK Then
+            TampilData()
+        End If
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-
+    Private Sub btnEdit_Click(sender As Object, e As EventArgs) Handles btnEdit.Click
+        If idTerpilih = "" Then
+            MessageBox.Show("Pilih data yang ingin diedit", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Exit Sub
+        End If
+        Dim f4 As New DialogProduct()
+        f4.Mode = "Edit"
+        f4.IDTerpilih = idTerpilih
+        If f4.ShowDialog() = DialogResult.OK Then
+            TampilData()
+        End If
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-
+    Private Sub btnDelete_Click(sender As Object, e As EventArgs) Handles btnDelete.Click
+        If idTerpilih = "" Then
+            MessageBox.Show("Pilih data yang ingin dihapus", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Exit Sub
+        End If
+        Dim hasil As DialogResult = MessageBox.Show("Apakah data ini ingin dihapus?", "Konfirmasi", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+        If hasil = DialogResult.Yes Then
+            If HapusProduk(idTerpilih) Then
+                MessageBox.Show("Data berhasil dihapus", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                idTerpilih = ""
+                TampilData()
+            End If
+        End If
     End Sub
 
-    Private Sub Label7_Click(sender As Object, e As EventArgs) Handles Label7.Click
+    Private Sub dgvProduk_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvProduk.CellClick
+        If e.RowIndex >= 0 Then
+            Dim row As DataGridViewRow = dgvProduk.Rows(e.RowIndex)
+            If row.Cells("id_produk").Value IsNot Nothing Then
+                idTerpilih = row.Cells("id_produk").Value.ToString()
+            End If
+        End If
+    End Sub
+
+    Private Sub dgvProduk_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvProduk.CellContentClick
 
     End Sub
 End Class

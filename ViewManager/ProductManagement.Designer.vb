@@ -43,15 +43,15 @@ Partial Class ProductManagement
         PictureBox2 = New PictureBox()
         Label1 = New Label()
         PictureBox1 = New PictureBox()
-        DataGridView1 = New DataGridView()
+        dgvProduk = New DataGridView()
         Label7 = New Label()
         Label8 = New Label()
-        TextBox1 = New TextBox()
-        Button1 = New Button()
-        Button2 = New Button()
+        txtSearch = New TextBox()
+        btnAddProduct = New Button()
+        btnEdit = New Button()
         PictureBox11 = New PictureBox()
-        Button3 = New Button()
-        Button4 = New Button()
+        btnDelete = New Button()
+        btnSearch = New Button()
         Panel1.SuspendLayout()
         Panel7.SuspendLayout()
         CType(PictureBox7, ComponentModel.ISupportInitialize).BeginInit()
@@ -66,7 +66,7 @@ Partial Class ProductManagement
         Panel2.SuspendLayout()
         CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
-        CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dgvProduk, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox11, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
@@ -275,15 +275,15 @@ Partial Class ProductManagement
         PictureBox1.TabIndex = 0
         PictureBox1.TabStop = False
         ' 
-        ' DataGridView1
+        ' dgvProduk
         ' 
-        DataGridView1.BackgroundColor = Color.White
-        DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridView1.Location = New Point(317, 137)
-        DataGridView1.Name = "DataGridView1"
-        DataGridView1.RowHeadersWidth = 62
-        DataGridView1.Size = New Size(1049, 695)
-        DataGridView1.TabIndex = 3
+        dgvProduk.BackgroundColor = Color.White
+        dgvProduk.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        dgvProduk.Location = New Point(317, 137)
+        dgvProduk.Name = "dgvProduk"
+        dgvProduk.RowHeadersWidth = 62
+        dgvProduk.Size = New Size(1049, 695)
+        dgvProduk.TabIndex = 3
         ' 
         ' Label7
         ' 
@@ -306,39 +306,39 @@ Partial Class ProductManagement
         Label8.TabIndex = 5
         Label8.Text = "Product Management"
         ' 
-        ' TextBox1
+        ' txtSearch
         ' 
-        TextBox1.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox1.ForeColor = SystemColors.ControlDark
-        TextBox1.Location = New Point(358, 92)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(584, 39)
-        TextBox1.TabIndex = 6
-        TextBox1.Text = "Search..."
+        txtSearch.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        txtSearch.ForeColor = SystemColors.ControlDark
+        txtSearch.Location = New Point(358, 92)
+        txtSearch.Name = "txtSearch"
+        txtSearch.Size = New Size(584, 39)
+        txtSearch.TabIndex = 6
+        txtSearch.Text = "Search..."
         ' 
-        ' Button1
+        ' btnAddProduct
         ' 
-        Button1.BackColor = Color.LimeGreen
-        Button1.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button1.ForeColor = Color.White
-        Button1.Location = New Point(1221, 91)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(146, 40)
-        Button1.TabIndex = 7
-        Button1.Text = "+ Add Product"
-        Button1.UseVisualStyleBackColor = False
+        btnAddProduct.BackColor = Color.LimeGreen
+        btnAddProduct.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnAddProduct.ForeColor = Color.White
+        btnAddProduct.Location = New Point(1221, 91)
+        btnAddProduct.Name = "btnAddProduct"
+        btnAddProduct.Size = New Size(146, 40)
+        btnAddProduct.TabIndex = 7
+        btnAddProduct.Text = "+ Add Product"
+        btnAddProduct.UseVisualStyleBackColor = False
         ' 
-        ' Button2
+        ' btnEdit
         ' 
-        Button2.BackColor = Color.CornflowerBlue
-        Button2.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button2.ForeColor = Color.White
-        Button2.Location = New Point(1130, 91)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(85, 40)
-        Button2.TabIndex = 8
-        Button2.Text = "Edit"
-        Button2.UseVisualStyleBackColor = False
+        btnEdit.BackColor = Color.CornflowerBlue
+        btnEdit.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnEdit.ForeColor = Color.White
+        btnEdit.Location = New Point(1130, 91)
+        btnEdit.Name = "btnEdit"
+        btnEdit.Size = New Size(85, 40)
+        btnEdit.TabIndex = 8
+        btnEdit.Text = "Edit"
+        btnEdit.UseVisualStyleBackColor = False
         ' 
         ' PictureBox11
         ' 
@@ -350,46 +350,46 @@ Partial Class ProductManagement
         PictureBox11.TabIndex = 9
         PictureBox11.TabStop = False
         ' 
-        ' Button3
+        ' btnDelete
         ' 
-        Button3.BackColor = Color.Red
-        Button3.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button3.ForeColor = Color.White
-        Button3.Location = New Point(1039, 91)
-        Button3.Name = "Button3"
-        Button3.Size = New Size(85, 40)
-        Button3.TabIndex = 10
-        Button3.Text = "Delete"
-        Button3.UseVisualStyleBackColor = False
+        btnDelete.BackColor = Color.Red
+        btnDelete.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnDelete.ForeColor = Color.White
+        btnDelete.Location = New Point(1039, 91)
+        btnDelete.Name = "btnDelete"
+        btnDelete.Size = New Size(85, 40)
+        btnDelete.TabIndex = 10
+        btnDelete.Text = "Delete"
+        btnDelete.UseVisualStyleBackColor = False
         ' 
-        ' Button4
+        ' btnSearch
         ' 
-        Button4.BackColor = Color.FromArgb(CByte(3), CByte(118), CByte(87))
-        Button4.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button4.ForeColor = Color.White
-        Button4.Location = New Point(948, 91)
-        Button4.Name = "Button4"
-        Button4.Size = New Size(85, 40)
-        Button4.TabIndex = 11
-        Button4.Text = "Search"
-        Button4.UseVisualStyleBackColor = False
+        btnSearch.BackColor = Color.FromArgb(CByte(3), CByte(118), CByte(87))
+        btnSearch.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnSearch.ForeColor = Color.White
+        btnSearch.Location = New Point(948, 91)
+        btnSearch.Name = "btnSearch"
+        btnSearch.Size = New Size(85, 40)
+        btnSearch.TabIndex = 11
+        btnSearch.Text = "Search"
+        btnSearch.UseVisualStyleBackColor = False
         ' 
-        ' Form3
+        ' ProductManagement
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1378, 844)
-        Controls.Add(Button4)
-        Controls.Add(Button3)
+        Controls.Add(btnSearch)
+        Controls.Add(btnDelete)
         Controls.Add(PictureBox11)
-        Controls.Add(Button2)
-        Controls.Add(Button1)
-        Controls.Add(TextBox1)
+        Controls.Add(btnEdit)
+        Controls.Add(btnAddProduct)
+        Controls.Add(txtSearch)
         Controls.Add(Label8)
         Controls.Add(Label7)
-        Controls.Add(DataGridView1)
+        Controls.Add(dgvProduk)
         Controls.Add(Panel1)
-        Name = "Form3"
+        Name = "ProductManagement"
         Text = "Form3"
         Panel1.ResumeLayout(False)
         Panel7.ResumeLayout(False)
@@ -411,7 +411,7 @@ Partial Class ProductManagement
         Panel2.PerformLayout()
         CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
-        CType(DataGridView1, ComponentModel.ISupportInitialize).EndInit()
+        CType(dgvProduk, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox11, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
@@ -437,13 +437,13 @@ Partial Class ProductManagement
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents Label1 As Label
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents dgvProduk As DataGridView
     Friend WithEvents Label7 As Label
     Friend WithEvents Label8 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents txtSearch As TextBox
+    Friend WithEvents btnAddProduct As Button
+    Friend WithEvents btnEdit As Button
     Friend WithEvents PictureBox11 As PictureBox
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button4 As Button
+    Friend WithEvents btnDelete As Button
+    Friend WithEvents btnSearch As Button
 End Class
