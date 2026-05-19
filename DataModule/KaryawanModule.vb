@@ -82,56 +82,49 @@ Module KaryawanModule
         Return dt
     End Function
 
-    Public Function SimpanKaryawan(id As String, nama As String, username As String, password As String, jabatan As String, telepon As String) As Boolean
+    Public Function SimpanKaryawan(id As String, nama As String, jabatan As String, telepon As String, gaji As Long, shift As String) As Boolean
         Try
             Dim query As String =
-                "INSERT INTO tbkaryawan(id_karyawan, nama_karyawan, username, password, jabatan, telepon_karyawan)
-                VALUES (@id, @nama, @username, @password, @jabatan, @telepon)"
-
+            "INSERT INTO tbkaryawan (id_karyawan, nama_karyawan, username, password, jabatan, telepon_karyawan, gaji_bersih, shift) " &
+            "VALUES (@id, @nama, @id, @id, @jabatan, @telepon, @gaji, @shift)"
             Using conn As MySqlConnection = GetConnection()
                 conn.Open()
-
                 Using cmd As New MySqlCommand(query, conn)
                     cmd.Parameters.AddWithValue("@id", id)
                     cmd.Parameters.AddWithValue("@nama", nama)
-                    cmd.Parameters.AddWithValue("@username", username)
-                    cmd.Parameters.AddWithValue("@password", password)
                     cmd.Parameters.AddWithValue("@jabatan", jabatan)
                     cmd.Parameters.AddWithValue("@telepon", telepon)
-
+                    cmd.Parameters.AddWithValue("@gaji", gaji)
+                    cmd.Parameters.AddWithValue("@shift", shift)
                     cmd.ExecuteNonQuery()
                 End Using
             End Using
-
             Return True
-
         Catch ex As Exception
-            MessageBox.Show("Gagal menyimpan data karyawan: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show("Gagal menyimpan data staff: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Return False
         End Try
     End Function
 
-    Public Function UbahKaryawan(id As String, nama As String, username As String, password As String, jabatan As String, telepon As String) As Boolean
+    Public Function UbahKaryawan(id As String, nama As String, jabatan As String, telepon As String, gaji As Long, shift As String) As Boolean
         Try
-            Dim query As String = "UPDATE tbkaryawan SET nama_karyawan = @nama, username = @username, password = @password, jabatan = @jabatan, telepon_karyawan = @telepon WHERE id_karyawan = @id"
-
+            Dim query As String =
+            "UPDATE tbkaryawan SET nama_karyawan=@nama, jabatan=@jabatan, " &
+            "telepon_karyawan=@telepon, gaji_bersih=@gaji, shift=@shift WHERE id_karyawan=@id"
             Using conn As MySqlConnection = GetConnection()
                 conn.Open()
-
                 Using cmd As New MySqlCommand(query, conn)
                     cmd.Parameters.AddWithValue("@id", id)
                     cmd.Parameters.AddWithValue("@nama", nama)
-                    cmd.Parameters.AddWithValue("@username", username)
-                    cmd.Parameters.AddWithValue("@password", password)
                     cmd.Parameters.AddWithValue("@jabatan", jabatan)
                     cmd.Parameters.AddWithValue("@telepon", telepon)
-
+                    cmd.Parameters.AddWithValue("@gaji", gaji)
+                    cmd.Parameters.AddWithValue("@shift", shift)
                     Return cmd.ExecuteNonQuery() > 0
                 End Using
             End Using
-
         Catch ex As Exception
-            MessageBox.Show("Gagal mengubah data karyawan: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show("Gagal mengubah data staff: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Return False
         End Try
     End Function
