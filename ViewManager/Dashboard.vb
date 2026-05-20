@@ -31,7 +31,7 @@
         Me.Hide()
     End Sub
 
-    Private Sub StaffSidebar_Click(sender As Object, e As EventArgs) Handles StaffSidebar.Click, Label2.Click
+    Private Sub StaffSidebar_Click(sender As Object, e As EventArgs) Handles StaffSidebar.Click
         Dim f As New StaffManagement
         f.Show()
         Hide()
