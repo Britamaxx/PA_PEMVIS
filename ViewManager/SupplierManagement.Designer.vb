@@ -43,12 +43,12 @@ Partial Class SupplierManagement
         PictureBox2 = New PictureBox()
         Label1 = New Label()
         PictureBox1 = New PictureBox()
-        DataGridView2 = New DataGridView()
-        Button1 = New Button()
-        Button2 = New Button()
-        Button3 = New Button()
-        Button4 = New Button()
-        TextBox1 = New TextBox()
+        dgvSupplier = New DataGridView()
+        btnAddSupplier = New Button()
+        btnEdit = New Button()
+        btnDelete = New Button()
+        btnSearch = New Button()
+        txtSearch = New TextBox()
         PictureBox11 = New PictureBox()
         Label7 = New Label()
         Label8 = New Label()
@@ -66,7 +66,7 @@ Partial Class SupplierManagement
         Panel2.SuspendLayout()
         CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
-        CType(DataGridView2, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dgvSupplier, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox11, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
@@ -275,73 +275,73 @@ Partial Class SupplierManagement
         PictureBox1.TabIndex = 0
         PictureBox1.TabStop = False
         ' 
-        ' DataGridView2
+        ' dgvSupplier
         ' 
-        DataGridView2.BackgroundColor = Color.White
-        DataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridView2.Location = New Point(317, 137)
-        DataGridView2.Name = "DataGridView2"
-        DataGridView2.RowHeadersWidth = 62
-        DataGridView2.Size = New Size(1049, 695)
-        DataGridView2.TabIndex = 6
+        dgvSupplier.BackgroundColor = Color.White
+        dgvSupplier.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        dgvSupplier.Location = New Point(317, 137)
+        dgvSupplier.Name = "dgvSupplier"
+        dgvSupplier.RowHeadersWidth = 62
+        dgvSupplier.Size = New Size(1049, 695)
+        dgvSupplier.TabIndex = 6
         ' 
-        ' Button1
+        ' btnAddSupplier
         ' 
-        Button1.BackColor = Color.LimeGreen
-        Button1.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button1.ForeColor = Color.White
-        Button1.Location = New Point(1220, 91)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(146, 40)
-        Button1.TabIndex = 9
-        Button1.Text = "+ Add Product"
-        Button1.UseVisualStyleBackColor = False
+        btnAddSupplier.BackColor = Color.LimeGreen
+        btnAddSupplier.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnAddSupplier.ForeColor = Color.White
+        btnAddSupplier.Location = New Point(1220, 91)
+        btnAddSupplier.Name = "btnAddSupplier"
+        btnAddSupplier.Size = New Size(146, 40)
+        btnAddSupplier.TabIndex = 9
+        btnAddSupplier.Text = "+ Add Supplier"
+        btnAddSupplier.UseVisualStyleBackColor = False
         ' 
-        ' Button2
+        ' btnEdit
         ' 
-        Button2.BackColor = Color.CornflowerBlue
-        Button2.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button2.ForeColor = Color.White
-        Button2.Location = New Point(1129, 91)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(85, 40)
-        Button2.TabIndex = 10
-        Button2.Text = "Edit"
-        Button2.UseVisualStyleBackColor = False
+        btnEdit.BackColor = Color.CornflowerBlue
+        btnEdit.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnEdit.ForeColor = Color.White
+        btnEdit.Location = New Point(1129, 91)
+        btnEdit.Name = "btnEdit"
+        btnEdit.Size = New Size(85, 40)
+        btnEdit.TabIndex = 10
+        btnEdit.Text = "Edit"
+        btnEdit.UseVisualStyleBackColor = False
         ' 
-        ' Button3
+        ' btnDelete
         ' 
-        Button3.BackColor = Color.Red
-        Button3.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button3.ForeColor = Color.White
-        Button3.Location = New Point(1038, 91)
-        Button3.Name = "Button3"
-        Button3.Size = New Size(85, 40)
-        Button3.TabIndex = 12
-        Button3.Text = "Delete"
-        Button3.UseVisualStyleBackColor = False
+        btnDelete.BackColor = Color.Red
+        btnDelete.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnDelete.ForeColor = Color.White
+        btnDelete.Location = New Point(1038, 91)
+        btnDelete.Name = "btnDelete"
+        btnDelete.Size = New Size(85, 40)
+        btnDelete.TabIndex = 12
+        btnDelete.Text = "Delete"
+        btnDelete.UseVisualStyleBackColor = False
         ' 
-        ' Button4
+        ' btnSearch
         ' 
-        Button4.BackColor = Color.FromArgb(CByte(3), CByte(118), CByte(87))
-        Button4.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button4.ForeColor = Color.White
-        Button4.Location = New Point(947, 91)
-        Button4.Name = "Button4"
-        Button4.Size = New Size(85, 40)
-        Button4.TabIndex = 13
-        Button4.Text = "Search"
-        Button4.UseVisualStyleBackColor = False
+        btnSearch.BackColor = Color.FromArgb(CByte(3), CByte(118), CByte(87))
+        btnSearch.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnSearch.ForeColor = Color.White
+        btnSearch.Location = New Point(947, 91)
+        btnSearch.Name = "btnSearch"
+        btnSearch.Size = New Size(85, 40)
+        btnSearch.TabIndex = 13
+        btnSearch.Text = "Search"
+        btnSearch.UseVisualStyleBackColor = False
         ' 
-        ' TextBox1
+        ' txtSearch
         ' 
-        TextBox1.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox1.ForeColor = SystemColors.ControlDark
-        TextBox1.Location = New Point(358, 92)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(584, 39)
-        TextBox1.TabIndex = 14
-        TextBox1.Text = "Search..."
+        txtSearch.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        txtSearch.ForeColor = SystemColors.ControlDark
+        txtSearch.Location = New Point(358, 92)
+        txtSearch.Name = "txtSearch"
+        txtSearch.Size = New Size(584, 39)
+        txtSearch.TabIndex = 14
+        txtSearch.Text = "Search..."
         ' 
         ' PictureBox11
         ' 
@@ -374,7 +374,7 @@ Partial Class SupplierManagement
         Label8.TabIndex = 17
         Label8.Text = "Supplier Management"
         ' 
-        ' Form7
+        ' SupplierManagement
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
@@ -382,14 +382,14 @@ Partial Class SupplierManagement
         Controls.Add(Label8)
         Controls.Add(Label7)
         Controls.Add(PictureBox11)
-        Controls.Add(TextBox1)
-        Controls.Add(Button4)
-        Controls.Add(Button3)
-        Controls.Add(Button2)
-        Controls.Add(Button1)
-        Controls.Add(DataGridView2)
+        Controls.Add(txtSearch)
+        Controls.Add(btnSearch)
+        Controls.Add(btnDelete)
+        Controls.Add(btnEdit)
+        Controls.Add(btnAddSupplier)
+        Controls.Add(dgvSupplier)
         Controls.Add(Panel1)
-        Name = "Form7"
+        Name = "SupplierManagement"
         Text = "Form7"
         Panel1.ResumeLayout(False)
         Panel7.ResumeLayout(False)
@@ -411,7 +411,7 @@ Partial Class SupplierManagement
         Panel2.PerformLayout()
         CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
-        CType(DataGridView2, ComponentModel.ISupportInitialize).EndInit()
+        CType(dgvSupplier, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox11, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
@@ -437,12 +437,12 @@ Partial Class SupplierManagement
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents Label1 As Label
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents DataGridView2 As DataGridView
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button4 As Button
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents dgvSupplier As DataGridView
+    Friend WithEvents btnAddSupplier As Button
+    Friend WithEvents btnEdit As Button
+    Friend WithEvents btnDelete As Button
+    Friend WithEvents btnSearch As Button
+    Friend WithEvents txtSearch As TextBox
     Friend WithEvents PictureBox11 As PictureBox
     Friend WithEvents Label7 As Label
     Friend WithEvents Label8 As Label
