@@ -24,40 +24,40 @@ Partial Class History
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(History))
         Panel1 = New Panel()
-        Panel7 = New Panel()
+        LogoutSidebar = New Panel()
         PictureBox7 = New PictureBox()
         Label6 = New Label()
-        Panel3 = New Panel()
+        HistorySidebar = New Panel()
         PictureBox3 = New PictureBox()
         Label2 = New Label()
         Panel2 = New Panel()
         PictureBox2 = New PictureBox()
-        Label1 = New Label()
+        TransactionSidebar = New Label()
         PictureBox1 = New PictureBox()
         Label7 = New Label()
         Label8 = New Label()
-        DataGridView1 = New DataGridView()
+        dgvHistory = New DataGridView()
         PictureBox11 = New PictureBox()
-        TextBox1 = New TextBox()
-        Button4 = New Button()
-        Button1 = New Button()
+        txtSearch = New TextBox()
+        btnSearch = New Button()
+        btnSeeDetails = New Button()
         Panel1.SuspendLayout()
-        Panel7.SuspendLayout()
+        LogoutSidebar.SuspendLayout()
         CType(PictureBox7, ComponentModel.ISupportInitialize).BeginInit()
-        Panel3.SuspendLayout()
+        HistorySidebar.SuspendLayout()
         CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
         Panel2.SuspendLayout()
         CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
-        CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dgvHistory, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox11, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Panel1
         ' 
         Panel1.BackColor = Color.FromArgb(CByte(3), CByte(118), CByte(87))
-        Panel1.Controls.Add(Panel7)
-        Panel1.Controls.Add(Panel3)
+        Panel1.Controls.Add(LogoutSidebar)
+        Panel1.Controls.Add(HistorySidebar)
         Panel1.Controls.Add(Panel2)
         Panel1.Controls.Add(PictureBox1)
         Panel1.Location = New Point(0, 0)
@@ -65,14 +65,14 @@ Partial Class History
         Panel1.Size = New Size(300, 850)
         Panel1.TabIndex = 7
         ' 
-        ' Panel7
+        ' LogoutSidebar
         ' 
-        Panel7.Controls.Add(PictureBox7)
-        Panel7.Controls.Add(Label6)
-        Panel7.Location = New Point(0, 782)
-        Panel7.Name = "Panel7"
-        Panel7.Size = New Size(300, 50)
-        Panel7.TabIndex = 3
+        LogoutSidebar.Controls.Add(PictureBox7)
+        LogoutSidebar.Controls.Add(Label6)
+        LogoutSidebar.Location = New Point(0, 782)
+        LogoutSidebar.Name = "LogoutSidebar"
+        LogoutSidebar.Size = New Size(300, 50)
+        LogoutSidebar.TabIndex = 3
         ' 
         ' PictureBox7
         ' 
@@ -95,14 +95,14 @@ Partial Class History
         Label6.TabIndex = 1
         Label6.Text = "Logout"
         ' 
-        ' Panel3
+        ' HistorySidebar
         ' 
-        Panel3.Controls.Add(PictureBox3)
-        Panel3.Controls.Add(Label2)
-        Panel3.Location = New Point(0, 232)
-        Panel3.Name = "Panel3"
-        Panel3.Size = New Size(300, 50)
-        Panel3.TabIndex = 3
+        HistorySidebar.Controls.Add(PictureBox3)
+        HistorySidebar.Controls.Add(Label2)
+        HistorySidebar.Location = New Point(0, 232)
+        HistorySidebar.Name = "HistorySidebar"
+        HistorySidebar.Size = New Size(300, 50)
+        HistorySidebar.TabIndex = 3
         ' 
         ' PictureBox3
         ' 
@@ -128,7 +128,7 @@ Partial Class History
         ' Panel2
         ' 
         Panel2.Controls.Add(PictureBox2)
-        Panel2.Controls.Add(Label1)
+        Panel2.Controls.Add(TransactionSidebar)
         Panel2.Location = New Point(0, 164)
         Panel2.Name = "Panel2"
         Panel2.Size = New Size(300, 50)
@@ -144,16 +144,16 @@ Partial Class History
         PictureBox2.TabIndex = 3
         PictureBox2.TabStop = False
         ' 
-        ' Label1
+        ' TransactionSidebar
         ' 
-        Label1.AutoSize = True
-        Label1.Font = New Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label1.ForeColor = Color.White
-        Label1.Location = New Point(87, 6)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(157, 38)
-        Label1.TabIndex = 1
-        Label1.Text = "Transaction"
+        TransactionSidebar.AutoSize = True
+        TransactionSidebar.Font = New Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        TransactionSidebar.ForeColor = Color.White
+        TransactionSidebar.Location = New Point(87, 6)
+        TransactionSidebar.Name = "TransactionSidebar"
+        TransactionSidebar.Size = New Size(157, 38)
+        TransactionSidebar.TabIndex = 1
+        TransactionSidebar.Text = "Transaction"
         ' 
         ' PictureBox1
         ' 
@@ -186,15 +186,15 @@ Partial Class History
         Label8.TabIndex = 20
         Label8.Text = "History"
         ' 
-        ' DataGridView1
+        ' dgvHistory
         ' 
-        DataGridView1.BackgroundColor = Color.White
-        DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridView1.Location = New Point(317, 137)
-        DataGridView1.Name = "DataGridView1"
-        DataGridView1.RowHeadersWidth = 62
-        DataGridView1.Size = New Size(1049, 695)
-        DataGridView1.TabIndex = 21
+        dgvHistory.BackgroundColor = Color.White
+        dgvHistory.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        dgvHistory.Location = New Point(317, 137)
+        dgvHistory.Name = "dgvHistory"
+        dgvHistory.RowHeadersWidth = 62
+        dgvHistory.Size = New Size(1049, 695)
+        dgvHistory.TabIndex = 21
         ' 
         ' PictureBox11
         ' 
@@ -206,88 +206,88 @@ Partial Class History
         PictureBox11.TabIndex = 22
         PictureBox11.TabStop = False
         ' 
-        ' TextBox1
+        ' txtSearch
         ' 
-        TextBox1.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox1.ForeColor = SystemColors.ControlDark
-        TextBox1.Location = New Point(358, 92)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(584, 39)
-        TextBox1.TabIndex = 23
-        TextBox1.Text = "Search..."
+        txtSearch.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        txtSearch.ForeColor = SystemColors.ControlDark
+        txtSearch.Location = New Point(358, 92)
+        txtSearch.Name = "txtSearch"
+        txtSearch.Size = New Size(584, 39)
+        txtSearch.TabIndex = 23
+        txtSearch.Text = "Search..."
         ' 
-        ' Button4
+        ' btnSearch
         ' 
-        Button4.BackColor = Color.FromArgb(CByte(3), CByte(118), CByte(87))
-        Button4.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button4.ForeColor = Color.White
-        Button4.Location = New Point(948, 91)
-        Button4.Name = "Button4"
-        Button4.Size = New Size(85, 40)
-        Button4.TabIndex = 24
-        Button4.Text = "Search"
-        Button4.UseVisualStyleBackColor = False
+        btnSearch.BackColor = Color.FromArgb(CByte(3), CByte(118), CByte(87))
+        btnSearch.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnSearch.ForeColor = Color.White
+        btnSearch.Location = New Point(948, 91)
+        btnSearch.Name = "btnSearch"
+        btnSearch.Size = New Size(85, 40)
+        btnSearch.TabIndex = 24
+        btnSearch.Text = "Search"
+        btnSearch.UseVisualStyleBackColor = False
         ' 
-        ' Button1
+        ' btnSeeDetails
         ' 
-        Button1.BackColor = Color.FromArgb(CByte(3), CByte(118), CByte(87))
-        Button1.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button1.ForeColor = Color.White
-        Button1.Location = New Point(1039, 91)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(327, 40)
-        Button1.TabIndex = 25
-        Button1.Text = "See Details"
-        Button1.UseVisualStyleBackColor = False
+        btnSeeDetails.BackColor = Color.FromArgb(CByte(3), CByte(118), CByte(87))
+        btnSeeDetails.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnSeeDetails.ForeColor = Color.White
+        btnSeeDetails.Location = New Point(1039, 91)
+        btnSeeDetails.Name = "btnSeeDetails"
+        btnSeeDetails.Size = New Size(327, 40)
+        btnSeeDetails.TabIndex = 25
+        btnSeeDetails.Text = "See Details"
+        btnSeeDetails.UseVisualStyleBackColor = False
         ' 
         ' History
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1378, 844)
-        Controls.Add(Button1)
-        Controls.Add(Button4)
-        Controls.Add(TextBox1)
+        Controls.Add(btnSeeDetails)
+        Controls.Add(btnSearch)
+        Controls.Add(txtSearch)
         Controls.Add(PictureBox11)
-        Controls.Add(DataGridView1)
+        Controls.Add(dgvHistory)
         Controls.Add(Label8)
         Controls.Add(Label7)
         Controls.Add(Panel1)
         Name = "History"
         Text = "Form11"
         Panel1.ResumeLayout(False)
-        Panel7.ResumeLayout(False)
-        Panel7.PerformLayout()
+        LogoutSidebar.ResumeLayout(False)
+        LogoutSidebar.PerformLayout()
         CType(PictureBox7, ComponentModel.ISupportInitialize).EndInit()
-        Panel3.ResumeLayout(False)
-        Panel3.PerformLayout()
+        HistorySidebar.ResumeLayout(False)
+        HistorySidebar.PerformLayout()
         CType(PictureBox3, ComponentModel.ISupportInitialize).EndInit()
         Panel2.ResumeLayout(False)
         Panel2.PerformLayout()
         CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
-        CType(DataGridView1, ComponentModel.ISupportInitialize).EndInit()
+        CType(dgvHistory, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox11, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
 
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents Panel7 As Panel
+    Friend WithEvents LogoutSidebar As Panel
     Friend WithEvents PictureBox7 As PictureBox
     Friend WithEvents Label6 As Label
-    Friend WithEvents Panel3 As Panel
+    Friend WithEvents HistorySidebar As Panel
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Panel2 As Panel
     Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents Label1 As Label
+    Friend WithEvents TransactionSidebar As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label7 As Label
     Friend WithEvents Label8 As Label
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents dgvHistory As DataGridView
     Friend WithEvents PictureBox11 As PictureBox
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Button1 As Button
+    Friend WithEvents txtSearch As TextBox
+    Friend WithEvents btnSearch As Button
+    Friend WithEvents btnSeeDetails As Button
 End Class
