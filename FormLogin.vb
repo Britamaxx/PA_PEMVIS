@@ -50,8 +50,6 @@ Public Class FormLogin
             txtPassword.Focus()
         End If
     End Sub
-
-    ' ===== SHOW / HIDE PASSWORD =====
     Private Sub picHidePass_Click(sender As Object, e As EventArgs) Handles picHidePass.Click
         txtPassword.PasswordChar = Chr(0)
         picHidePass.Visible = False
@@ -77,5 +75,4 @@ Public Class FormLogin
             btnLogin.PerformClick()
         End If
     End Sub
-
 End Class

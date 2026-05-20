@@ -52,27 +52,27 @@ Partial Class FormLogin
         Panel1.Location = New Point(0, 0)
         Panel1.Margin = New Padding(2)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(440, 560)
+        Panel1.Size = New Size(550, 700)
         Panel1.TabIndex = 0
         ' 
         ' Label1
         ' 
         Label1.AutoSize = True
         Label1.ForeColor = Color.White
-        Label1.Location = New Point(83, 442)
+        Label1.Location = New Point(104, 552)
         Label1.Margin = New Padding(2, 0, 2, 0)
         Label1.Name = "Label1"
-        Label1.Size = New Size(253, 20)
+        Label1.Size = New Size(305, 25)
         Label1.TabIndex = 1
         Label1.Text = "© 2026 9-Eleven. All Rights Reserved"
         ' 
         ' PictureBox1
         ' 
         PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
-        PictureBox1.Location = New Point(53, 42)
+        PictureBox1.Location = New Point(66, 52)
         PictureBox1.Margin = New Padding(2)
         PictureBox1.Name = "PictureBox1"
-        PictureBox1.Size = New Size(314, 310)
+        PictureBox1.Size = New Size(392, 388)
         PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox1.TabIndex = 0
         PictureBox1.TabStop = False
@@ -87,20 +87,20 @@ Partial Class FormLogin
         Panel2.Controls.Add(Label4)
         Panel2.Controls.Add(Label3)
         Panel2.Controls.Add(Label2)
-        Panel2.Location = New Point(440, 0)
+        Panel2.Location = New Point(550, 0)
         Panel2.Margin = New Padding(2)
         Panel2.Name = "Panel2"
-        Panel2.Size = New Size(440, 560)
+        Panel2.Size = New Size(550, 700)
         Panel2.TabIndex = 1
         ' 
         ' Panel3
         ' 
         Panel3.Controls.Add(picShowPass)
         Panel3.Controls.Add(picHidePass)
-        Panel3.Location = New Point(359, 280)
+        Panel3.Location = New Point(449, 350)
         Panel3.Margin = New Padding(2)
         Panel3.Name = "Panel3"
-        Panel3.Size = New Size(40, 38)
+        Panel3.Size = New Size(50, 48)
         Panel3.TabIndex = 2
         ' 
         ' picShowPass
@@ -109,7 +109,7 @@ Partial Class FormLogin
         picShowPass.Location = New Point(2, 2)
         picShowPass.Margin = New Padding(2)
         picShowPass.Name = "picShowPass"
-        picShowPass.Size = New Size(35, 31)
+        picShowPass.Size = New Size(44, 39)
         picShowPass.SizeMode = PictureBoxSizeMode.StretchImage
         picShowPass.TabIndex = 0
         picShowPass.TabStop = False
@@ -121,7 +121,7 @@ Partial Class FormLogin
         picHidePass.Location = New Point(2, 2)
         picHidePass.Margin = New Padding(2)
         picHidePass.Name = "picHidePass"
-        picHidePass.Size = New Size(35, 31)
+        picHidePass.Size = New Size(44, 39)
         picHidePass.SizeMode = PictureBoxSizeMode.StretchImage
         picHidePass.TabIndex = 1
         picHidePass.TabStop = False
@@ -132,10 +132,10 @@ Partial Class FormLogin
         btnLogin.BackColor = Color.FromArgb(CByte(3), CByte(118), CByte(87))
         btnLogin.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         btnLogin.ForeColor = Color.White
-        btnLogin.Location = New Point(38, 341)
+        btnLogin.Location = New Point(48, 426)
         btnLogin.Margin = New Padding(2)
         btnLogin.Name = "btnLogin"
-        btnLogin.Size = New Size(102, 39)
+        btnLogin.Size = New Size(128, 52)
         btnLogin.TabIndex = 5
         btnLogin.Text = "Login"
         btnLogin.UseVisualStyleBackColor = False
@@ -143,29 +143,29 @@ Partial Class FormLogin
         ' txtPassword
         ' 
         txtPassword.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        txtPassword.Location = New Point(38, 280)
+        txtPassword.Location = New Point(48, 350)
         txtPassword.Margin = New Padding(2)
         txtPassword.Name = "txtPassword"
-        txtPassword.Size = New Size(309, 34)
+        txtPassword.Size = New Size(385, 39)
         txtPassword.TabIndex = 4
         ' 
         ' txtUsername
         ' 
         txtUsername.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        txtUsername.Location = New Point(38, 177)
+        txtUsername.Location = New Point(48, 221)
         txtUsername.Margin = New Padding(2)
         txtUsername.Name = "txtUsername"
-        txtUsername.Size = New Size(309, 34)
+        txtUsername.Size = New Size(385, 39)
         txtUsername.TabIndex = 3
         ' 
         ' Label4
         ' 
         Label4.AutoSize = True
         Label4.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label4.Location = New Point(38, 244)
+        Label4.Location = New Point(48, 305)
         Label4.Margin = New Padding(2, 0, 2, 0)
         Label4.Name = "Label4"
-        Label4.Size = New Size(93, 28)
+        Label4.Size = New Size(111, 32)
         Label4.TabIndex = 2
         Label4.Text = "Password"
         ' 
@@ -173,10 +173,10 @@ Partial Class FormLogin
         ' 
         Label3.AutoSize = True
         Label3.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label3.Location = New Point(38, 142)
+        Label3.Location = New Point(48, 178)
         Label3.Margin = New Padding(2, 0, 2, 0)
         Label3.Name = "Label3"
-        Label3.Size = New Size(99, 28)
+        Label3.Size = New Size(121, 32)
         Label3.TabIndex = 1
         Label3.Text = "Username"
         ' 
@@ -185,19 +185,19 @@ Partial Class FormLogin
         Label2.AutoSize = True
         Label2.Font = New Font("Segoe UI", 28F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label2.ForeColor = Color.FromArgb(CByte(3), CByte(118), CByte(87))
-        Label2.Location = New Point(26, 42)
+        Label2.Location = New Point(32, 52)
         Label2.Margin = New Padding(2, 0, 2, 0)
         Label2.Name = "Label2"
-        Label2.Size = New Size(246, 62)
+        Label2.Size = New Size(292, 74)
         Label2.TabIndex = 0
         Label2.Text = "Welcome!"
         ' 
         ' FormLogin
         ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.Control
-        ClientSize = New Size(862, 515)
+        ClientSize = New Size(1078, 644)
         Controls.Add(Panel2)
         Controls.Add(Panel1)
         Margin = New Padding(2)

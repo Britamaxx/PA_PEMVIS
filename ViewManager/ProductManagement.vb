@@ -71,7 +71,40 @@ Public Class ProductManagement
         End If
     End Sub
 
-    Private Sub dgvProduk_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvProduk.CellContentClick
+    Private Sub DashboardSidebar_Click(sender As Object, e As EventArgs) Handles DashboardSidebar.Click
+        Dim f As New Dashboard()
+        f.Show()
+        Me.Hide()
+    End Sub
 
+    Private Sub ProductSidebar_Click(sender As Object, e As EventArgs) Handles ProductSidebar.Click
+        ' Sudah di halaman ini, tidak perlu navigasi
+    End Sub
+
+    Private Sub StaffSidebar_Click(sender As Object, e As EventArgs) Handles StaffSidebar.Click
+        Dim f As New StaffManagement()
+        f.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub SupplierSidebar_Click(sender As Object, e As EventArgs) Handles SupplierSidebar.Click
+        Dim f As New SupplierManagement()
+        f.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub StockSidebar_Click(sender As Object, e As EventArgs) Handles StockSidebar.Click
+        Dim f As New StockSupplying()
+        f.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub LogoutSidebar_Click(sender As Object, e As EventArgs) Handles LogoutSidebar.Click
+        Dim hasil As DialogResult = MessageBox.Show("Yakin ingin logout?", "Konfirmasi", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+        If hasil = DialogResult.Yes Then
+            Dim f As New FormLogin()
+            f.Show()
+            Me.Close()
+        End If
     End Sub
 End Class

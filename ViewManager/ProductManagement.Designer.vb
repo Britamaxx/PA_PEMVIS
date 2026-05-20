@@ -24,24 +24,24 @@ Partial Class ProductManagement
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ProductManagement))
         Panel1 = New Panel()
-        Panel7 = New Panel()
+        LogoutSidebar = New Panel()
         PictureBox7 = New PictureBox()
         Label6 = New Label()
         Panel6 = New Panel()
         PictureBox6 = New PictureBox()
-        Label5 = New Label()
+        StockSidebar = New Label()
         Panel5 = New Panel()
         PictureBox5 = New PictureBox()
-        Label4 = New Label()
-        Panel4 = New Panel()
+        SupplierSidebar = New Label()
+        StaffSidebar = New Panel()
         PictureBox4 = New PictureBox()
         Label3 = New Label()
         Panel3 = New Panel()
         PictureBox3 = New PictureBox()
-        Label2 = New Label()
+        ProductSidebar = New Label()
         Panel2 = New Panel()
         PictureBox2 = New PictureBox()
-        Label1 = New Label()
+        DashboardSidebar = New Label()
         PictureBox1 = New PictureBox()
         dgvProduk = New DataGridView()
         Label7 = New Label()
@@ -53,13 +53,13 @@ Partial Class ProductManagement
         btnDelete = New Button()
         btnSearch = New Button()
         Panel1.SuspendLayout()
-        Panel7.SuspendLayout()
+        LogoutSidebar.SuspendLayout()
         CType(PictureBox7, ComponentModel.ISupportInitialize).BeginInit()
         Panel6.SuspendLayout()
         CType(PictureBox6, ComponentModel.ISupportInitialize).BeginInit()
         Panel5.SuspendLayout()
         CType(PictureBox5, ComponentModel.ISupportInitialize).BeginInit()
-        Panel4.SuspendLayout()
+        StaffSidebar.SuspendLayout()
         CType(PictureBox4, ComponentModel.ISupportInitialize).BeginInit()
         Panel3.SuspendLayout()
         CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
@@ -73,10 +73,10 @@ Partial Class ProductManagement
         ' Panel1
         ' 
         Panel1.BackColor = Color.FromArgb(CByte(3), CByte(118), CByte(87))
-        Panel1.Controls.Add(Panel7)
+        Panel1.Controls.Add(LogoutSidebar)
         Panel1.Controls.Add(Panel6)
         Panel1.Controls.Add(Panel5)
-        Panel1.Controls.Add(Panel4)
+        Panel1.Controls.Add(StaffSidebar)
         Panel1.Controls.Add(Panel3)
         Panel1.Controls.Add(Panel2)
         Panel1.Controls.Add(PictureBox1)
@@ -85,14 +85,14 @@ Partial Class ProductManagement
         Panel1.Size = New Size(300, 850)
         Panel1.TabIndex = 2
         ' 
-        ' Panel7
+        ' LogoutSidebar
         ' 
-        Panel7.Controls.Add(PictureBox7)
-        Panel7.Controls.Add(Label6)
-        Panel7.Location = New Point(0, 782)
-        Panel7.Name = "Panel7"
-        Panel7.Size = New Size(300, 50)
-        Panel7.TabIndex = 3
+        LogoutSidebar.Controls.Add(PictureBox7)
+        LogoutSidebar.Controls.Add(Label6)
+        LogoutSidebar.Location = New Point(0, 782)
+        LogoutSidebar.Name = "LogoutSidebar"
+        LogoutSidebar.Size = New Size(300, 50)
+        LogoutSidebar.TabIndex = 3
         ' 
         ' PictureBox7
         ' 
@@ -118,7 +118,7 @@ Partial Class ProductManagement
         ' Panel6
         ' 
         Panel6.Controls.Add(PictureBox6)
-        Panel6.Controls.Add(Label5)
+        Panel6.Controls.Add(StockSidebar)
         Panel6.Location = New Point(0, 447)
         Panel6.Name = "Panel6"
         Panel6.Size = New Size(300, 50)
@@ -134,21 +134,21 @@ Partial Class ProductManagement
         PictureBox6.TabIndex = 3
         PictureBox6.TabStop = False
         ' 
-        ' Label5
+        ' StockSidebar
         ' 
-        Label5.AutoSize = True
-        Label5.Font = New Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label5.ForeColor = Color.White
-        Label5.Location = New Point(87, 6)
-        Label5.Name = "Label5"
-        Label5.Size = New Size(83, 38)
-        Label5.TabIndex = 1
-        Label5.Text = "Stock"
+        StockSidebar.AutoSize = True
+        StockSidebar.Font = New Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        StockSidebar.ForeColor = Color.White
+        StockSidebar.Location = New Point(87, 6)
+        StockSidebar.Name = "StockSidebar"
+        StockSidebar.Size = New Size(83, 38)
+        StockSidebar.TabIndex = 1
+        StockSidebar.Text = "Stock"
         ' 
         ' Panel5
         ' 
         Panel5.Controls.Add(PictureBox5)
-        Panel5.Controls.Add(Label4)
+        Panel5.Controls.Add(SupplierSidebar)
         Panel5.Location = New Point(0, 374)
         Panel5.Name = "Panel5"
         Panel5.Size = New Size(300, 50)
@@ -164,25 +164,25 @@ Partial Class ProductManagement
         PictureBox5.TabIndex = 3
         PictureBox5.TabStop = False
         ' 
-        ' Label4
+        ' SupplierSidebar
         ' 
-        Label4.AutoSize = True
-        Label4.Font = New Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label4.ForeColor = Color.White
-        Label4.Location = New Point(87, 6)
-        Label4.Name = "Label4"
-        Label4.Size = New Size(119, 38)
-        Label4.TabIndex = 1
-        Label4.Text = "Supplier"
+        SupplierSidebar.AutoSize = True
+        SupplierSidebar.Font = New Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        SupplierSidebar.ForeColor = Color.White
+        SupplierSidebar.Location = New Point(87, 6)
+        SupplierSidebar.Name = "SupplierSidebar"
+        SupplierSidebar.Size = New Size(119, 38)
+        SupplierSidebar.TabIndex = 1
+        SupplierSidebar.Text = "Supplier"
         ' 
-        ' Panel4
+        ' StaffSidebar
         ' 
-        Panel4.Controls.Add(PictureBox4)
-        Panel4.Controls.Add(Label3)
-        Panel4.Location = New Point(0, 303)
-        Panel4.Name = "Panel4"
-        Panel4.Size = New Size(300, 50)
-        Panel4.TabIndex = 3
+        StaffSidebar.Controls.Add(PictureBox4)
+        StaffSidebar.Controls.Add(Label3)
+        StaffSidebar.Location = New Point(0, 303)
+        StaffSidebar.Name = "StaffSidebar"
+        StaffSidebar.Size = New Size(300, 50)
+        StaffSidebar.TabIndex = 3
         ' 
         ' PictureBox4
         ' 
@@ -208,7 +208,7 @@ Partial Class ProductManagement
         ' Panel3
         ' 
         Panel3.Controls.Add(PictureBox3)
-        Panel3.Controls.Add(Label2)
+        Panel3.Controls.Add(ProductSidebar)
         Panel3.Location = New Point(0, 232)
         Panel3.Name = "Panel3"
         Panel3.Size = New Size(300, 50)
@@ -224,21 +224,21 @@ Partial Class ProductManagement
         PictureBox3.TabIndex = 3
         PictureBox3.TabStop = False
         ' 
-        ' Label2
+        ' ProductSidebar
         ' 
-        Label2.AutoSize = True
-        Label2.Font = New Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label2.ForeColor = Color.White
-        Label2.Location = New Point(87, 6)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(120, 38)
-        Label2.TabIndex = 1
-        Label2.Text = "Product"
+        ProductSidebar.AutoSize = True
+        ProductSidebar.Font = New Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        ProductSidebar.ForeColor = Color.White
+        ProductSidebar.Location = New Point(87, 6)
+        ProductSidebar.Name = "ProductSidebar"
+        ProductSidebar.Size = New Size(120, 38)
+        ProductSidebar.TabIndex = 1
+        ProductSidebar.Text = "Product"
         ' 
         ' Panel2
         ' 
         Panel2.Controls.Add(PictureBox2)
-        Panel2.Controls.Add(Label1)
+        Panel2.Controls.Add(DashboardSidebar)
         Panel2.Location = New Point(0, 164)
         Panel2.Name = "Panel2"
         Panel2.Size = New Size(300, 50)
@@ -254,16 +254,16 @@ Partial Class ProductManagement
         PictureBox2.TabIndex = 3
         PictureBox2.TabStop = False
         ' 
-        ' Label1
+        ' DashboardSidebar
         ' 
-        Label1.AutoSize = True
-        Label1.Font = New Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label1.ForeColor = Color.White
-        Label1.Location = New Point(87, 6)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(151, 38)
-        Label1.TabIndex = 1
-        Label1.Text = "Dashboard"
+        DashboardSidebar.AutoSize = True
+        DashboardSidebar.Font = New Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        DashboardSidebar.ForeColor = Color.White
+        DashboardSidebar.Location = New Point(87, 6)
+        DashboardSidebar.Name = "DashboardSidebar"
+        DashboardSidebar.Size = New Size(151, 38)
+        DashboardSidebar.TabIndex = 1
+        DashboardSidebar.Text = "Dashboard"
         ' 
         ' PictureBox1
         ' 
@@ -392,8 +392,8 @@ Partial Class ProductManagement
         Name = "ProductManagement"
         Text = "Form3"
         Panel1.ResumeLayout(False)
-        Panel7.ResumeLayout(False)
-        Panel7.PerformLayout()
+        LogoutSidebar.ResumeLayout(False)
+        LogoutSidebar.PerformLayout()
         CType(PictureBox7, ComponentModel.ISupportInitialize).EndInit()
         Panel6.ResumeLayout(False)
         Panel6.PerformLayout()
@@ -401,8 +401,8 @@ Partial Class ProductManagement
         Panel5.ResumeLayout(False)
         Panel5.PerformLayout()
         CType(PictureBox5, ComponentModel.ISupportInitialize).EndInit()
-        Panel4.ResumeLayout(False)
-        Panel4.PerformLayout()
+        StaffSidebar.ResumeLayout(False)
+        StaffSidebar.PerformLayout()
         CType(PictureBox4, ComponentModel.ISupportInitialize).EndInit()
         Panel3.ResumeLayout(False)
         Panel3.PerformLayout()
@@ -418,24 +418,24 @@ Partial Class ProductManagement
     End Sub
 
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents Panel7 As Panel
+    Friend WithEvents LogoutSidebar As Panel
     Friend WithEvents PictureBox7 As PictureBox
     Friend WithEvents Label6 As Label
     Friend WithEvents Panel6 As Panel
     Friend WithEvents PictureBox6 As PictureBox
-    Friend WithEvents Label5 As Label
+    Friend WithEvents StockSidebar As Label
     Friend WithEvents Panel5 As Panel
     Friend WithEvents PictureBox5 As PictureBox
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Panel4 As Panel
+    Friend WithEvents SupplierSidebar As Label
+    Friend WithEvents StaffSidebar As Panel
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents Label3 As Label
     Friend WithEvents Panel3 As Panel
     Friend WithEvents PictureBox3 As PictureBox
-    Friend WithEvents Label2 As Label
+    Friend WithEvents ProductSidebar As Label
     Friend WithEvents Panel2 As Panel
     Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents Label1 As Label
+    Friend WithEvents DashboardSidebar As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents dgvProduk As DataGridView
     Friend WithEvents Label7 As Label

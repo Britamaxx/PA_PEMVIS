@@ -3,112 +3,124 @@
   "WorkspaceRootPath": "D:\\PA_PEMVIS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|d:\\pa_pemvis\\datamodule\\dashboardmodule.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:datamodule\\dashboardmodule.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|d:\\pa_pemvis\\viewmanager\\stocksupplying.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:viewmanager\\stocksupplying.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|d:\\pa_pemvis\\datamodule\\detailpenjualanmodule.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:datamodule\\detailpenjualanmodule.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|d:\\pa_pemvis\\viewmanager\\dialogsupplier.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:viewmanager\\dialogsupplier.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|d:\\pa_pemvis\\datamodule\\transaksipenjualanmodule.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:datamodule\\transaksipenjualanmodule.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|d:\\pa_pemvis\\viewmanager\\suppliermanagement.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:viewmanager\\suppliermanagement.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|d:\\pa_pemvis\\viewmanager\\dialogsupplier.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:viewmanager\\dialogsupplier.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|d:\\pa_pemvis\\viewmanager\\suppliermanagement.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:viewmanager\\suppliermanagement.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|d:\\pa_pemvis\\viewmanager\\dialogproduct.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:viewmanager\\dialogproduct.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|d:\\pa_pemvis\\viewmanager\\dialogproduct.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:viewmanager\\dialogproduct.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|d:\\pa_pemvis\\viewmanager\\dashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:viewmanager\\dashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|d:\\pa_pemvis\\viewmanager\\dialogstaff.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:viewmanager\\dialogstaff.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|d:\\pa_pemvis\\viewmanager\\dialogstaff.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:viewmanager\\dialogstaff.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|d:\\pa_pemvis\\datamodule\\detailpembelianmodule.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:datamodule\\detailpembelianmodule.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|d:\\pa_pemvis\\datamodule\\karyawanmodule.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:datamodule\\karyawanmodule.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|d:\\pa_pemvis\\datamodule\\productmodule.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:datamodule\\productmodule.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|d:\\pa_pemvis\\datamodule\\suppliermodule.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:datamodule\\suppliermodule.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|d:\\pa_pemvis\\datamodule\\transaksipembelianmodule.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:datamodule\\transaksipembelianmodule.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|d:\\pa_pemvis\\form10.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:form10.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|d:\\pa_pemvis\\datamodule\\dashboardmodule.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:datamodule\\dashboardmodule.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|d:\\pa_pemvis\\datamodule\\connectionmodule.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:datamodule\\connectionmodule.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|d:\\pa_pemvis\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|d:\\pa_pemvis\\viewmanager\\productmanagement.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:viewmanager\\productmanagement.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|d:\\pa_pemvis\\form2.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:form2.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|d:\\pa_pemvis\\viewmanager\\productmanagement.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:viewmanager\\productmanagement.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|d:\\pa_pemvis\\form3.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:form3.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|d:\\pa_pemvis\\viewmanager\\stocksupplying.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:viewmanager\\stocksupplying.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|d:\\pa_pemvis\\form3.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:form3.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|d:\\pa_pemvis\\viewmanager\\staffmanagement.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:viewmanager\\staffmanagement.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|d:\\pa_pemvis\\form4.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:form4.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|d:\\pa_pemvis\\viewmanager\\dashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:viewmanager\\dashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|d:\\pa_pemvis\\form5.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:form5.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|d:\\pa_pemvis\\viewkasir\\transaction.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:viewkasir\\transaction.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|d:\\pa_pemvis\\form6.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:form6.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|d:\\pa_pemvis\\viewkasir\\transaction.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:viewkasir\\transaction.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|d:\\pa_pemvis\\form7.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:form7.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|d:\\pa_pemvis\\viewkasir\\history.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:viewkasir\\history.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|d:\\pa_pemvis\\form7.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:form7.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|d:\\pa_pemvis\\viewkasir\\history.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:viewkasir\\history.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|d:\\pa_pemvis\\form8.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:form8.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|d:\\pa_pemvis\\datamodule\\karyawanmodule.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:datamodule\\karyawanmodule.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|d:\\pa_pemvis\\form9.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:form9.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|d:\\pa_pemvis\\datamodule\\transaksipenjualanmodule.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:datamodule\\transaksipenjualanmodule.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|d:\\pa_pemvis\\form11.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:form11.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|d:\\pa_pemvis\\datamodule\\transaksipembelianmodule.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:datamodule\\transaksipembelianmodule.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|d:\\pa_pemvis\\form10.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:form10.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|d:\\pa_pemvis\\datamodule\\suppliermodule.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:datamodule\\suppliermodule.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|d:\\pa_pemvis\\form6.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:form6.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|d:\\pa_pemvis\\datamodule\\productmodule.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:datamodule\\productmodule.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|d:\\pa_pemvis\\form9.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:form9.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|d:\\pa_pemvis\\datamodule\\detailpenjualanmodule.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:datamodule\\detailpenjualanmodule.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|d:\\pa_pemvis\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|d:\\pa_pemvis\\viewmanager\\staffmanagement.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:viewmanager\\staffmanagement.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|d:\\pa_pemvis\\form2.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:form2.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|d:\\pa_pemvis\\formlogin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:formlogin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -118,7 +130,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -130,335 +142,373 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DashboardModule.vb",
-              "DocumentMoniker": "D:\\PA_PEMVIS\\DataModule\\DashboardModule.vb",
-              "RelativeDocumentMoniker": "DataModule\\DashboardModule.vb",
-              "ToolTip": "D:\\PA_PEMVIS\\DataModule\\DashboardModule.vb",
-              "RelativeToolTip": "DataModule\\DashboardModule.vb",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAowFkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-05-18T07:04:31.172Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "DetailPenjualanModule.vb",
-              "DocumentMoniker": "D:\\PA_PEMVIS\\DataModule\\DetailPenjualanModule.vb",
-              "RelativeDocumentMoniker": "DataModule\\DetailPenjualanModule.vb",
-              "ToolTip": "D:\\PA_PEMVIS\\DataModule\\DetailPenjualanModule.vb",
-              "RelativeToolTip": "DataModule\\DetailPenjualanModule.vb",
-              "ViewState": "AgIAACMAAAAAAAAAAAAUwDoAAAAQAAAAAAAAAA==",
+              "Title": "DialogSupplier.vb",
+              "DocumentMoniker": "D:\\PA_PEMVIS\\ViewManager\\DialogSupplier.vb",
+              "RelativeDocumentMoniker": "ViewManager\\DialogSupplier.vb",
+              "ToolTip": "D:\\PA_PEMVIS\\ViewManager\\DialogSupplier.vb",
+              "RelativeToolTip": "ViewManager\\DialogSupplier.vb",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAkwA0AAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-05-18T07:02:43.099Z",
+              "WhenOpened": "2026-05-20T03:06:38.01Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "TransaksiPenjualanModule.vb",
-              "DocumentMoniker": "D:\\PA_PEMVIS\\DataModule\\TransaksiPenjualanModule.vb",
-              "RelativeDocumentMoniker": "DataModule\\TransaksiPenjualanModule.vb",
-              "ToolTip": "D:\\PA_PEMVIS\\DataModule\\TransaksiPenjualanModule.vb",
-              "RelativeToolTip": "DataModule\\TransaksiPenjualanModule.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEkAAAALAAAAAAAAAA==",
+              "Title": "SupplierManagement.vb",
+              "DocumentMoniker": "D:\\PA_PEMVIS\\ViewManager\\SupplierManagement.vb",
+              "RelativeDocumentMoniker": "ViewManager\\SupplierManagement.vb",
+              "ToolTip": "D:\\PA_PEMVIS\\ViewManager\\SupplierManagement.vb",
+              "RelativeToolTip": "ViewManager\\SupplierManagement.vb",
+              "ViewState": "AgIAABoAAAAAAAAAAAAgwEkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-05-18T07:00:28.707Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ProductModule.vb",
-              "DocumentMoniker": "D:\\PA_PEMVIS\\DataModule\\ProductModule.vb",
-              "RelativeDocumentMoniker": "DataModule\\ProductModule.vb",
-              "ToolTip": "D:\\PA_PEMVIS\\DataModule\\ProductModule.vb",
-              "RelativeToolTip": "DataModule\\ProductModule.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-05-18T06:59:16.469Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "SupplierModule.vb",
-              "DocumentMoniker": "D:\\PA_PEMVIS\\DataModule\\SupplierModule.vb",
-              "RelativeDocumentMoniker": "DataModule\\SupplierModule.vb",
-              "ToolTip": "D:\\PA_PEMVIS\\DataModule\\SupplierModule.vb",
-              "RelativeToolTip": "DataModule\\SupplierModule.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-05-18T06:59:15.23Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "KaryawanModule.vb",
-              "DocumentMoniker": "D:\\PA_PEMVIS\\DataModule\\KaryawanModule.vb",
-              "RelativeDocumentMoniker": "DataModule\\KaryawanModule.vb",
-              "ToolTip": "D:\\PA_PEMVIS\\DataModule\\KaryawanModule.vb",
-              "RelativeToolTip": "DataModule\\KaryawanModule.vb",
-              "ViewState": "AgIAAGUAAAAAAAAAAAAuwG0AAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-05-18T06:34:51.603Z",
+              "WhenOpened": "2026-05-20T02:42:09.907Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "DialogSupplier.vb [Design]",
+              "DocumentMoniker": "D:\\PA_PEMVIS\\ViewManager\\DialogSupplier.vb",
+              "RelativeDocumentMoniker": "ViewManager\\DialogSupplier.vb",
+              "ToolTip": "D:\\PA_PEMVIS\\ViewManager\\DialogSupplier.vb [Design]",
+              "RelativeToolTip": "ViewManager\\DialogSupplier.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-19T12:05:19.987Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StockSupplying.vb [Design]",
+              "DocumentMoniker": "D:\\PA_PEMVIS\\ViewManager\\StockSupplying.vb",
+              "RelativeDocumentMoniker": "ViewManager\\StockSupplying.vb",
+              "ToolTip": "D:\\PA_PEMVIS\\ViewManager\\StockSupplying.vb [Design]",
+              "RelativeToolTip": "ViewManager\\StockSupplying.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-20T02:41:48.999Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SupplierManagement.vb [Design]",
+              "DocumentMoniker": "D:\\PA_PEMVIS\\ViewManager\\SupplierManagement.vb",
+              "RelativeDocumentMoniker": "ViewManager\\SupplierManagement.vb",
+              "ToolTip": "D:\\PA_PEMVIS\\ViewManager\\SupplierManagement.vb [Design]",
+              "RelativeToolTip": "ViewManager\\SupplierManagement.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-20T02:42:01.972Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DialogProduct.vb [Design]",
+              "DocumentMoniker": "D:\\PA_PEMVIS\\ViewManager\\DialogProduct.vb",
+              "RelativeDocumentMoniker": "ViewManager\\DialogProduct.vb",
+              "ToolTip": "D:\\PA_PEMVIS\\ViewManager\\DialogProduct.vb [Design]",
+              "RelativeToolTip": "ViewManager\\DialogProduct.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-19T12:19:40.384Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DialogProduct.vb",
+              "DocumentMoniker": "D:\\PA_PEMVIS\\ViewManager\\DialogProduct.vb",
+              "RelativeDocumentMoniker": "ViewManager\\DialogProduct.vb",
+              "ToolTip": "D:\\PA_PEMVIS\\ViewManager\\DialogProduct.vb",
+              "RelativeToolTip": "ViewManager\\DialogProduct.vb",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAlwF0AAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-19T12:26:52.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Dashboard.vb [Design]",
+              "DocumentMoniker": "D:\\PA_PEMVIS\\ViewManager\\Dashboard.vb",
+              "RelativeDocumentMoniker": "ViewManager\\Dashboard.vb",
+              "ToolTip": "D:\\PA_PEMVIS\\ViewManager\\Dashboard.vb [Design]",
+              "RelativeToolTip": "ViewManager\\Dashboard.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-19T12:04:43.358Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DialogStaff.vb",
+              "DocumentMoniker": "D:\\PA_PEMVIS\\ViewManager\\DialogStaff.vb",
+              "RelativeDocumentMoniker": "ViewManager\\DialogStaff.vb",
+              "ToolTip": "D:\\PA_PEMVIS\\ViewManager\\DialogStaff.vb",
+              "RelativeToolTip": "ViewManager\\DialogStaff.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-19T13:05:54.084Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DialogStaff.vb [Design]",
+              "DocumentMoniker": "D:\\PA_PEMVIS\\ViewManager\\DialogStaff.vb",
+              "RelativeDocumentMoniker": "ViewManager\\DialogStaff.vb",
+              "ToolTip": "D:\\PA_PEMVIS\\ViewManager\\DialogStaff.vb [Design]",
+              "RelativeToolTip": "ViewManager\\DialogStaff.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-19T12:48:22.983Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "DetailPembelianModule.vb",
               "DocumentMoniker": "D:\\PA_PEMVIS\\DataModule\\DetailPembelianModule.vb",
               "RelativeDocumentMoniker": "DataModule\\DetailPembelianModule.vb",
               "ToolTip": "D:\\PA_PEMVIS\\DataModule\\DetailPembelianModule.vb",
               "RelativeToolTip": "DataModule\\DetailPembelianModule.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2026-05-18T06:47:50.2Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "TransaksiPembelianModule.vb",
-              "DocumentMoniker": "D:\\PA_PEMVIS\\DataModule\\TransaksiPembelianModule.vb",
-              "RelativeDocumentMoniker": "DataModule\\TransaksiPembelianModule.vb",
-              "ToolTip": "D:\\PA_PEMVIS\\DataModule\\TransaksiPembelianModule.vb",
-              "RelativeToolTip": "DataModule\\TransaksiPembelianModule.vb",
-              "ViewState": "AgIAACwAAAAAAAAAAAAgwEYAAAAQAAAAAAAAAA==",
+              "DocumentIndex": 11,
+              "Title": "DashboardModule.vb",
+              "DocumentMoniker": "D:\\PA_PEMVIS\\DataModule\\DashboardModule.vb",
+              "RelativeDocumentMoniker": "DataModule\\DashboardModule.vb",
+              "ToolTip": "D:\\PA_PEMVIS\\DataModule\\DashboardModule.vb",
+              "RelativeToolTip": "DataModule\\DashboardModule.vb",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAAwHQAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-05-18T06:41:21.377Z",
+              "WhenOpened": "2026-05-18T07:04:31.172Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "ConnectionModule.vb",
               "DocumentMoniker": "D:\\PA_PEMVIS\\DataModule\\ConnectionModule.vb",
               "RelativeDocumentMoniker": "DataModule\\ConnectionModule.vb",
               "ToolTip": "D:\\PA_PEMVIS\\DataModule\\ConnectionModule.vb",
               "RelativeToolTip": "DataModule\\ConnectionModule.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-05-18T06:31:13.191Z"
+              "WhenOpened": "2026-05-18T06:31:13.191Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "Form10.vb",
-              "DocumentMoniker": "D:\\PA_PEMVIS\\Form10.vb",
-              "RelativeDocumentMoniker": "Form10.vb",
-              "ToolTip": "D:\\PA_PEMVIS\\Form10.vb",
-              "RelativeToolTip": "Form10.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAA+wAIAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 13,
+              "Title": "ProductManagement.vb",
+              "DocumentMoniker": "D:\\PA_PEMVIS\\ViewManager\\ProductManagement.vb",
+              "RelativeDocumentMoniker": "ViewManager\\ProductManagement.vb",
+              "ToolTip": "D:\\PA_PEMVIS\\ViewManager\\ProductManagement.vb",
+              "RelativeToolTip": "ViewManager\\ProductManagement.vb",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAswAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-05-17T13:41:57.827Z"
+              "WhenOpened": "2026-05-19T12:12:41.59Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Form10.vb [Design]",
-              "DocumentMoniker": "D:\\PA_PEMVIS\\Form10.vb",
-              "RelativeDocumentMoniker": "Form10.vb",
-              "ToolTip": "D:\\PA_PEMVIS\\Form10.vb [Design]",
-              "RelativeToolTip": "Form10.vb [Design]",
+              "DocumentIndex": 14,
+              "Title": "ProductManagement.vb [Design]",
+              "DocumentMoniker": "D:\\PA_PEMVIS\\ViewManager\\ProductManagement.vb",
+              "RelativeDocumentMoniker": "ViewManager\\ProductManagement.vb",
+              "ToolTip": "D:\\PA_PEMVIS\\ViewManager\\ProductManagement.vb [Design]",
+              "RelativeToolTip": "ViewManager\\ProductManagement.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-05-17T13:40:23.135Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Form9.vb",
-              "DocumentMoniker": "D:\\PA_PEMVIS\\Form9.vb",
-              "RelativeDocumentMoniker": "Form9.vb",
-              "ToolTip": "D:\\PA_PEMVIS\\Form9.vb",
-              "RelativeToolTip": "Form9.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-05-17T13:29:02.763Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Form9.vb [Design]",
-              "DocumentMoniker": "D:\\PA_PEMVIS\\Form9.vb",
-              "RelativeDocumentMoniker": "Form9.vb",
-              "ToolTip": "D:\\PA_PEMVIS\\Form9.vb [Design]",
-              "RelativeToolTip": "Form9.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-05-17T11:49:50.974Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Form8.vb [Design]",
-              "DocumentMoniker": "D:\\PA_PEMVIS\\Form8.vb",
-              "RelativeDocumentMoniker": "Form8.vb",
-              "ToolTip": "D:\\PA_PEMVIS\\Form8.vb [Design]",
-              "RelativeToolTip": "Form8.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-05-17T11:37:17.316Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Form1.vb [Design]",
-              "DocumentMoniker": "D:\\PA_PEMVIS\\Form1.vb",
-              "RelativeDocumentMoniker": "Form1.vb",
-              "ToolTip": "D:\\PA_PEMVIS\\Form1.vb [Design]",
-              "RelativeToolTip": "Form1.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-05-15T02:11:11.856Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Form11.vb [Design]",
-              "DocumentMoniker": "D:\\PA_PEMVIS\\Form11.vb",
-              "RelativeDocumentMoniker": "Form11.vb",
-              "ToolTip": "D:\\PA_PEMVIS\\Form11.vb [Design]",
-              "RelativeToolTip": "Form11.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-05-17T13:51:42.444Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Form7.vb",
-              "DocumentMoniker": "D:\\PA_PEMVIS\\Form7.vb",
-              "RelativeDocumentMoniker": "Form7.vb",
-              "ToolTip": "D:\\PA_PEMVIS\\Form7.vb",
-              "RelativeToolTip": "Form7.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAA+wAIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-05-17T11:35:32.573Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Form7.vb [Design]",
-              "DocumentMoniker": "D:\\PA_PEMVIS\\Form7.vb",
-              "RelativeDocumentMoniker": "Form7.vb",
-              "ToolTip": "D:\\PA_PEMVIS\\Form7.vb [Design]",
-              "RelativeToolTip": "Form7.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-05-17T11:33:03.028Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Form6.vb",
-              "DocumentMoniker": "D:\\PA_PEMVIS\\Form6.vb",
-              "RelativeDocumentMoniker": "Form6.vb",
-              "ToolTip": "D:\\PA_PEMVIS\\Form6.vb",
-              "RelativeToolTip": "Form6.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-05-17T11:21:47.955Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Form6.vb [Design]",
-              "DocumentMoniker": "D:\\PA_PEMVIS\\Form6.vb",
-              "RelativeDocumentMoniker": "Form6.vb",
-              "ToolTip": "D:\\PA_PEMVIS\\Form6.vb [Design]",
-              "RelativeToolTip": "Form6.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-05-17T11:18:16.867Z",
+              "WhenOpened": "2026-05-19T12:03:48.519Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "Form5.vb [Design]",
-              "DocumentMoniker": "D:\\PA_PEMVIS\\Form5.vb",
-              "RelativeDocumentMoniker": "Form5.vb",
-              "ToolTip": "D:\\PA_PEMVIS\\Form5.vb [Design]",
-              "RelativeToolTip": "Form5.vb [Design]",
+              "Title": "StockSupplying.vb",
+              "DocumentMoniker": "D:\\PA_PEMVIS\\ViewManager\\StockSupplying.vb",
+              "RelativeDocumentMoniker": "ViewManager\\StockSupplying.vb",
+              "ToolTip": "D:\\PA_PEMVIS\\ViewManager\\StockSupplying.vb",
+              "RelativeToolTip": "ViewManager\\StockSupplying.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-05-17T11:11:08.091Z",
+              "WhenOpened": "2026-05-20T02:41:53.575Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "StaffManagement.vb [Design]",
+              "DocumentMoniker": "D:\\PA_PEMVIS\\ViewManager\\StaffManagement.vb",
+              "RelativeDocumentMoniker": "ViewManager\\StaffManagement.vb",
+              "ToolTip": "D:\\PA_PEMVIS\\ViewManager\\StaffManagement.vb [Design]",
+              "RelativeToolTip": "ViewManager\\StaffManagement.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-19T12:42:47.93Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Form4.vb [Design]",
-              "DocumentMoniker": "D:\\PA_PEMVIS\\Form4.vb",
-              "RelativeDocumentMoniker": "Form4.vb",
-              "ToolTip": "D:\\PA_PEMVIS\\Form4.vb [Design]",
-              "RelativeToolTip": "Form4.vb [Design]",
+              "DocumentIndex": 17,
+              "Title": "Dashboard.vb",
+              "DocumentMoniker": "D:\\PA_PEMVIS\\ViewManager\\Dashboard.vb",
+              "RelativeDocumentMoniker": "ViewManager\\Dashboard.vb",
+              "ToolTip": "D:\\PA_PEMVIS\\ViewManager\\Dashboard.vb",
+              "RelativeToolTip": "ViewManager\\Dashboard.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-05-17T10:58:11.479Z",
+              "WhenOpened": "2026-05-20T02:40:27.296Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Transaction.vb",
+              "DocumentMoniker": "D:\\PA_PEMVIS\\ViewKasir\\Transaction.vb",
+              "RelativeDocumentMoniker": "ViewKasir\\Transaction.vb",
+              "ToolTip": "D:\\PA_PEMVIS\\ViewKasir\\Transaction.vb",
+              "RelativeToolTip": "ViewKasir\\Transaction.vb",
+              "ViewState": "AgIAAEcBAAAAAAAAAAAlwFQBAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-20T02:39:41.494Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Transaction.vb [Design]",
+              "DocumentMoniker": "D:\\PA_PEMVIS\\ViewKasir\\Transaction.vb",
+              "RelativeDocumentMoniker": "ViewKasir\\Transaction.vb",
+              "ToolTip": "D:\\PA_PEMVIS\\ViewKasir\\Transaction.vb [Design]",
+              "RelativeToolTip": "ViewKasir\\Transaction.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-19T12:04:47.09Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Form3.vb",
-              "DocumentMoniker": "D:\\PA_PEMVIS\\Form3.vb",
-              "RelativeDocumentMoniker": "Form3.vb",
-              "ToolTip": "D:\\PA_PEMVIS\\Form3.vb",
-              "RelativeToolTip": "Form3.vb",
-              "ViewState": "AgIAAA0AAAAAAAAAAIAwwBoAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 20,
+              "Title": "History.vb",
+              "DocumentMoniker": "D:\\PA_PEMVIS\\ViewKasir\\History.vb",
+              "RelativeDocumentMoniker": "ViewKasir\\History.vb",
+              "ToolTip": "D:\\PA_PEMVIS\\ViewKasir\\History.vb",
+              "RelativeToolTip": "ViewKasir\\History.vb",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwBsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-05-17T10:31:31.46Z"
+              "WhenOpened": "2026-05-20T02:39:07.915Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Form3.vb [Design]",
-              "DocumentMoniker": "D:\\PA_PEMVIS\\Form3.vb",
-              "RelativeDocumentMoniker": "Form3.vb",
-              "ToolTip": "D:\\PA_PEMVIS\\Form3.vb [Design]",
-              "RelativeToolTip": "Form3.vb [Design]",
+              "DocumentIndex": 21,
+              "Title": "History.vb [Design]",
+              "DocumentMoniker": "D:\\PA_PEMVIS\\ViewKasir\\History.vb",
+              "RelativeDocumentMoniker": "ViewKasir\\History.vb",
+              "ToolTip": "D:\\PA_PEMVIS\\ViewKasir\\History.vb [Design]",
+              "RelativeToolTip": "ViewKasir\\History.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-05-17T10:16:53.191Z",
+              "WhenOpened": "2026-05-19T12:04:45.978Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "Form2.vb",
-              "DocumentMoniker": "D:\\PA_PEMVIS\\Form2.vb",
-              "RelativeDocumentMoniker": "Form2.vb",
-              "ToolTip": "D:\\PA_PEMVIS\\Form2.vb",
-              "RelativeToolTip": "Form2.vb",
-              "ViewState": "AgIAAAUAAAAAAAAAAIAwwBIAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 22,
+              "Title": "KaryawanModule.vb",
+              "DocumentMoniker": "D:\\PA_PEMVIS\\DataModule\\KaryawanModule.vb",
+              "RelativeDocumentMoniker": "DataModule\\KaryawanModule.vb",
+              "ToolTip": "D:\\PA_PEMVIS\\DataModule\\KaryawanModule.vb",
+              "RelativeToolTip": "DataModule\\KaryawanModule.vb",
+              "ViewState": "AgIAAIMAAAAAAAAAAAAIwJcAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-05-15T02:37:54.518Z"
+              "WhenOpened": "2026-05-18T06:34:51.603Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Form2.vb [Design]",
-              "DocumentMoniker": "D:\\PA_PEMVIS\\Form2.vb",
-              "RelativeDocumentMoniker": "Form2.vb",
-              "ToolTip": "D:\\PA_PEMVIS\\Form2.vb [Design]",
-              "RelativeToolTip": "Form2.vb [Design]",
+              "DocumentIndex": 23,
+              "Title": "TransaksiPenjualanModule.vb",
+              "DocumentMoniker": "D:\\PA_PEMVIS\\DataModule\\TransaksiPenjualanModule.vb",
+              "RelativeDocumentMoniker": "DataModule\\TransaksiPenjualanModule.vb",
+              "ToolTip": "D:\\PA_PEMVIS\\DataModule\\TransaksiPenjualanModule.vb",
+              "RelativeToolTip": "DataModule\\TransaksiPenjualanModule.vb",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAAwG8AAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-05-15T02:35:36.214Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-05-18T07:00:28.707Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "TransaksiPembelianModule.vb",
+              "DocumentMoniker": "D:\\PA_PEMVIS\\DataModule\\TransaksiPembelianModule.vb",
+              "RelativeDocumentMoniker": "DataModule\\TransaksiPembelianModule.vb",
+              "ToolTip": "D:\\PA_PEMVIS\\DataModule\\TransaksiPembelianModule.vb",
+              "RelativeToolTip": "DataModule\\TransaksiPembelianModule.vb",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAAwFsAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-18T06:41:21.377Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 25,
-              "Title": "Form1.vb",
-              "DocumentMoniker": "D:\\PA_PEMVIS\\Form1.vb",
-              "RelativeDocumentMoniker": "Form1.vb",
-              "ToolTip": "D:\\PA_PEMVIS\\Form1.vb",
-              "RelativeToolTip": "Form1.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAA+wAYAAAAAAAAAAAAAAA==",
+              "Title": "SupplierModule.vb",
+              "DocumentMoniker": "D:\\PA_PEMVIS\\DataModule\\SupplierModule.vb",
+              "RelativeDocumentMoniker": "DataModule\\SupplierModule.vb",
+              "ToolTip": "D:\\PA_PEMVIS\\DataModule\\SupplierModule.vb",
+              "RelativeToolTip": "DataModule\\SupplierModule.vb",
+              "ViewState": "AgIAAHEAAAAAAAAAAAAAwIUAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-05-15T02:15:57.166Z"
+              "WhenOpened": "2026-05-18T06:59:15.23Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ProductModule.vb",
+              "DocumentMoniker": "D:\\PA_PEMVIS\\DataModule\\ProductModule.vb",
+              "RelativeDocumentMoniker": "DataModule\\ProductModule.vb",
+              "ToolTip": "D:\\PA_PEMVIS\\DataModule\\ProductModule.vb",
+              "RelativeToolTip": "DataModule\\ProductModule.vb",
+              "ViewState": "AgIAAI4AAAAAAAAAAAAAwKIAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-18T06:59:16.469Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "DetailPenjualanModule.vb",
+              "DocumentMoniker": "D:\\PA_PEMVIS\\DataModule\\DetailPenjualanModule.vb",
+              "RelativeDocumentMoniker": "DataModule\\DetailPenjualanModule.vb",
+              "ToolTip": "D:\\PA_PEMVIS\\DataModule\\DetailPenjualanModule.vb",
+              "RelativeToolTip": "DataModule\\DetailPenjualanModule.vb",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAwE0AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-18T07:02:43.099Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "StaffManagement.vb",
+              "DocumentMoniker": "D:\\PA_PEMVIS\\ViewManager\\StaffManagement.vb",
+              "RelativeDocumentMoniker": "ViewManager\\StaffManagement.vb",
+              "ToolTip": "D:\\PA_PEMVIS\\ViewManager\\StaffManagement.vb",
+              "RelativeToolTip": "ViewManager\\StaffManagement.vb",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAgwBcAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-19T12:43:52.084Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "FormLogin.vb [Design]",
+              "DocumentMoniker": "D:\\PA_PEMVIS\\FormLogin.vb",
+              "RelativeDocumentMoniker": "FormLogin.vb",
+              "ToolTip": "D:\\PA_PEMVIS\\FormLogin.vb [Design]",
+              "RelativeToolTip": "FormLogin.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-19T12:04:52.395Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

@@ -27,42 +27,42 @@ Partial Class Dashboard
         Panel1 = New Panel()
         Panel7 = New Panel()
         PictureBox7 = New PictureBox()
-        Label6 = New Label()
+        LogoutSidebar = New Label()
         Panel6 = New Panel()
         PictureBox6 = New PictureBox()
-        Label5 = New Label()
+        StockSidebar = New Label()
         Panel5 = New Panel()
         PictureBox5 = New PictureBox()
-        Label4 = New Label()
+        SupplierSidebar = New Label()
         Panel4 = New Panel()
         PictureBox4 = New PictureBox()
-        Label3 = New Label()
+        StaffSidebar = New Label()
         Panel3 = New Panel()
         PictureBox3 = New PictureBox()
-        Label2 = New Label()
-        Panel2 = New Panel()
+        ProductSidebar = New Label()
+        test = New Panel()
         PictureBox2 = New PictureBox()
-        Label1 = New Label()
+        DashboardSidebar = New Label()
         Label7 = New Label()
         Label8 = New Label()
         Panel8 = New Panel()
         Label10 = New Label()
-        Label9 = New Label()
+        lblTodaySales = New Label()
         PictureBox8 = New PictureBox()
         Panel9 = New Panel()
         Label11 = New Label()
-        Label12 = New Label()
+        lblNetProfit = New Label()
         PictureBox9 = New PictureBox()
         Panel10 = New Panel()
         Label13 = New Label()
-        Label14 = New Label()
+        lblTransactionCount = New Label()
         PictureBox10 = New PictureBox()
-        DataGridView1 = New DataGridView()
+        dgvLowStock = New DataGridView()
         PictureBox11 = New PictureBox()
         Label15 = New Label()
         PictureBox12 = New PictureBox()
         TextBox1 = New TextBox()
-        DataGridView2 = New DataGridView()
+        dgvTopSelling = New DataGridView()
         Label16 = New Label()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         Panel1.SuspendLayout()
@@ -76,7 +76,7 @@ Partial Class Dashboard
         CType(PictureBox4, ComponentModel.ISupportInitialize).BeginInit()
         Panel3.SuspendLayout()
         CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
-        Panel2.SuspendLayout()
+        test.SuspendLayout()
         CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         Panel8.SuspendLayout()
         CType(PictureBox8, ComponentModel.ISupportInitialize).BeginInit()
@@ -84,10 +84,10 @@ Partial Class Dashboard
         CType(PictureBox9, ComponentModel.ISupportInitialize).BeginInit()
         Panel10.SuspendLayout()
         CType(PictureBox10, ComponentModel.ISupportInitialize).BeginInit()
-        CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dgvLowStock, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox11, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox12, ComponentModel.ISupportInitialize).BeginInit()
-        CType(DataGridView2, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dgvTopSelling, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' PictureBox1
@@ -108,7 +108,7 @@ Partial Class Dashboard
         Panel1.Controls.Add(Panel5)
         Panel1.Controls.Add(Panel4)
         Panel1.Controls.Add(Panel3)
-        Panel1.Controls.Add(Panel2)
+        Panel1.Controls.Add(test)
         Panel1.Controls.Add(PictureBox1)
         Panel1.Location = New Point(0, 0)
         Panel1.Name = "Panel1"
@@ -118,7 +118,7 @@ Partial Class Dashboard
         ' Panel7
         ' 
         Panel7.Controls.Add(PictureBox7)
-        Panel7.Controls.Add(Label6)
+        Panel7.Controls.Add(LogoutSidebar)
         Panel7.Location = New Point(0, 782)
         Panel7.Name = "Panel7"
         Panel7.Size = New Size(300, 50)
@@ -134,21 +134,21 @@ Partial Class Dashboard
         PictureBox7.TabIndex = 3
         PictureBox7.TabStop = False
         ' 
-        ' Label6
+        ' LogoutSidebar
         ' 
-        Label6.Font = New Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label6.ForeColor = Color.Red
-        Label6.Location = New Point(3, 0)
-        Label6.Name = "Label6"
-        Label6.Size = New Size(294, 50)
-        Label6.TabIndex = 1
-        Label6.Text = "Logout"
-        Label6.TextAlign = ContentAlignment.MiddleCenter
+        LogoutSidebar.Font = New Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        LogoutSidebar.ForeColor = Color.Red
+        LogoutSidebar.Location = New Point(3, 0)
+        LogoutSidebar.Name = "LogoutSidebar"
+        LogoutSidebar.Size = New Size(294, 50)
+        LogoutSidebar.TabIndex = 1
+        LogoutSidebar.Text = "Logout"
+        LogoutSidebar.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' Panel6
         ' 
         Panel6.Controls.Add(PictureBox6)
-        Panel6.Controls.Add(Label5)
+        Panel6.Controls.Add(StockSidebar)
         Panel6.Location = New Point(0, 447)
         Panel6.Name = "Panel6"
         Panel6.Size = New Size(300, 50)
@@ -164,21 +164,21 @@ Partial Class Dashboard
         PictureBox6.TabIndex = 3
         PictureBox6.TabStop = False
         ' 
-        ' Label5
+        ' StockSidebar
         ' 
-        Label5.Font = New Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label5.ForeColor = Color.White
-        Label5.Location = New Point(3, 7)
-        Label5.Name = "Label5"
-        Label5.Size = New Size(294, 42)
-        Label5.TabIndex = 1
-        Label5.Text = "Stock"
-        Label5.TextAlign = ContentAlignment.MiddleCenter
+        StockSidebar.Font = New Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        StockSidebar.ForeColor = Color.White
+        StockSidebar.Location = New Point(3, 7)
+        StockSidebar.Name = "StockSidebar"
+        StockSidebar.Size = New Size(294, 42)
+        StockSidebar.TabIndex = 1
+        StockSidebar.Text = "Stock"
+        StockSidebar.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' Panel5
         ' 
         Panel5.Controls.Add(PictureBox5)
-        Panel5.Controls.Add(Label4)
+        Panel5.Controls.Add(SupplierSidebar)
         Panel5.Location = New Point(0, 373)
         Panel5.Name = "Panel5"
         Panel5.Size = New Size(300, 50)
@@ -194,21 +194,21 @@ Partial Class Dashboard
         PictureBox5.TabIndex = 3
         PictureBox5.TabStop = False
         ' 
-        ' Label4
+        ' SupplierSidebar
         ' 
-        Label4.Font = New Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label4.ForeColor = Color.White
-        Label4.Location = New Point(3, 7)
-        Label4.Name = "Label4"
-        Label4.Size = New Size(294, 42)
-        Label4.TabIndex = 1
-        Label4.Text = "Supplier"
-        Label4.TextAlign = ContentAlignment.MiddleCenter
+        SupplierSidebar.Font = New Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        SupplierSidebar.ForeColor = Color.White
+        SupplierSidebar.Location = New Point(3, 7)
+        SupplierSidebar.Name = "SupplierSidebar"
+        SupplierSidebar.Size = New Size(294, 42)
+        SupplierSidebar.TabIndex = 1
+        SupplierSidebar.Text = "Supplier"
+        SupplierSidebar.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' Panel4
         ' 
         Panel4.Controls.Add(PictureBox4)
-        Panel4.Controls.Add(Label3)
+        Panel4.Controls.Add(StaffSidebar)
         Panel4.Location = New Point(0, 303)
         Panel4.Name = "Panel4"
         Panel4.Size = New Size(300, 50)
@@ -224,21 +224,21 @@ Partial Class Dashboard
         PictureBox4.TabIndex = 3
         PictureBox4.TabStop = False
         ' 
-        ' Label3
+        ' StaffSidebar
         ' 
-        Label3.Font = New Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label3.ForeColor = Color.White
-        Label3.Location = New Point(3, 7)
-        Label3.Name = "Label3"
-        Label3.Size = New Size(294, 42)
-        Label3.TabIndex = 1
-        Label3.Text = "Staff"
-        Label3.TextAlign = ContentAlignment.MiddleCenter
+        StaffSidebar.Font = New Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        StaffSidebar.ForeColor = Color.White
+        StaffSidebar.Location = New Point(3, 7)
+        StaffSidebar.Name = "StaffSidebar"
+        StaffSidebar.Size = New Size(294, 42)
+        StaffSidebar.TabIndex = 1
+        StaffSidebar.Text = "Staff"
+        StaffSidebar.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' Panel3
         ' 
         Panel3.Controls.Add(PictureBox3)
-        Panel3.Controls.Add(Label2)
+        Panel3.Controls.Add(ProductSidebar)
         Panel3.Location = New Point(0, 232)
         Panel3.Name = "Panel3"
         Panel3.Size = New Size(300, 50)
@@ -254,25 +254,25 @@ Partial Class Dashboard
         PictureBox3.TabIndex = 3
         PictureBox3.TabStop = False
         ' 
-        ' Label2
+        ' ProductSidebar
         ' 
-        Label2.Font = New Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label2.ForeColor = Color.White
-        Label2.Location = New Point(3, 7)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(294, 42)
-        Label2.TabIndex = 1
-        Label2.Text = "Product"
-        Label2.TextAlign = ContentAlignment.MiddleCenter
+        ProductSidebar.Font = New Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        ProductSidebar.ForeColor = Color.White
+        ProductSidebar.Location = New Point(92, 8)
+        ProductSidebar.Name = "ProductSidebar"
+        ProductSidebar.Size = New Size(159, 37)
+        ProductSidebar.TabIndex = 1
+        ProductSidebar.Text = "Product"
+        ProductSidebar.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Panel2
+        ' test
         ' 
-        Panel2.Controls.Add(PictureBox2)
-        Panel2.Controls.Add(Label1)
-        Panel2.Location = New Point(0, 163)
-        Panel2.Name = "Panel2"
-        Panel2.Size = New Size(300, 50)
-        Panel2.TabIndex = 2
+        test.Controls.Add(PictureBox2)
+        test.Controls.Add(DashboardSidebar)
+        test.Location = New Point(0, 163)
+        test.Name = "test"
+        test.Size = New Size(300, 50)
+        test.TabIndex = 2
         ' 
         ' PictureBox2
         ' 
@@ -284,16 +284,16 @@ Partial Class Dashboard
         PictureBox2.TabIndex = 3
         PictureBox2.TabStop = False
         ' 
-        ' Label1
+        ' DashboardSidebar
         ' 
-        Label1.AutoSize = True
-        Label1.Font = New Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label1.ForeColor = Color.White
-        Label1.Location = New Point(87, 7)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(159, 38)
-        Label1.TabIndex = 1
-        Label1.Text = "Dashboard"
+        DashboardSidebar.AutoSize = True
+        DashboardSidebar.Font = New Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        DashboardSidebar.ForeColor = Color.White
+        DashboardSidebar.Location = New Point(92, 7)
+        DashboardSidebar.Name = "DashboardSidebar"
+        DashboardSidebar.Size = New Size(159, 38)
+        DashboardSidebar.TabIndex = 1
+        DashboardSidebar.Text = "Dashboard"
         ' 
         ' Label7
         ' 
@@ -320,7 +320,7 @@ Partial Class Dashboard
         ' 
         Panel8.BackColor = Color.White
         Panel8.Controls.Add(Label10)
-        Panel8.Controls.Add(Label9)
+        Panel8.Controls.Add(lblTodaySales)
         Panel8.Controls.Add(PictureBox8)
         Panel8.Location = New Point(317, 102)
         Panel8.Name = "Panel8"
@@ -337,16 +337,16 @@ Partial Class Dashboard
         Label10.TabIndex = 7
         Label10.Text = "Rp xxx"
         ' 
-        ' Label9
+        ' lblTodaySales
         ' 
-        Label9.AutoSize = True
-        Label9.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label9.ForeColor = Color.FromArgb(CByte(3), CByte(118), CByte(87))
-        Label9.Location = New Point(30, 93)
-        Label9.Name = "Label9"
-        Label9.Size = New Size(163, 32)
-        Label9.TabIndex = 7
-        Label9.Text = "Today's Sales"
+        lblTodaySales.AutoSize = True
+        lblTodaySales.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblTodaySales.ForeColor = Color.FromArgb(CByte(3), CByte(118), CByte(87))
+        lblTodaySales.Location = New Point(30, 93)
+        lblTodaySales.Name = "lblTodaySales"
+        lblTodaySales.Size = New Size(163, 32)
+        lblTodaySales.TabIndex = 7
+        lblTodaySales.Text = "Today's Sales"
         ' 
         ' PictureBox8
         ' 
@@ -362,7 +362,7 @@ Partial Class Dashboard
         ' 
         Panel9.BackColor = Color.White
         Panel9.Controls.Add(Label11)
-        Panel9.Controls.Add(Label12)
+        Panel9.Controls.Add(lblNetProfit)
         Panel9.Controls.Add(PictureBox9)
         Panel9.Location = New Point(1066, 102)
         Panel9.Name = "Panel9"
@@ -379,16 +379,16 @@ Partial Class Dashboard
         Label11.TabIndex = 7
         Label11.Text = "Rp xxx"
         ' 
-        ' Label12
+        ' lblNetProfit
         ' 
-        Label12.AutoSize = True
-        Label12.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label12.ForeColor = Color.FromArgb(CByte(3), CByte(118), CByte(87))
-        Label12.Location = New Point(30, 93)
-        Label12.Name = "Label12"
-        Label12.Size = New Size(127, 32)
-        Label12.TabIndex = 7
-        Label12.Text = "Net Profit"
+        lblNetProfit.AutoSize = True
+        lblNetProfit.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblNetProfit.ForeColor = Color.FromArgb(CByte(3), CByte(118), CByte(87))
+        lblNetProfit.Location = New Point(30, 93)
+        lblNetProfit.Name = "lblNetProfit"
+        lblNetProfit.Size = New Size(127, 32)
+        lblNetProfit.TabIndex = 7
+        lblNetProfit.Text = "Net Profit"
         ' 
         ' PictureBox9
         ' 
@@ -404,7 +404,7 @@ Partial Class Dashboard
         ' 
         Panel10.BackColor = Color.White
         Panel10.Controls.Add(Label13)
-        Panel10.Controls.Add(Label14)
+        Panel10.Controls.Add(lblTransactionCount)
         Panel10.Controls.Add(PictureBox10)
         Panel10.Location = New Point(689, 102)
         Panel10.Name = "Panel10"
@@ -421,16 +421,16 @@ Partial Class Dashboard
         Label13.TabIndex = 7
         Label13.Text = "xxx"
         ' 
-        ' Label14
+        ' lblTransactionCount
         ' 
-        Label14.AutoSize = True
-        Label14.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label14.ForeColor = Color.FromArgb(CByte(3), CByte(118), CByte(87))
-        Label14.Location = New Point(30, 93)
-        Label14.Name = "Label14"
-        Label14.Size = New Size(222, 32)
-        Label14.TabIndex = 7
-        Label14.Text = "Transaction Count"
+        lblTransactionCount.AutoSize = True
+        lblTransactionCount.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblTransactionCount.ForeColor = Color.FromArgb(CByte(3), CByte(118), CByte(87))
+        lblTransactionCount.Location = New Point(30, 93)
+        lblTransactionCount.Name = "lblTransactionCount"
+        lblTransactionCount.Size = New Size(222, 32)
+        lblTransactionCount.TabIndex = 7
+        lblTransactionCount.Text = "Transaction Count"
         ' 
         ' PictureBox10
         ' 
@@ -442,15 +442,15 @@ Partial Class Dashboard
         PictureBox10.TabIndex = 0
         PictureBox10.TabStop = False
         ' 
-        ' DataGridView1
+        ' dgvLowStock
         ' 
-        DataGridView1.BackgroundColor = Color.White
-        DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridView1.Location = New Point(317, 632)
-        DataGridView1.Name = "DataGridView1"
-        DataGridView1.RowHeadersWidth = 62
-        DataGridView1.Size = New Size(1049, 200)
-        DataGridView1.TabIndex = 7
+        dgvLowStock.BackgroundColor = Color.White
+        dgvLowStock.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        dgvLowStock.Location = New Point(317, 632)
+        dgvLowStock.Name = "dgvLowStock"
+        dgvLowStock.RowHeadersWidth = 62
+        dgvLowStock.Size = New Size(1049, 200)
+        dgvLowStock.TabIndex = 7
         ' 
         ' PictureBox11
         ' 
@@ -492,15 +492,15 @@ Partial Class Dashboard
         TextBox1.TabIndex = 11
         TextBox1.Text = "Search..."
         ' 
-        ' DataGridView2
+        ' dgvTopSelling
         ' 
-        DataGridView2.BackgroundColor = Color.White
-        DataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridView2.Location = New Point(317, 390)
-        DataGridView2.Name = "DataGridView2"
-        DataGridView2.RowHeadersWidth = 62
-        DataGridView2.Size = New Size(1049, 200)
-        DataGridView2.TabIndex = 12
+        dgvTopSelling.BackgroundColor = Color.White
+        dgvTopSelling.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        dgvTopSelling.Location = New Point(317, 390)
+        dgvTopSelling.Name = "dgvTopSelling"
+        dgvTopSelling.RowHeadersWidth = 62
+        dgvTopSelling.Size = New Size(1049, 200)
+        dgvTopSelling.TabIndex = 12
         ' 
         ' Label16
         ' 
@@ -520,12 +520,12 @@ Partial Class Dashboard
         BackColor = SystemColors.Control
         ClientSize = New Size(1393, 838)
         Controls.Add(Label16)
-        Controls.Add(DataGridView2)
+        Controls.Add(dgvTopSelling)
         Controls.Add(TextBox1)
         Controls.Add(PictureBox12)
         Controls.Add(Label15)
         Controls.Add(PictureBox11)
-        Controls.Add(DataGridView1)
+        Controls.Add(dgvLowStock)
         Controls.Add(Panel10)
         Controls.Add(Panel9)
         Controls.Add(Panel8)
@@ -546,8 +546,8 @@ Partial Class Dashboard
         CType(PictureBox4, ComponentModel.ISupportInitialize).EndInit()
         Panel3.ResumeLayout(False)
         CType(PictureBox3, ComponentModel.ISupportInitialize).EndInit()
-        Panel2.ResumeLayout(False)
-        Panel2.PerformLayout()
+        test.ResumeLayout(False)
+        test.PerformLayout()
         CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
         Panel8.ResumeLayout(False)
         Panel8.PerformLayout()
@@ -558,52 +558,52 @@ Partial Class Dashboard
         Panel10.ResumeLayout(False)
         Panel10.PerformLayout()
         CType(PictureBox10, ComponentModel.ISupportInitialize).EndInit()
-        CType(DataGridView1, ComponentModel.ISupportInitialize).EndInit()
+        CType(dgvLowStock, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox11, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox12, ComponentModel.ISupportInitialize).EndInit()
-        CType(DataGridView2, ComponentModel.ISupportInitialize).EndInit()
+        CType(dgvTopSelling, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Panel2 As Panel
+    Friend WithEvents DashboardSidebar As Label
+    Friend WithEvents test As Panel
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents Panel7 As Panel
     Friend WithEvents PictureBox7 As PictureBox
-    Friend WithEvents Label6 As Label
+    Friend WithEvents LogoutSidebar As Label
     Friend WithEvents Panel6 As Panel
     Friend WithEvents PictureBox6 As PictureBox
-    Friend WithEvents Label5 As Label
+    Friend WithEvents StockSidebar As Label
     Friend WithEvents Panel5 As Panel
     Friend WithEvents PictureBox5 As PictureBox
-    Friend WithEvents Label4 As Label
+    Friend WithEvents SupplierSidebar As Label
     Friend WithEvents Panel4 As Panel
     Friend WithEvents PictureBox4 As PictureBox
-    Friend WithEvents Label3 As Label
+    Friend WithEvents StaffSidebar As Label
     Friend WithEvents Panel3 As Panel
     Friend WithEvents PictureBox3 As PictureBox
-    Friend WithEvents Label2 As Label
+    Friend WithEvents ProductSidebar As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents Label8 As Label
     Friend WithEvents Panel8 As Panel
     Friend WithEvents PictureBox8 As PictureBox
     Friend WithEvents Label10 As Label
-    Friend WithEvents Label9 As Label
+    Friend WithEvents lblTodaySales As Label
     Friend WithEvents Panel9 As Panel
     Friend WithEvents Label11 As Label
-    Friend WithEvents Label12 As Label
+    Friend WithEvents lblNetProfit As Label
     Friend WithEvents PictureBox9 As PictureBox
     Friend WithEvents Panel10 As Panel
     Friend WithEvents Label13 As Label
-    Friend WithEvents Label14 As Label
+    Friend WithEvents lblTransactionCount As Label
     Friend WithEvents PictureBox10 As PictureBox
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents dgvLowStock As DataGridView
     Friend WithEvents PictureBox11 As PictureBox
     Friend WithEvents Label15 As Label
     Friend WithEvents PictureBox12 As PictureBox
     Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents DataGridView2 As DataGridView
+    Friend WithEvents dgvTopSelling As DataGridView
     Friend WithEvents Label16 As Label
 End Class
