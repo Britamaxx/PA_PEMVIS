@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\PA_PEMVIS\\PA_PEMVIS.vbproj": {}
+    "C:\\Users\\VECTOR\\OneDrive\\Documents\\GitHub\\PA_PEMVIS\\PA_PEMVIS.vbproj": {}
   },
   "projects": {
-    "D:\\PA_PEMVIS\\PA_PEMVIS.vbproj": {
+    "C:\\Users\\VECTOR\\OneDrive\\Documents\\GitHub\\PA_PEMVIS\\PA_PEMVIS.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\PA_PEMVIS\\PA_PEMVIS.vbproj",
+        "projectUniqueName": "C:\\Users\\VECTOR\\OneDrive\\Documents\\GitHub\\PA_PEMVIS\\PA_PEMVIS.vbproj",
         "projectName": "PA_PEMVIS",
-        "projectPath": "D:\\PA_PEMVIS\\PA_PEMVIS.vbproj",
-        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "D:\\PA_PEMVIS\\obj\\",
+        "projectPath": "C:\\Users\\VECTOR\\OneDrive\\Documents\\GitHub\\PA_PEMVIS\\PA_PEMVIS.vbproj",
+        "packagesPath": "C:\\Users\\VECTOR\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\VECTOR\\OneDrive\\Documents\\GitHub\\PA_PEMVIS\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\VECTOR\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -25,8 +25,7 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net10.0-windows": {
-            "framework": "net10.0-windows7.0",
+          "net10.0-windows7.0": {
             "targetAlias": "net10.0-windows",
             "projectReferences": {}
           }
@@ -41,11 +40,10 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.300"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
-        "net10.0-windows": {
-          "framework": "net10.0-windows7.0",
+        "net10.0-windows7.0": {
           "targetAlias": "net10.0-windows",
           "dependencies": {
             "MySqlConnector": {
@@ -72,7 +70,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",

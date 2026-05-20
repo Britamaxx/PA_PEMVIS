@@ -33,11 +33,8 @@
     End Sub
 
     Private Sub btnKonfirmasi_Click(sender As Object, e As EventArgs) Handles btnKonfirmasi.Click
-        If txtSupplierID.Text.Trim() = "" OrElse txtSupplierName.Text.Trim() = "" OrElse
-           txtSupplierPhone.Text.Trim() = "" OrElse txtSupplierAddress.Text.Trim() = "" Then
-            MessageBox.Show("Semua field harus diisi", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-            Exit Sub
-        End If
+        If Not ValidasiSupplier(txtSupplierID, txtSupplierName,
+                                txtSupplierPhone, txtSupplierAddress) Then Exit Sub
 
         Dim id As String = txtSupplierID.Text.Trim()
         Dim nama As String = txtSupplierName.Text.Trim()
@@ -60,9 +57,7 @@
     End Sub
 
     Private Sub txtSupplierPhone_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtSupplierPhone.KeyPress
-        If Not Char.IsDigit(e.KeyChar) AndAlso Not Char.IsControl(e.KeyChar) Then
-            e.Handled = True
-        End If
+        BatinHanyaDigit(e)
     End Sub
 
 End Class

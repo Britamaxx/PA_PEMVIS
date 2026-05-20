@@ -52,11 +52,9 @@
     End Sub
 
     Private Sub btnKonfirmasi_Click(sender As Object, e As EventArgs) Handles btnKonfirmasi.Click
-        If txtStaffID.Text.Trim() = "" OrElse txtStaffName.Text.Trim() = "" OrElse
-           txtStaffPhone.Text.Trim() = "" OrElse txtNetSalary.Text.Trim() = "" Then
-            MessageBox.Show("Semua field harus diisi", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-            Exit Sub
-        End If
+        If Not ValidasiStaff(txtStaffID, txtStaffName,
+                             txtStaffPhone, txtNetSalary,
+                             GetShiftTerpilih()) Then Exit Sub
 
         Dim id As String = txtStaffID.Text.Trim()
         Dim nama As String = txtStaffName.Text.Trim()
@@ -80,15 +78,11 @@
     End Sub
 
     Private Sub txtStaffPhone_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtStaffPhone.KeyPress
-        If Not Char.IsDigit(e.KeyChar) AndAlso Not Char.IsControl(e.KeyChar) Then
-            e.Handled = True
-        End If
+        BatinHanyaDigit(e)
     End Sub
 
     Private Sub txtNetSalary_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtNetSalary.KeyPress
-        If Not Char.IsDigit(e.KeyChar) AndAlso Not Char.IsControl(e.KeyChar) Then
-            e.Handled = True
-        End If
+        BatinHanyaDigit(e)
     End Sub
 
 End Class

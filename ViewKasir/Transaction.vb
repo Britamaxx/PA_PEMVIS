@@ -106,19 +106,6 @@ Public Class Transaction
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
         Try
-            If ComboBox1.Text = "" Or TextBox2.Text = "" Then
-
-                MessageBox.Show("Produk dan qty wajib diisi")
-                Exit Sub
-
-            End If
-
-            If Not IsNumeric(TextBox2.Text) Then
-
-                MessageBox.Show("Qty harus angka")
-                Exit Sub
-
-            End If
 
             conn.Open()
 
@@ -140,16 +127,10 @@ Public Class Transaction
 
                 Dim stok As Integer =
                     Convert.ToInt32(rd("stok"))
+                rd.Close()
 
-                If qty > stok Then
-
-                    MessageBox.Show("Stok tidak cukup")
-
-                    rd.Close()
-                    conn.Close()
-
-                    Exit Sub
-
+                If Not ValidasiTambahItem(ComboBox1, TextBox2, stok) Then
+                    conn.Close() : Exit Sub
                 End If
 
                 For Each row As DataGridViewRow In DataGridView1.Rows
@@ -213,20 +194,33 @@ Public Class Transaction
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
 
-        If DataGridView1.CurrentRow IsNot Nothing Then
+        If DataGridView1.CurrentRow Is Nothing Then Exit Sub
 
-            Dim qty As Integer = Convert.ToInt32(TextBox2.Text)
+        Try
+            Dim idProduk As String = DataGridView1.CurrentRow.Cells(0).Value.ToString()
+
+            conn.Open()
+            Dim cmd As New MySqlCommand(
+            "SELECT stok FROM tbproduk WHERE id_produk=@id", conn)
+            cmd.Parameters.AddWithValue("@id", idProduk)
+            Dim stokTersedia As Integer = Convert.ToInt32(cmd.ExecuteScalar())
+            conn.Close()
+
+            If Not ValidasiUpdateItem(TextBox2, stokTersedia) Then Exit Sub
+
+            Dim qty As Integer = CInt(TextBox2.Text)
             Dim harga As Decimal =
             Convert.ToDecimal(DataGridView1.CurrentRow.Cells(3).Value)
 
             DataGridView1.CurrentRow.Cells(2).Value = qty
             DataGridView1.CurrentRow.Cells(4).Value = qty * harga
 
-
             HitungTotal()
-        End If
 
-
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+            If conn.State = ConnectionState.Open Then conn.Close()
+        End Try
 
     End Sub
 
@@ -262,12 +256,7 @@ Public Class Transaction
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
 
-        If DataGridView1.Rows.Count <= 1 Then
-
-            MessageBox.Show("Keranjang kosong")
-            Exit Sub
-
-        End If
+        If Not ValidasiCheckout(DataGridView1.Rows.Count) Then Exit Sub
 
         Try
 

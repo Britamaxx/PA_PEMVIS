@@ -12,17 +12,7 @@ Public Class FormLogin
     End Sub
 
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
-        If String.IsNullOrWhiteSpace(txtUsername.Text) Then
-            MessageBox.Show("Username tidak boleh kosong!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-            txtUsername.Focus()
-            Return
-        End If
-
-        If String.IsNullOrWhiteSpace(txtPassword.Text) Then
-            MessageBox.Show("Password tidak boleh kosong!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-            txtPassword.Focus()
-            Return
-        End If
+        If Not ValidasiLogin(txtUsername, txtPassword) Then Return
 
         Dim dt As DataTable = LoginKaryawan(txtUsername.Text.Trim(), txtPassword.Text.Trim())
 

@@ -39,15 +39,9 @@
 
     Private Sub btnConfirm_Click(sender As Object, e As EventArgs) Handles btnConfirm.Click
 
-        If txtProductID.Text.Trim() = "" OrElse
-           txtProductName.Text.Trim() = "" OrElse
-           txtBuyingPrice.Text.Trim() = "" OrElse
-           txtSellingPrice.Text.Trim() = "" OrElse
-           txtMinimumStock.Text.Trim() = "" Then
-
-            MessageBox.Show("Semua field harus diisi", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-            Exit Sub
-        End If
+        If Not ValidasiProduk(txtProductID, txtProductName,
+                              txtBuyingPrice, txtSellingPrice,
+                              txtMinimumStock) Then Exit Sub
 
         Dim id As String = txtProductID.Text.Trim()
         Dim nama As String = txtProductName.Text.Trim()
@@ -76,21 +70,15 @@
     End Sub
 
     Private Sub txtBuyingPrice_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtBuyingPrice.KeyPress
-        If Not Char.IsDigit(e.KeyChar) AndAlso Not Char.IsControl(e.KeyChar) Then
-            e.Handled = True
-        End If
+        BatinHanyaDigit(e)
     End Sub
 
     Private Sub txtSellingPrice_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtSellingPrice.KeyPress
-        If Not Char.IsDigit(e.KeyChar) AndAlso Not Char.IsControl(e.KeyChar) Then
-            e.Handled = True
-        End If
+        BatinHanyaDigit(e)
     End Sub
 
     Private Sub txtMinimumStock_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtMinimumStock.KeyPress
-        If Not Char.IsDigit(e.KeyChar) AndAlso Not Char.IsControl(e.KeyChar) Then
-            e.Handled = True
-        End If
+        BatinHanyaDigit(e)
     End Sub
 
 End Class

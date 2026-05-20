@@ -89,7 +89,7 @@ Partial Class Transaction
         ' 
         ' Label6
         ' 
-        Label6.Font = New Font("Segoe UI", 14.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label6.Font = New Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label6.ForeColor = Color.Red
         Label6.Location = New Point(0, 6)
         Label6.Name = "Label6"
@@ -119,7 +119,7 @@ Partial Class Transaction
         ' 
         ' Label2
         ' 
-        Label2.Font = New Font("Segoe UI", 14.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label2.Font = New Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label2.ForeColor = Color.White
         Label2.Location = New Point(3, 6)
         Label2.Name = "Label2"
@@ -149,7 +149,7 @@ Partial Class Transaction
         ' 
         ' Label1
         ' 
-        Label1.Font = New Font("Segoe UI", 14.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label1.Font = New Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label1.ForeColor = Color.White
         Label1.Location = New Point(3, 6)
         Label1.Name = "Label1"
@@ -181,7 +181,7 @@ Partial Class Transaction
         ' Label8
         ' 
         Label8.AutoSize = True
-        Label8.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label8.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label8.ForeColor = Color.FromArgb(CByte(3), CByte(118), CByte(87))
         Label8.Location = New Point(315, 37)
         Label8.Name = "Label8"
@@ -202,7 +202,7 @@ Partial Class Transaction
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Font = New Font("Segoe UI", 10.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label3.Font = New Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label3.Location = New Point(315, 669)
         Label3.Name = "Label3"
         Label3.Size = New Size(81, 28)
@@ -211,7 +211,7 @@ Partial Class Transaction
         ' 
         ' TextBox2
         ' 
-        TextBox2.Font = New Font("Segoe UI", 10.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        TextBox2.Font = New Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         TextBox2.Location = New Point(448, 706)
         TextBox2.Name = "TextBox2"
         TextBox2.Size = New Size(918, 34)
@@ -220,7 +220,7 @@ Partial Class Transaction
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Font = New Font("Segoe UI", 10.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label4.Font = New Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label4.Location = New Point(315, 709)
         Label4.Name = "Label4"
         Label4.Size = New Size(127, 28)
@@ -230,7 +230,7 @@ Partial Class Transaction
         ' Button1
         ' 
         Button1.BackColor = Color.LimeGreen
-        Button1.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button1.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Button1.ForeColor = Color.White
         Button1.Location = New Point(1220, 746)
         Button1.Name = "Button1"
@@ -242,7 +242,7 @@ Partial Class Transaction
         ' Button2
         ' 
         Button2.BackColor = Color.CornflowerBlue
-        Button2.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button2.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Button2.ForeColor = Color.White
         Button2.Location = New Point(1129, 746)
         Button2.Name = "Button2"
@@ -254,7 +254,7 @@ Partial Class Transaction
         ' Button3
         ' 
         Button3.BackColor = Color.Red
-        Button3.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button3.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Button3.ForeColor = Color.White
         Button3.Location = New Point(1038, 746)
         Button3.Name = "Button3"
@@ -266,7 +266,7 @@ Partial Class Transaction
         ' Button5
         ' 
         Button5.BackColor = Color.FromArgb(CByte(3), CByte(118), CByte(87))
-        Button5.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button5.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Button5.ForeColor = Color.White
         Button5.Location = New Point(315, 792)
         Button5.Name = "Button5"
@@ -285,7 +285,7 @@ Partial Class Transaction
         ' 
         ' Transaction
         ' 
-        AutoScaleDimensions = New SizeF(10.0F, 25.0F)
+        AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1378, 844)
         Controls.Add(ComboBox1)
