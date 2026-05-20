@@ -17,9 +17,9 @@ Public Class FormLogin
         Dim dt As DataTable = LoginKaryawan(txtUsername.Text.Trim(), txtPassword.Text.Trim())
 
         If dt IsNot Nothing AndAlso dt.Rows.Count > 0 Then
-            Dim jabatan As String = dt.Rows(0)("Jabatan").ToString()
-            Dim namaKaryawan As String = dt.Rows(0)("Nama_Karyawan").ToString()
-            Dim idKaryawan As String = dt.Rows(0)("ID_Karyawan").ToString()
+            Dim jabatan As String = dt.Rows(0)("jabatan").ToString()
+            Dim namaKaryawan As String = dt.Rows(0)("nama_Karyawan").ToString()
+            Dim idKaryawan As String = dt.Rows(0)("id_Karyawan").ToString()
 
             SessionInfo.NamaKaryawan = namaKaryawan
             SessionInfo.Jabatan = jabatan

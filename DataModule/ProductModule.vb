@@ -160,4 +160,37 @@ Module ProductModule
             Return False
         End Try
     End Function
+
+    Public Function GetProdukBySupplier(idSupplier As String) As DataTable
+        Dim dt As New DataTable()
+        Try
+            Dim query As String = "SELECT * FROM tbproduk WHERE id_supplier = @idSupplier ORDER BY id_produk ASC"
+            Using conn As MySqlConnection = GetConnection()
+                Using da As New MySqlDataAdapter(query, conn)
+                    da.SelectCommand.Parameters.AddWithValue("@idSupplier", idSupplier)
+                    da.Fill(dt)
+                End Using
+            End Using
+        Catch ex As Exception
+            MessageBox.Show("Gagal menampilkan produk supplier: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+        Return dt
+    End Function
+
+    Public Function SearchProdukBySupplier(idSupplier As String, keyword As String) As DataTable
+        Dim dt As New DataTable()
+        Try
+            Dim query As String = "SELECT * FROM tbproduk WHERE id_supplier = @idSupplier AND nama_produk LIKE @keyword ORDER BY id_produk ASC"
+            Using conn As MySqlConnection = GetConnection()
+                Using da As New MySqlDataAdapter(query, conn)
+                    da.SelectCommand.Parameters.AddWithValue("@idSupplier", idSupplier)
+                    da.SelectCommand.Parameters.AddWithValue("@keyword", "%" & keyword & "%")
+                    da.Fill(dt)
+                End Using
+            End Using
+        Catch ex As Exception
+            MessageBox.Show("Gagal mencari produk: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+        Return dt
+    End Function
 End Module

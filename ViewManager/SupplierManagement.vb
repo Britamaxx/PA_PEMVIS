@@ -103,6 +103,7 @@ Public Class SupplierManagement
     Private Sub LogoutSidebar_Click(sender As Object, e As EventArgs) Handles LogoutSidebar.Click
         Dim hasil As DialogResult = MessageBox.Show("Yakin ingin logout?", "Konfirmasi", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
         If hasil = DialogResult.Yes Then
+            SessionInfo.ClearSession()
             Dim f As New FormLogin()
             f.Show()
             Me.Close()
