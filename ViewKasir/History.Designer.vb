@@ -240,7 +240,7 @@ Partial Class History
         Button1.Text = "See Details"
         Button1.UseVisualStyleBackColor = False
         ' 
-        ' Form11
+        ' History
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
@@ -253,7 +253,7 @@ Partial Class History
         Controls.Add(Label8)
         Controls.Add(Label7)
         Controls.Add(Panel1)
-        Name = "Form11"
+        Name = "History"
         Text = "Form11"
         Panel1.ResumeLayout(False)
         Panel7.ResumeLayout(False)

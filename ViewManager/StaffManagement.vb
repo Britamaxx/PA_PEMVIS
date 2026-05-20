@@ -24,7 +24,7 @@ Public Class StaffManagement
     End Sub
 
     Private Sub btnAddStaff_Click(sender As Object, e As EventArgs) Handles btnAddStaff.Click
-        Dim f6 As New Form6()
+        Dim f6 As New DialogStaff()
         f6.Mode = "Tambah"
         If f6.ShowDialog() = DialogResult.OK Then
             TampilData()
@@ -36,7 +36,7 @@ Public Class StaffManagement
             MessageBox.Show("Pilih data yang ingin diedit", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             Exit Sub
         End If
-        Dim f6 As New Form6()
+        Dim f6 As New DialogStaff()
         f6.Mode = "Edit"
         f6.IDTerpilih = idTerpilih
         If f6.ShowDialog() = DialogResult.OK Then

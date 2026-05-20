@@ -25,30 +25,30 @@ Partial Class Dashboard
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Dashboard))
         PictureBox1 = New PictureBox()
         Panel1 = New Panel()
-        Panel2 = New Panel()
-        PictureBox2 = New PictureBox()
-        Label1 = New Label()
-        Panel3 = New Panel()
-        PictureBox3 = New PictureBox()
-        Label2 = New Label()
-        Panel4 = New Panel()
-        PictureBox4 = New PictureBox()
-        Label3 = New Label()
-        Panel5 = New Panel()
-        PictureBox5 = New PictureBox()
-        Label4 = New Label()
-        Panel6 = New Panel()
-        PictureBox6 = New PictureBox()
-        Label5 = New Label()
         Panel7 = New Panel()
         PictureBox7 = New PictureBox()
         Label6 = New Label()
+        Panel6 = New Panel()
+        PictureBox6 = New PictureBox()
+        Label5 = New Label()
+        Panel5 = New Panel()
+        PictureBox5 = New PictureBox()
+        Label4 = New Label()
+        Panel4 = New Panel()
+        PictureBox4 = New PictureBox()
+        Label3 = New Label()
+        Panel3 = New Panel()
+        PictureBox3 = New PictureBox()
+        Label2 = New Label()
+        Panel2 = New Panel()
+        PictureBox2 = New PictureBox()
+        Label1 = New Label()
         Label7 = New Label()
         Label8 = New Label()
         Panel8 = New Panel()
-        PictureBox8 = New PictureBox()
-        Label9 = New Label()
         Label10 = New Label()
+        Label9 = New Label()
+        PictureBox8 = New PictureBox()
         Panel9 = New Panel()
         Label11 = New Label()
         Label12 = New Label()
@@ -66,18 +66,18 @@ Partial Class Dashboard
         Label16 = New Label()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         Panel1.SuspendLayout()
-        Panel2.SuspendLayout()
-        CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
-        Panel3.SuspendLayout()
-        CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
-        Panel4.SuspendLayout()
-        CType(PictureBox4, ComponentModel.ISupportInitialize).BeginInit()
-        Panel5.SuspendLayout()
-        CType(PictureBox5, ComponentModel.ISupportInitialize).BeginInit()
-        Panel6.SuspendLayout()
-        CType(PictureBox6, ComponentModel.ISupportInitialize).BeginInit()
         Panel7.SuspendLayout()
         CType(PictureBox7, ComponentModel.ISupportInitialize).BeginInit()
+        Panel6.SuspendLayout()
+        CType(PictureBox6, ComponentModel.ISupportInitialize).BeginInit()
+        Panel5.SuspendLayout()
+        CType(PictureBox5, ComponentModel.ISupportInitialize).BeginInit()
+        Panel4.SuspendLayout()
+        CType(PictureBox4, ComponentModel.ISupportInitialize).BeginInit()
+        Panel3.SuspendLayout()
+        CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
+        Panel2.SuspendLayout()
+        CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         Panel8.SuspendLayout()
         CType(PictureBox8, ComponentModel.ISupportInitialize).BeginInit()
         Panel9.SuspendLayout()
@@ -115,125 +115,35 @@ Partial Class Dashboard
         Panel1.Size = New Size(300, 850)
         Panel1.TabIndex = 1
         ' 
-        ' Panel2
+        ' Panel7
         ' 
-        Panel2.Controls.Add(PictureBox2)
-        Panel2.Controls.Add(Label1)
-        Panel2.Location = New Point(0, 164)
-        Panel2.Name = "Panel2"
-        Panel2.Size = New Size(300, 50)
-        Panel2.TabIndex = 2
+        Panel7.Controls.Add(PictureBox7)
+        Panel7.Controls.Add(Label6)
+        Panel7.Location = New Point(0, 782)
+        Panel7.Name = "Panel7"
+        Panel7.Size = New Size(300, 50)
+        Panel7.TabIndex = 3
         ' 
-        ' PictureBox2
+        ' PictureBox7
         ' 
-        PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), Image)
-        PictureBox2.Location = New Point(28, 6)
-        PictureBox2.Name = "PictureBox2"
-        PictureBox2.Size = New Size(41, 38)
-        PictureBox2.SizeMode = PictureBoxSizeMode.StretchImage
-        PictureBox2.TabIndex = 3
-        PictureBox2.TabStop = False
+        PictureBox7.Image = CType(resources.GetObject("PictureBox7.Image"), Image)
+        PictureBox7.Location = New Point(29, 7)
+        PictureBox7.Name = "PictureBox7"
+        PictureBox7.Size = New Size(41, 38)
+        PictureBox7.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox7.TabIndex = 3
+        PictureBox7.TabStop = False
         ' 
-        ' Label1
+        ' Label6
         ' 
-        Label1.AutoSize = True
-        Label1.Font = New Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label1.ForeColor = Color.White
-        Label1.Location = New Point(87, 6)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(159, 38)
-        Label1.TabIndex = 1
-        Label1.Text = "Dashboard"
-        ' 
-        ' Panel3
-        ' 
-        Panel3.Controls.Add(PictureBox3)
-        Panel3.Controls.Add(Label2)
-        Panel3.Location = New Point(0, 232)
-        Panel3.Name = "Panel3"
-        Panel3.Size = New Size(300, 50)
-        Panel3.TabIndex = 3
-        ' 
-        ' PictureBox3
-        ' 
-        PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), Image)
-        PictureBox3.Location = New Point(28, 6)
-        PictureBox3.Name = "PictureBox3"
-        PictureBox3.Size = New Size(41, 38)
-        PictureBox3.SizeMode = PictureBoxSizeMode.StretchImage
-        PictureBox3.TabIndex = 3
-        PictureBox3.TabStop = False
-        ' 
-        ' Label2
-        ' 
-        Label2.AutoSize = True
-        Label2.Font = New Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label2.ForeColor = Color.White
-        Label2.Location = New Point(87, 6)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(113, 38)
-        Label2.TabIndex = 1
-        Label2.Text = "Product"
-        ' 
-        ' Panel4
-        ' 
-        Panel4.Controls.Add(PictureBox4)
-        Panel4.Controls.Add(Label3)
-        Panel4.Location = New Point(0, 303)
-        Panel4.Name = "Panel4"
-        Panel4.Size = New Size(300, 50)
-        Panel4.TabIndex = 3
-        ' 
-        ' PictureBox4
-        ' 
-        PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), Image)
-        PictureBox4.Location = New Point(28, 6)
-        PictureBox4.Name = "PictureBox4"
-        PictureBox4.Size = New Size(41, 38)
-        PictureBox4.SizeMode = PictureBoxSizeMode.StretchImage
-        PictureBox4.TabIndex = 3
-        PictureBox4.TabStop = False
-        ' 
-        ' Label3
-        ' 
-        Label3.AutoSize = True
-        Label3.Font = New Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label3.ForeColor = Color.White
-        Label3.Location = New Point(87, 6)
-        Label3.Name = "Label3"
-        Label3.Size = New Size(72, 38)
-        Label3.TabIndex = 1
-        Label3.Text = "Staff"
-        ' 
-        ' Panel5
-        ' 
-        Panel5.Controls.Add(PictureBox5)
-        Panel5.Controls.Add(Label4)
-        Panel5.Location = New Point(0, 374)
-        Panel5.Name = "Panel5"
-        Panel5.Size = New Size(300, 50)
-        Panel5.TabIndex = 3
-        ' 
-        ' PictureBox5
-        ' 
-        PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), Image)
-        PictureBox5.Location = New Point(28, 6)
-        PictureBox5.Name = "PictureBox5"
-        PictureBox5.Size = New Size(41, 38)
-        PictureBox5.SizeMode = PictureBoxSizeMode.StretchImage
-        PictureBox5.TabIndex = 3
-        PictureBox5.TabStop = False
-        ' 
-        ' Label4
-        ' 
-        Label4.AutoSize = True
-        Label4.Font = New Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label4.ForeColor = Color.White
-        Label4.Location = New Point(87, 6)
-        Label4.Name = "Label4"
-        Label4.Size = New Size(119, 38)
-        Label4.TabIndex = 1
-        Label4.Text = "Supplier"
+        Label6.Font = New Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label6.ForeColor = Color.Red
+        Label6.Location = New Point(3, 0)
+        Label6.Name = "Label6"
+        Label6.Size = New Size(294, 50)
+        Label6.TabIndex = 1
+        Label6.Text = "Logout"
+        Label6.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' Panel6
         ' 
@@ -247,7 +157,7 @@ Partial Class Dashboard
         ' PictureBox6
         ' 
         PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), Image)
-        PictureBox6.Location = New Point(28, 6)
+        PictureBox6.Location = New Point(29, 7)
         PictureBox6.Name = "PictureBox6"
         PictureBox6.Size = New Size(41, 38)
         PictureBox6.SizeMode = PictureBoxSizeMode.StretchImage
@@ -256,44 +166,134 @@ Partial Class Dashboard
         ' 
         ' Label5
         ' 
-        Label5.AutoSize = True
         Label5.Font = New Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label5.ForeColor = Color.White
-        Label5.Location = New Point(87, 6)
+        Label5.Location = New Point(3, 7)
         Label5.Name = "Label5"
-        Label5.Size = New Size(83, 38)
+        Label5.Size = New Size(294, 42)
         Label5.TabIndex = 1
         Label5.Text = "Stock"
+        Label5.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Panel7
+        ' Panel5
         ' 
-        Panel7.Controls.Add(PictureBox7)
-        Panel7.Controls.Add(Label6)
-        Panel7.Location = New Point(0, 782)
-        Panel7.Name = "Panel7"
-        Panel7.Size = New Size(300, 50)
-        Panel7.TabIndex = 3
+        Panel5.Controls.Add(PictureBox5)
+        Panel5.Controls.Add(Label4)
+        Panel5.Location = New Point(0, 373)
+        Panel5.Name = "Panel5"
+        Panel5.Size = New Size(300, 50)
+        Panel5.TabIndex = 3
         ' 
-        ' PictureBox7
+        ' PictureBox5
         ' 
-        PictureBox7.Image = CType(resources.GetObject("PictureBox7.Image"), Image)
-        PictureBox7.Location = New Point(28, 6)
-        PictureBox7.Name = "PictureBox7"
-        PictureBox7.Size = New Size(41, 38)
-        PictureBox7.SizeMode = PictureBoxSizeMode.StretchImage
-        PictureBox7.TabIndex = 3
-        PictureBox7.TabStop = False
+        PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), Image)
+        PictureBox5.Location = New Point(29, 7)
+        PictureBox5.Name = "PictureBox5"
+        PictureBox5.Size = New Size(41, 38)
+        PictureBox5.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox5.TabIndex = 3
+        PictureBox5.TabStop = False
         ' 
-        ' Label6
+        ' Label4
         ' 
-        Label6.AutoSize = True
-        Label6.Font = New Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label6.ForeColor = Color.Red
-        Label6.Location = New Point(87, 6)
-        Label6.Name = "Label6"
-        Label6.Size = New Size(103, 38)
-        Label6.TabIndex = 1
-        Label6.Text = "Logout"
+        Label4.Font = New Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label4.ForeColor = Color.White
+        Label4.Location = New Point(3, 7)
+        Label4.Name = "Label4"
+        Label4.Size = New Size(294, 42)
+        Label4.TabIndex = 1
+        Label4.Text = "Supplier"
+        Label4.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' Panel4
+        ' 
+        Panel4.Controls.Add(PictureBox4)
+        Panel4.Controls.Add(Label3)
+        Panel4.Location = New Point(0, 303)
+        Panel4.Name = "Panel4"
+        Panel4.Size = New Size(300, 50)
+        Panel4.TabIndex = 3
+        ' 
+        ' PictureBox4
+        ' 
+        PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), Image)
+        PictureBox4.Location = New Point(29, 7)
+        PictureBox4.Name = "PictureBox4"
+        PictureBox4.Size = New Size(41, 38)
+        PictureBox4.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox4.TabIndex = 3
+        PictureBox4.TabStop = False
+        ' 
+        ' Label3
+        ' 
+        Label3.Font = New Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label3.ForeColor = Color.White
+        Label3.Location = New Point(3, 7)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(294, 42)
+        Label3.TabIndex = 1
+        Label3.Text = "Staff"
+        Label3.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' Panel3
+        ' 
+        Panel3.Controls.Add(PictureBox3)
+        Panel3.Controls.Add(Label2)
+        Panel3.Location = New Point(0, 232)
+        Panel3.Name = "Panel3"
+        Panel3.Size = New Size(300, 50)
+        Panel3.TabIndex = 3
+        ' 
+        ' PictureBox3
+        ' 
+        PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), Image)
+        PictureBox3.Location = New Point(29, 7)
+        PictureBox3.Name = "PictureBox3"
+        PictureBox3.Size = New Size(41, 38)
+        PictureBox3.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox3.TabIndex = 3
+        PictureBox3.TabStop = False
+        ' 
+        ' Label2
+        ' 
+        Label2.Font = New Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label2.ForeColor = Color.White
+        Label2.Location = New Point(3, 7)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(294, 42)
+        Label2.TabIndex = 1
+        Label2.Text = "Product"
+        Label2.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' Panel2
+        ' 
+        Panel2.Controls.Add(PictureBox2)
+        Panel2.Controls.Add(Label1)
+        Panel2.Location = New Point(0, 163)
+        Panel2.Name = "Panel2"
+        Panel2.Size = New Size(300, 50)
+        Panel2.TabIndex = 2
+        ' 
+        ' PictureBox2
+        ' 
+        PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), Image)
+        PictureBox2.Location = New Point(29, 7)
+        PictureBox2.Name = "PictureBox2"
+        PictureBox2.Size = New Size(41, 38)
+        PictureBox2.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox2.TabIndex = 3
+        PictureBox2.TabStop = False
+        ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Font = New Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label1.ForeColor = Color.White
+        Label1.Location = New Point(87, 7)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(159, 38)
+        Label1.TabIndex = 1
+        Label1.Text = "Dashboard"
         ' 
         ' Label7
         ' 
@@ -327,15 +327,15 @@ Partial Class Dashboard
         Panel8.Size = New Size(300, 250)
         Panel8.TabIndex = 4
         ' 
-        ' PictureBox8
+        ' Label10
         ' 
-        PictureBox8.Image = CType(resources.GetObject("PictureBox8.Image"), Image)
-        PictureBox8.Location = New Point(30, 30)
-        PictureBox8.Name = "PictureBox8"
-        PictureBox8.Size = New Size(60, 60)
-        PictureBox8.SizeMode = PictureBoxSizeMode.StretchImage
-        PictureBox8.TabIndex = 0
-        PictureBox8.TabStop = False
+        Label10.AutoSize = True
+        Label10.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label10.Location = New Point(30, 165)
+        Label10.Name = "Label10"
+        Label10.Size = New Size(91, 32)
+        Label10.TabIndex = 7
+        Label10.Text = "Rp xxx"
         ' 
         ' Label9
         ' 
@@ -348,15 +348,15 @@ Partial Class Dashboard
         Label9.TabIndex = 7
         Label9.Text = "Today's Sales"
         ' 
-        ' Label10
+        ' PictureBox8
         ' 
-        Label10.AutoSize = True
-        Label10.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label10.Location = New Point(30, 165)
-        Label10.Name = "Label10"
-        Label10.Size = New Size(91, 32)
-        Label10.TabIndex = 7
-        Label10.Text = "Rp xxx"
+        PictureBox8.Image = CType(resources.GetObject("PictureBox8.Image"), Image)
+        PictureBox8.Location = New Point(30, 30)
+        PictureBox8.Name = "PictureBox8"
+        PictureBox8.Size = New Size(60, 60)
+        PictureBox8.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox8.TabIndex = 0
+        PictureBox8.TabStop = False
         ' 
         ' Panel9
         ' 
@@ -406,7 +406,7 @@ Partial Class Dashboard
         Panel10.Controls.Add(Label13)
         Panel10.Controls.Add(Label14)
         Panel10.Controls.Add(PictureBox10)
-        Panel10.Location = New Point(688, 102)
+        Panel10.Location = New Point(689, 102)
         Panel10.Name = "Panel10"
         Panel10.Size = New Size(300, 250)
         Panel10.TabIndex = 6
@@ -455,7 +455,7 @@ Partial Class Dashboard
         ' PictureBox11
         ' 
         PictureBox11.Image = CType(resources.GetObject("PictureBox11.Image"), Image)
-        PictureBox11.Location = New Point(317, 596)
+        PictureBox11.Location = New Point(317, 597)
         PictureBox11.Name = "PictureBox11"
         PictureBox11.Size = New Size(30, 30)
         PictureBox11.SizeMode = PictureBoxSizeMode.StretchImage
@@ -467,7 +467,7 @@ Partial Class Dashboard
         Label15.AutoSize = True
         Label15.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label15.ForeColor = Color.FromArgb(CByte(3), CByte(118), CByte(87))
-        Label15.Location = New Point(353, 594)
+        Label15.Location = New Point(353, 593)
         Label15.Name = "Label15"
         Label15.Size = New Size(237, 32)
         Label15.TabIndex = 9
@@ -476,7 +476,7 @@ Partial Class Dashboard
         ' PictureBox12
         ' 
         PictureBox12.Image = CType(resources.GetObject("PictureBox12.Image"), Image)
-        PictureBox12.Location = New Point(1013, 19)
+        PictureBox12.Location = New Point(1013, 18)
         PictureBox12.Name = "PictureBox12"
         PictureBox12.Size = New Size(50, 50)
         PictureBox12.SizeMode = PictureBoxSizeMode.StretchImage
@@ -513,12 +513,12 @@ Partial Class Dashboard
         Label16.TabIndex = 13
         Label16.Text = "Top-Selling Products"
         ' 
-        ' Form2
+        ' Dashboard
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.Control
-        ClientSize = New Size(1378, 844)
+        ClientSize = New Size(1393, 838)
         Controls.Add(Label16)
         Controls.Add(DataGridView2)
         Controls.Add(TextBox1)
@@ -532,28 +532,23 @@ Partial Class Dashboard
         Controls.Add(Label8)
         Controls.Add(Label7)
         Controls.Add(Panel1)
-        Name = "Form2"
+        Name = "Dashboard"
         Text = "Form2"
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         Panel1.ResumeLayout(False)
+        Panel7.ResumeLayout(False)
+        CType(PictureBox7, ComponentModel.ISupportInitialize).EndInit()
+        Panel6.ResumeLayout(False)
+        CType(PictureBox6, ComponentModel.ISupportInitialize).EndInit()
+        Panel5.ResumeLayout(False)
+        CType(PictureBox5, ComponentModel.ISupportInitialize).EndInit()
+        Panel4.ResumeLayout(False)
+        CType(PictureBox4, ComponentModel.ISupportInitialize).EndInit()
+        Panel3.ResumeLayout(False)
+        CType(PictureBox3, ComponentModel.ISupportInitialize).EndInit()
         Panel2.ResumeLayout(False)
         Panel2.PerformLayout()
         CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
-        Panel3.ResumeLayout(False)
-        Panel3.PerformLayout()
-        CType(PictureBox3, ComponentModel.ISupportInitialize).EndInit()
-        Panel4.ResumeLayout(False)
-        Panel4.PerformLayout()
-        CType(PictureBox4, ComponentModel.ISupportInitialize).EndInit()
-        Panel5.ResumeLayout(False)
-        Panel5.PerformLayout()
-        CType(PictureBox5, ComponentModel.ISupportInitialize).EndInit()
-        Panel6.ResumeLayout(False)
-        Panel6.PerformLayout()
-        CType(PictureBox6, ComponentModel.ISupportInitialize).EndInit()
-        Panel7.ResumeLayout(False)
-        Panel7.PerformLayout()
-        CType(PictureBox7, ComponentModel.ISupportInitialize).EndInit()
         Panel8.ResumeLayout(False)
         Panel8.PerformLayout()
         CType(PictureBox8, ComponentModel.ISupportInitialize).EndInit()

@@ -66,7 +66,7 @@
 
         Else
 
-            If UbahProduk(id, "", nama, stokMin, hargaBeli, hargaJual, kategori) Then
+            If UbahProduk(id, nama, stokMin, hargaBeli, hargaJual, kategori) Then
                 MessageBox.Show("Data produk berhasil diubah", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 Me.DialogResult = DialogResult.OK
                 Me.Close()

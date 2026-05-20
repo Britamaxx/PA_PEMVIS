@@ -1,21 +1,30 @@
 ﻿Public Class Dashboard
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
-
+    Private Sub Panel3_Paint(sender As Object, e As PaintEventArgs) Handles Panel3.Click
+        Dim DialogProduct As New DialogProduct()
+        DialogProduct.Show()
     End Sub
 
-    Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
+        Dim DialogProduct As New DialogProduct()
+        DialogProduct.Show()
     End Sub
 
-    Private Sub Label9_Click(sender As Object, e As EventArgs) Handles Label9.Click
-
+    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
+        Dim DialogSupplier As New DialogSupplier()
+        DialogSupplier.Show()
     End Sub
 
-    Private Sub Label14_Click(sender As Object, e As EventArgs) Handles Label14.Click
-
+    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
+        Dim DialogStaff As New DialogStaff()
+        DialogStaff.Show()
     End Sub
 
-    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
-
+    Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
+        DialogSupplier.Show()
     End Sub
+
+	Private Sub Label6_Click(sender As Object, e As EventArgs) Handles Label6.Click
+		Me.Close()
+		FormLogin.Show()
+	End Sub
 End Class
