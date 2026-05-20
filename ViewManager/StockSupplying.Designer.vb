@@ -56,7 +56,7 @@ Partial Class StockSupplying
         btnAddToCart = New Button()
         Label10 = New Label()
         txtItemAmount = New TextBox()
-        txtDelete = New Button()
+        btnDelete = New Button()
         PictureBox8 = New PictureBox()
         btnConfirmTransaction = New Button()
         Panel1.SuspendLayout()
@@ -415,17 +415,17 @@ Partial Class StockSupplying
         txtItemAmount.Size = New Size(401, 34)
         txtItemAmount.TabIndex = 29
         ' 
-        ' txtDelete
+        ' btnDelete
         ' 
-        txtDelete.BackColor = Color.FromArgb(CByte(3), CByte(118), CByte(87))
-        txtDelete.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        txtDelete.ForeColor = Color.White
-        txtDelete.Location = New Point(1281, 457)
-        txtDelete.Name = "txtDelete"
-        txtDelete.Size = New Size(85, 40)
-        txtDelete.TabIndex = 31
-        txtDelete.Text = "Delete"
-        txtDelete.UseVisualStyleBackColor = False
+        btnDelete.BackColor = Color.FromArgb(CByte(3), CByte(118), CByte(87))
+        btnDelete.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnDelete.ForeColor = Color.White
+        btnDelete.Location = New Point(1281, 457)
+        btnDelete.Name = "btnDelete"
+        btnDelete.Size = New Size(85, 40)
+        btnDelete.TabIndex = 31
+        btnDelete.Text = "Delete"
+        btnDelete.UseVisualStyleBackColor = False
         ' 
         ' PictureBox8
         ' 
@@ -456,7 +456,7 @@ Partial Class StockSupplying
         ClientSize = New Size(1378, 844)
         Controls.Add(btnConfirmTransaction)
         Controls.Add(PictureBox8)
-        Controls.Add(txtDelete)
+        Controls.Add(btnDelete)
         Controls.Add(txtItemAmount)
         Controls.Add(Label10)
         Controls.Add(btnAddToCart)
@@ -534,7 +534,7 @@ Partial Class StockSupplying
     Friend WithEvents btnAddToCart As Button
     Friend WithEvents Label10 As Label
     Friend WithEvents txtItemAmount As TextBox
-    Friend WithEvents txtDelete As Button
+    Friend WithEvents btnDelete As Button
     Friend WithEvents PictureBox8 As PictureBox
     Friend WithEvents btnConfirmTransaction As Button
 End Class

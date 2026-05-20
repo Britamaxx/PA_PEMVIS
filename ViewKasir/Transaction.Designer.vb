@@ -24,42 +24,43 @@ Partial Class Transaction
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Transaction))
         Panel1 = New Panel()
-        Panel7 = New Panel()
+        LogoutSidebar = New Panel()
         PictureBox7 = New PictureBox()
         Label6 = New Label()
         Panel3 = New Panel()
         PictureBox3 = New PictureBox()
-        Label2 = New Label()
+        HistorySidebar = New Label()
         Panel2 = New Panel()
         PictureBox2 = New PictureBox()
-        Label1 = New Label()
+        TransactionSidebar = New Label()
         PictureBox1 = New PictureBox()
         Label7 = New Label()
         Label8 = New Label()
-        DataGridView1 = New DataGridView()
+        dgvTransaction = New DataGridView()
         Label3 = New Label()
-        TextBox2 = New TextBox()
+        txtQty = New TextBox()
         Label4 = New Label()
-        Button1 = New Button()
-        Button2 = New Button()
-        Button3 = New Button()
-        Button5 = New Button()
-        ComboBox1 = New ComboBox()
+        btnAddItem = New Button()
+        btnEditItem = New Button()
+        btnDeleteItem = New Button()
+        btnConfirm = New Button()
+        cboProduct = New ComboBox()
+        lblTotal = New Label()
         Panel1.SuspendLayout()
-        Panel7.SuspendLayout()
+        LogoutSidebar.SuspendLayout()
         CType(PictureBox7, ComponentModel.ISupportInitialize).BeginInit()
         Panel3.SuspendLayout()
         CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
         Panel2.SuspendLayout()
         CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
-        CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dgvTransaction, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Panel1
         ' 
         Panel1.BackColor = Color.FromArgb(CByte(3), CByte(118), CByte(87))
-        Panel1.Controls.Add(Panel7)
+        Panel1.Controls.Add(LogoutSidebar)
         Panel1.Controls.Add(Panel3)
         Panel1.Controls.Add(Panel2)
         Panel1.Controls.Add(PictureBox1)
@@ -68,14 +69,14 @@ Partial Class Transaction
         Panel1.Size = New Size(300, 850)
         Panel1.TabIndex = 6
         ' 
-        ' Panel7
+        ' LogoutSidebar
         ' 
-        Panel7.Controls.Add(PictureBox7)
-        Panel7.Controls.Add(Label6)
-        Panel7.Location = New Point(0, 782)
-        Panel7.Name = "Panel7"
-        Panel7.Size = New Size(300, 50)
-        Panel7.TabIndex = 3
+        LogoutSidebar.Controls.Add(PictureBox7)
+        LogoutSidebar.Controls.Add(Label6)
+        LogoutSidebar.Location = New Point(0, 782)
+        LogoutSidebar.Name = "LogoutSidebar"
+        LogoutSidebar.Size = New Size(300, 50)
+        LogoutSidebar.TabIndex = 3
         ' 
         ' PictureBox7
         ' 
@@ -101,7 +102,7 @@ Partial Class Transaction
         ' Panel3
         ' 
         Panel3.Controls.Add(PictureBox3)
-        Panel3.Controls.Add(Label2)
+        Panel3.Controls.Add(HistorySidebar)
         Panel3.Location = New Point(0, 232)
         Panel3.Name = "Panel3"
         Panel3.Size = New Size(300, 50)
@@ -117,21 +118,21 @@ Partial Class Transaction
         PictureBox3.TabIndex = 3
         PictureBox3.TabStop = False
         ' 
-        ' Label2
+        ' HistorySidebar
         ' 
-        Label2.Font = New Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label2.ForeColor = Color.White
-        Label2.Location = New Point(3, 6)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(297, 38)
-        Label2.TabIndex = 1
-        Label2.Text = "History"
-        Label2.TextAlign = ContentAlignment.TopCenter
+        HistorySidebar.Font = New Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        HistorySidebar.ForeColor = Color.White
+        HistorySidebar.Location = New Point(3, 6)
+        HistorySidebar.Name = "HistorySidebar"
+        HistorySidebar.Size = New Size(297, 38)
+        HistorySidebar.TabIndex = 1
+        HistorySidebar.Text = "History"
+        HistorySidebar.TextAlign = ContentAlignment.TopCenter
         ' 
         ' Panel2
         ' 
         Panel2.Controls.Add(PictureBox2)
-        Panel2.Controls.Add(Label1)
+        Panel2.Controls.Add(TransactionSidebar)
         Panel2.Location = New Point(0, 164)
         Panel2.Name = "Panel2"
         Panel2.Size = New Size(300, 50)
@@ -147,16 +148,16 @@ Partial Class Transaction
         PictureBox2.TabIndex = 3
         PictureBox2.TabStop = False
         ' 
-        ' Label1
+        ' TransactionSidebar
         ' 
-        Label1.Font = New Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label1.ForeColor = Color.White
-        Label1.Location = New Point(3, 6)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(294, 38)
-        Label1.TabIndex = 1
-        Label1.Text = "Transaction"
-        Label1.TextAlign = ContentAlignment.TopCenter
+        TransactionSidebar.Font = New Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        TransactionSidebar.ForeColor = Color.White
+        TransactionSidebar.Location = New Point(3, 6)
+        TransactionSidebar.Name = "TransactionSidebar"
+        TransactionSidebar.Size = New Size(294, 38)
+        TransactionSidebar.TabIndex = 1
+        TransactionSidebar.Text = "Transaction"
+        TransactionSidebar.TextAlign = ContentAlignment.TopCenter
         ' 
         ' PictureBox1
         ' 
@@ -189,15 +190,15 @@ Partial Class Transaction
         Label8.TabIndex = 19
         Label8.Text = "Transaction"
         ' 
-        ' DataGridView1
+        ' dgvTransaction
         ' 
-        DataGridView1.BackgroundColor = Color.White
-        DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridView1.Location = New Point(315, 91)
-        DataGridView1.Name = "DataGridView1"
-        DataGridView1.RowHeadersWidth = 62
-        DataGridView1.Size = New Size(1051, 550)
-        DataGridView1.TabIndex = 27
+        dgvTransaction.BackgroundColor = Color.White
+        dgvTransaction.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        dgvTransaction.Location = New Point(315, 91)
+        dgvTransaction.Name = "dgvTransaction"
+        dgvTransaction.RowHeadersWidth = 62
+        dgvTransaction.Size = New Size(1051, 550)
+        dgvTransaction.TabIndex = 27
         ' 
         ' Label3
         ' 
@@ -209,13 +210,13 @@ Partial Class Transaction
         Label3.TabIndex = 28
         Label3.Text = "Product"
         ' 
-        ' TextBox2
+        ' txtQty
         ' 
-        TextBox2.Font = New Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox2.Location = New Point(448, 706)
-        TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(918, 34)
-        TextBox2.TabIndex = 30
+        txtQty.Font = New Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        txtQty.Location = New Point(448, 706)
+        txtQty.Name = "txtQty"
+        txtQty.Size = New Size(918, 34)
+        txtQty.TabIndex = 30
         ' 
         ' Label4
         ' 
@@ -227,114 +228,126 @@ Partial Class Transaction
         Label4.TabIndex = 31
         Label4.Text = "Item Amount"
         ' 
-        ' Button1
+        ' btnAddItem
         ' 
-        Button1.BackColor = Color.LimeGreen
-        Button1.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button1.ForeColor = Color.White
-        Button1.Location = New Point(1220, 746)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(146, 40)
-        Button1.TabIndex = 32
-        Button1.Text = "+ Add Item"
-        Button1.UseVisualStyleBackColor = False
+        btnAddItem.BackColor = Color.LimeGreen
+        btnAddItem.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnAddItem.ForeColor = Color.White
+        btnAddItem.Location = New Point(1220, 746)
+        btnAddItem.Name = "btnAddItem"
+        btnAddItem.Size = New Size(146, 40)
+        btnAddItem.TabIndex = 32
+        btnAddItem.Text = "+ Add Item"
+        btnAddItem.UseVisualStyleBackColor = False
         ' 
-        ' Button2
+        ' btnEditItem
         ' 
-        Button2.BackColor = Color.CornflowerBlue
-        Button2.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button2.ForeColor = Color.White
-        Button2.Location = New Point(1129, 746)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(85, 40)
-        Button2.TabIndex = 33
-        Button2.Text = "Edit"
-        Button2.UseVisualStyleBackColor = False
+        btnEditItem.BackColor = Color.CornflowerBlue
+        btnEditItem.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnEditItem.ForeColor = Color.White
+        btnEditItem.Location = New Point(1129, 746)
+        btnEditItem.Name = "btnEditItem"
+        btnEditItem.Size = New Size(85, 40)
+        btnEditItem.TabIndex = 33
+        btnEditItem.Text = "Edit"
+        btnEditItem.UseVisualStyleBackColor = False
         ' 
-        ' Button3
+        ' btnDeleteItem
         ' 
-        Button3.BackColor = Color.Red
-        Button3.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button3.ForeColor = Color.White
-        Button3.Location = New Point(1038, 746)
-        Button3.Name = "Button3"
-        Button3.Size = New Size(85, 40)
-        Button3.TabIndex = 34
-        Button3.Text = "Delete"
-        Button3.UseVisualStyleBackColor = False
+        btnDeleteItem.BackColor = Color.Red
+        btnDeleteItem.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnDeleteItem.ForeColor = Color.White
+        btnDeleteItem.Location = New Point(1038, 746)
+        btnDeleteItem.Name = "btnDeleteItem"
+        btnDeleteItem.Size = New Size(85, 40)
+        btnDeleteItem.TabIndex = 34
+        btnDeleteItem.Text = "Delete"
+        btnDeleteItem.UseVisualStyleBackColor = False
         ' 
-        ' Button5
+        ' btnConfirm
         ' 
-        Button5.BackColor = Color.FromArgb(CByte(3), CByte(118), CByte(87))
-        Button5.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button5.ForeColor = Color.White
-        Button5.Location = New Point(315, 792)
-        Button5.Name = "Button5"
-        Button5.Size = New Size(1051, 40)
-        Button5.TabIndex = 35
-        Button5.Text = "Confirm Transaction"
-        Button5.UseVisualStyleBackColor = False
+        btnConfirm.BackColor = Color.FromArgb(CByte(3), CByte(118), CByte(87))
+        btnConfirm.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnConfirm.ForeColor = Color.White
+        btnConfirm.Location = New Point(315, 792)
+        btnConfirm.Name = "btnConfirm"
+        btnConfirm.Size = New Size(1051, 40)
+        btnConfirm.TabIndex = 35
+        btnConfirm.Text = "Confirm Transaction"
+        btnConfirm.UseVisualStyleBackColor = False
         ' 
-        ' ComboBox1
+        ' cboProduct
         ' 
-        ComboBox1.FormattingEnabled = True
-        ComboBox1.Location = New Point(448, 664)
-        ComboBox1.Name = "ComboBox1"
-        ComboBox1.Size = New Size(918, 33)
-        ComboBox1.TabIndex = 36
+        cboProduct.FormattingEnabled = True
+        cboProduct.Location = New Point(448, 664)
+        cboProduct.Name = "cboProduct"
+        cboProduct.Size = New Size(918, 33)
+        cboProduct.TabIndex = 36
+        ' 
+        ' lblTotal
+        ' 
+        lblTotal.AutoSize = True
+        lblTotal.Font = New Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        lblTotal.Location = New Point(396, 758)
+        lblTotal.Name = "lblTotal"
+        lblTotal.Size = New Size(401, 28)
+        lblTotal.TabIndex = 37
+        lblTotal.Text = "kita lihat ada gak yang ngecek perubahan ini"
         ' 
         ' Transaction
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1378, 844)
-        Controls.Add(ComboBox1)
-        Controls.Add(Button5)
-        Controls.Add(Button3)
-        Controls.Add(Button2)
-        Controls.Add(Button1)
+        Controls.Add(lblTotal)
+        Controls.Add(cboProduct)
+        Controls.Add(btnConfirm)
+        Controls.Add(btnDeleteItem)
+        Controls.Add(btnEditItem)
+        Controls.Add(btnAddItem)
         Controls.Add(Label4)
-        Controls.Add(TextBox2)
+        Controls.Add(txtQty)
         Controls.Add(Label3)
-        Controls.Add(DataGridView1)
+        Controls.Add(dgvTransaction)
         Controls.Add(Label8)
         Controls.Add(Label7)
         Controls.Add(Panel1)
         Name = "Transaction"
         Text = "Form10"
         Panel1.ResumeLayout(False)
-        Panel7.ResumeLayout(False)
+        LogoutSidebar.ResumeLayout(False)
         CType(PictureBox7, ComponentModel.ISupportInitialize).EndInit()
         Panel3.ResumeLayout(False)
         CType(PictureBox3, ComponentModel.ISupportInitialize).EndInit()
         Panel2.ResumeLayout(False)
         CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
-        CType(DataGridView1, ComponentModel.ISupportInitialize).EndInit()
+        CType(dgvTransaction, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
 
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents Panel7 As Panel
+    Friend WithEvents LogoutSidebar As Panel
     Friend WithEvents PictureBox7 As PictureBox
     Friend WithEvents Label6 As Label
     Friend WithEvents Panel3 As Panel
     Friend WithEvents PictureBox3 As PictureBox
-    Friend WithEvents Label2 As Label
+    Friend WithEvents HistorySidebar As Label
     Friend WithEvents Panel2 As Panel
     Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents Label1 As Label
+    Friend WithEvents TransactionSidebar As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label7 As Label
     Friend WithEvents Label8 As Label
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents dgvTransaction As DataGridView
     Friend WithEvents Label3 As Label
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents txtQty As TextBox
     Friend WithEvents Label4 As Label
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button5 As Button
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents btnAddItem As Button
+    Friend WithEvents btnEditItem As Button
+    Friend WithEvents btnDeleteItem As Button
+    Friend WithEvents btnConfirm As Button
+    Friend WithEvents cboProduct As ComboBox
+    Friend WithEvents lblTotal As Label
 End Class
