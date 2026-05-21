@@ -1,12 +1,5 @@
-﻿''' <summary>
-''' ValidationModule — Modul terpusat untuk validasi input di seluruh aplikasi.
-''' Digunakan oleh: FormLogin, Transaction, DialogProduct, DialogStaff, DialogSupplier
-''' </summary>
-Public Module ValidationModule
+﻿Public Module ValidationModule
 
-    ' ─────────────────────────────────────────────
-    '  KONSTANTA BATAS NILAI
-    ' ─────────────────────────────────────────────
     Public Const MAX_QTY As Integer = 9999
     Public Const MIN_QTY As Integer = 1
     Public Const MAX_HARGA As Long = 999_999_999
@@ -18,55 +11,35 @@ Public Module ValidationModule
     Public Const MAX_PANJANG_TELEPON As Integer = 15
     Public Const MIN_PANJANG_TELEPON As Integer = 7
 
-    ' ─────────────────────────────────────────────
-    '  HELPER UMUM
-    ' ─────────────────────────────────────────────
-
-    ''' <summary>Tampilkan pesan peringatan standar lalu fokus ke kontrol bermasalah.</summary>
-    Public Sub TampilkanPeringatan(pesan As String,
-                                   Optional kontrol As Control = Nothing,
-                                   Optional judul As String = "Peringatan")
+    Public Sub TampilkanPeringatan(pesan As String, Optional kontrol As Control = Nothing, Optional judul As String = "Peringatan")
         MessageBox.Show(pesan, judul, MessageBoxButtons.OK, MessageBoxIcon.Warning)
         If kontrol IsNot Nothing Then kontrol.Focus()
     End Sub
 
-    ''' <summary>Kembalikan True jika teks tidak kosong dan tidak hanya spasi.</summary>
     Public Function TidakKosong(teks As String) As Boolean
         Return Not String.IsNullOrWhiteSpace(teks)
     End Function
 
-    ''' <summary>Kembalikan True jika teks adalah bilangan bulat positif (>= 1).</summary>
     Public Function AdalaAngkaPositif(teks As String) As Boolean
         Dim nilai As Integer
         Return Integer.TryParse(teks.Trim(), nilai) AndAlso nilai >= 1
     End Function
 
-    ''' <summary>Kembalikan True jika teks adalah bilangan bulat non-negatif (>= 0).</summary>
     Public Function AdalaAngkaNonNegatif(teks As String) As Boolean
         Dim nilai As Long
         Return Long.TryParse(teks.Trim(), nilai) AndAlso nilai >= 0
     End Function
 
-    ''' <summary>Kembalikan True jika teks hanya berisi digit (0–9).</summary>
     Public Function HanyaDigit(teks As String) As Boolean
         If String.IsNullOrEmpty(teks) Then Return False
         Return teks.All(Function(c) Char.IsDigit(c))
     End Function
 
-    ''' <summary>Blokir input non-digit pada event KeyPress (tidak mengizinkan koma/titik).</summary>
     Public Sub BatinHanyaDigit(e As KeyPressEventArgs)
         If Not Char.IsDigit(e.KeyChar) AndAlso Not Char.IsControl(e.KeyChar) Then
             e.Handled = True
         End If
     End Sub
-
-    ' ─────────────────────────────────────────────
-    '  VALIDASI — FORM LOGIN
-    ' ─────────────────────────────────────────────
-
-    ''' <summary>
-    ''' Validasi field login. Kembalikan True jika semua valid.
-    ''' </summary>
     ''' <param name="txtUsername">TextBox username</param>
     ''' <param name="txtPassword">TextBox password</param>
     Public Function ValidasiLogin(txtUsername As TextBox,
@@ -89,20 +62,10 @@ Public Module ValidationModule
         Return True
     End Function
 
-    ' ─────────────────────────────────────────────
-    '  VALIDASI — TRANSACTION (Tambah Item ke Keranjang)
-    ' ─────────────────────────────────────────────
-
-    ''' <summary>
-    ''' Validasi sebelum menambahkan item ke keranjang transaksi.
-    ''' Kembalikan True jika valid.
-    ''' </summary>
     ''' <param name="cboNamaProduk">ComboBox nama produk</param>
     ''' <param name="txtQty">TextBox qty</param>
     ''' <param name="stokTersedia">Stok yang ada di database</param>
-    Public Function ValidasiTambahItem(cboNamaProduk As ComboBox,
-                                       txtQty As TextBox,
-                                       stokTersedia As Integer) As Boolean
+    Public Function ValidasiTambahItem(cboNamaProduk As ComboBox, txtQty As TextBox, stokTersedia As Integer) As Boolean
         If Not TidakKosong(cboNamaProduk.Text) Then
             TampilkanPeringatan("Pilih produk terlebih dahulu.", cboNamaProduk)
             Return False
@@ -134,12 +97,7 @@ Public Module ValidationModule
         Return True
     End Function
 
-    ''' <summary>
-    ''' Validasi sebelum update qty item yang sudah ada di keranjang.
-    ''' Kembalikan True jika valid.
-    ''' </summary>
-    Public Function ValidasiUpdateItem(txtQty As TextBox,
-                                       stokTersedia As Integer) As Boolean
+    Public Function ValidasiUpdateItem(txtQty As TextBox, stokTersedia As Integer) As Boolean
         If Not TidakKosong(txtQty.Text) Then
             TampilkanPeringatan("Qty tidak boleh kosong.", txtQty)
             Return False
@@ -166,13 +124,8 @@ Public Module ValidationModule
         Return True
     End Function
 
-    ''' <summary>
-    ''' Validasi sebelum menyimpan transaksi (checkout).
-    ''' Kembalikan True jika keranjang tidak kosong.
-    ''' </summary>
     ''' <param name="jumlahBaris">Jumlah baris DataGridView (termasuk baris kosong bawaan)</param>
     Public Function ValidasiCheckout(jumlahBaris As Integer) As Boolean
-        ' DataGridView selalu memiliki 1 baris "new row" saat kosong
         If jumlahBaris <= 1 Then
             TampilkanPeringatan("Keranjang masih kosong. Tambahkan produk terlebih dahulu.",
                                 judul:="Transaksi Gagal")
@@ -181,19 +134,7 @@ Public Module ValidationModule
         Return True
     End Function
 
-    ' ─────────────────────────────────────────────
-    '  VALIDASI — DIALOG PRODUK
-    ' ─────────────────────────────────────────────
-
-    ''' <summary>
-    ''' Validasi form produk (Tambah/Edit). Kembalikan True jika semua valid.
-    ''' </summary>
-    Public Function ValidasiProduk(txtID As TextBox,
-                                   txtNama As TextBox,
-                                   txtHargaBeli As TextBox,
-                                   txtHargaJual As TextBox,
-                                   txtStokMin As TextBox) As Boolean
-        ' ── Wajib isi ──
+    Public Function ValidasiProduk(txtID As TextBox, txtNama As TextBox, txtHargaBeli As TextBox, txtHargaJual As TextBox, txtStokMin As TextBox) As Boolean
         If Not TidakKosong(txtID.Text) Then
             TampilkanPeringatan("ID Produk tidak boleh kosong.", txtID)
             Return False
@@ -246,7 +187,6 @@ Public Module ValidationModule
             Return False
         End If
 
-        ' Harga jual >= harga beli (opsional tapi umum diinginkan)
         If CLng(txtHargaJual.Text.Trim()) < CLng(txtHargaBeli.Text.Trim()) Then
             TampilkanPeringatan("Harga Jual tidak boleh lebih kecil dari Harga Beli.", txtHargaJual)
             Return False
@@ -266,18 +206,7 @@ Public Module ValidationModule
         Return True
     End Function
 
-    ' ─────────────────────────────────────────────
-    '  VALIDASI — DIALOG STAFF
-    ' ─────────────────────────────────────────────
-
-    ''' <summary>
-    ''' Validasi form staff (Tambah/Edit). Kembalikan True jika semua valid.
-    ''' </summary>
-    Public Function ValidasiStaff(txtID As TextBox,
-                                  txtNama As TextBox,
-                                  txtTelepon As MaskedTextBox,
-                                  txtGaji As TextBox,
-                                  shiftTerpilih As String) As Boolean
+    Public Function ValidasiStaff(txtID As TextBox, txtNama As TextBox, txtTelepon As MaskedTextBox, txtGaji As TextBox, shiftTerpilih As String) As Boolean
         If Not TidakKosong(txtID.Text) Then
             TampilkanPeringatan("ID Staff tidak boleh kosong.", txtID)
             Return False
@@ -339,17 +268,7 @@ Public Module ValidationModule
         Return True
     End Function
 
-    ' ─────────────────────────────────────────────
-    '  VALIDASI — DIALOG SUPPLIER
-    ' ─────────────────────────────────────────────
-
-    ''' <summary>
-    ''' Validasi form supplier (Tambah/Edit). Kembalikan True jika semua valid.
-    ''' </summary>
-    Public Function ValidasiSupplier(txtID As TextBox,
-                                     txtNama As TextBox,
-                                     txtTelepon As MaskedTextBox,
-                                     txtAlamat As TextBox) As Boolean
+    Public Function ValidasiSupplier(txtID As TextBox, txtNama As TextBox, txtTelepon As MaskedTextBox, txtAlamat As TextBox) As Boolean
         If Not TidakKosong(txtID.Text) Then
             TampilkanPeringatan("ID Supplier tidak boleh kosong.", txtID)
             Return False
@@ -394,5 +313,4 @@ Public Module ValidationModule
 
         Return True
     End Function
-
 End Module

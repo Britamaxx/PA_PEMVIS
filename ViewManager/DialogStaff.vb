@@ -52,10 +52,7 @@
     End Sub
 
     Private Sub btnKonfirmasi_Click(sender As Object, e As EventArgs) Handles btnKonfirmasi.Click
-        If Not ValidasiStaff(txtStaffID, txtStaffName,
-                             txtStaffPhone, txtNetSalary,
-                             GetShiftTerpilih()) Then Exit Sub
-
+        If Not ValidasiStaff(txtStaffID, txtStaffName, txtStaffPhone, txtNetSalary, GetShiftTerpilih()) Then Exit Sub
         Dim id As String = txtStaffID.Text.Trim()
         Dim nama As String = txtStaffName.Text.Trim()
         Dim telepon As String = txtStaffPhone.Text.Trim()

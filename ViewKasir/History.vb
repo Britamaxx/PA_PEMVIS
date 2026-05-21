@@ -89,7 +89,7 @@ Public Class History
     End Sub
 
     Private Sub HistorySidebar_Click(sender As Object, e As EventArgs) Handles HistorySidebar.Click
-        ' Sudah di halaman ini
+
     End Sub
 
     Private Sub LogoutSidebar_Click(sender As Object, e As EventArgs) Handles LogoutSidebar.Click

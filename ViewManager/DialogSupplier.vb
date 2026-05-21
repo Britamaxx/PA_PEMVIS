@@ -33,8 +33,7 @@
     End Sub
 
     Private Sub btnKonfirmasi_Click(sender As Object, e As EventArgs) Handles btnKonfirmasi.Click
-        If Not ValidasiSupplier(txtSupplierID, txtSupplierName,
-                                txtSupplierPhone, txtSupplierAddress) Then Exit Sub
+        If Not ValidasiSupplier(txtSupplierID, txtSupplierName, txtSupplierPhone, txtSupplierAddress) Then Exit Sub
 
         Dim id As String = txtSupplierID.Text.Trim()
         Dim nama As String = txtSupplierName.Text.Trim()

@@ -78,7 +78,7 @@ Public Class ProductManagement
     End Sub
 
     Private Sub ProductSidebar_Click(sender As Object, e As EventArgs) Handles ProductSidebar.Click
-        ' Sudah di halaman ini, tidak perlu navigasi
+
     End Sub
 
     Private Sub StaffSidebar_Click(sender As Object, e As EventArgs) Handles StaffSidebar.Click

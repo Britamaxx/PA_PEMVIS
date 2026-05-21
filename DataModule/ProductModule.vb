@@ -73,9 +73,7 @@ Module ProductModule
 
     Public Function UbahProduk(id As String, nama As String, stokMin As Integer, hargaBeli As Long, hargaJual As Long, kategori As String) As Boolean
         Try
-            Dim query As String = "UPDATE tbproduk SET nama_produk=@nama, stok_minimum=@stokMin, " &
-                              "harga_beli=@hargaBeli, harga_jual=@hargaJual, kategori=@kategori " &
-                              "WHERE id_produk=@id"
+            Dim query As String = "UPDATE tbproduk SET nama_produk=@nama, stok_minimum=@stokMin, " & "harga_beli=@hargaBeli, harga_jual=@hargaJual, kategori=@kategori " & "WHERE id_produk=@id"
             Using conn As MySqlConnection = GetConnection()
                 conn.Open()
                 Using cmd As New MySqlCommand(query, conn)

@@ -180,7 +180,6 @@
         Next
 
         MessageBox.Show("Transaksi pembelian berhasil disimpan", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information)
-
         dtCart.Rows.Clear()
         dgvCart.Refresh()
         cboSupplier.SelectedIndex = -1
@@ -215,7 +214,7 @@
     End Sub
 
     Private Sub StockSidebar_Click(sender As Object, e As EventArgs) Handles StockSidebar.Click
-        ' Sudah di halaman ini
+
     End Sub
 
     Private Sub LogoutSidebar_Click(sender As Object, e As EventArgs) Handles LogoutSidebar.Click

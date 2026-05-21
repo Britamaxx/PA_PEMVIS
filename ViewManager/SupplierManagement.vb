@@ -91,7 +91,7 @@ Public Class SupplierManagement
     End Sub
 
     Private Sub SupplierSidebar_Click(sender As Object, e As EventArgs) Handles SupplierSidebar.Click
-        ' Sudah di halaman ini, tidak perlu navigasi
+
     End Sub
 
     Private Sub StockSidebar_Click(sender As Object, e As EventArgs) Handles StockSidebar.Click

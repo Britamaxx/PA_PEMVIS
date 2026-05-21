@@ -81,7 +81,7 @@ Public Class StaffManagement
     End Sub
 
     Private Sub StaffSidebar_Click(sender As Object, e As EventArgs) Handles StaffSidebar.Click
-        ' Sudah di halaman ini, tidak perlu navigasi
+
     End Sub
 
     Private Sub SupplierSidebar_Click(sender As Object, e As EventArgs) Handles SupplierSidebar.Click

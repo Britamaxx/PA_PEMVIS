@@ -191,10 +191,7 @@ Public Class Transaction
 
                 Try
                     Dim idPenjualan As String = GenerateIDPenjualan()
-
-                    Dim cmdPenjualan As New MySqlCommand(
-                        "INSERT INTO tbtransaksi_penjualan VALUES (@id, @tanggal, @karyawan, @total, @bayar, @kembalian)",
-                        conn, transaksi)
+                    Dim cmdPenjualan As New MySqlCommand("INSERT INTO tbtransaksi_penjualan VALUES (@id, @tanggal, @karyawan, @total, @bayar, @kembalian)", conn, transaksi)
                     cmdPenjualan.Parameters.AddWithValue("@id", idPenjualan)
                     cmdPenjualan.Parameters.AddWithValue("@tanggal", Date.Now)
                     cmdPenjualan.Parameters.AddWithValue("@karyawan", SessionInfo.IDKaryawan)
@@ -203,7 +200,6 @@ Public Class Transaction
                     cmdPenjualan.Parameters.AddWithValue("@kembalian", 0)
                     cmdPenjualan.ExecuteNonQuery()
 
-                    ' Simpan detail dan update stok
                     Dim nomor As Integer = 1
                     For Each row As DataGridViewRow In dgvTransaction.Rows
                         If row.IsNewRow Then Continue For
@@ -238,7 +234,6 @@ Public Class Transaction
                     transaksi.Commit()
                     MessageBox.Show("Transaksi berhasil disimpan", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information)
 
-                    ' Reset form
                     dgvTransaction.Rows.Clear()
                     cboProduct.SelectedIndex = -1
                     txtQty.Clear()
