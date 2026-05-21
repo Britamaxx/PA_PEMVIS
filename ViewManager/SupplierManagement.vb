@@ -109,4 +109,26 @@ Public Class SupplierManagement
             Me.Close()
         End If
     End Sub
+
+    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
+        Dim f As New ProductManagement()
+        f.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
+        Dim f As New StockSupplying()
+        f.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub Label6_Click(sender As Object, e As EventArgs) Handles Label6.Click
+        Dim hasil As DialogResult = MessageBox.Show("Yakin ingin logout?", "Konfirmasi", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+        If hasil = DialogResult.Yes Then
+            SessionInfo.ClearSession()
+            Dim f As New FormLogin()
+            f.Show()
+            Me.Close()
+        End If
+    End Sub
 End Class

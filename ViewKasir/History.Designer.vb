@@ -90,10 +90,10 @@ Partial Class History
         Label6.ForeColor = Color.Red
         Label6.Location = New Point(3, 0)
         Label6.Name = "Label6"
+        Label6.Padding = New Padding(90, 0, 0, 0)
         Label6.Size = New Size(294, 44)
         Label6.TabIndex = 1
         Label6.Text = "Logout"
-        Label6.TextAlign = ContentAlignment.TopCenter
         ' 
         ' HistorySidebar
         ' 
@@ -116,12 +116,12 @@ Partial Class History
         ' 
         ' Label2
         ' 
-        Label2.AutoSize = True
-        Label2.Font = New Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label2.Font = New Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label2.ForeColor = Color.White
-        Label2.Location = New Point(87, 6)
+        Label2.Location = New Point(3, 6)
         Label2.Name = "Label2"
-        Label2.Size = New Size(105, 38)
+        Label2.Padding = New Padding(90, 0, 0, 0)
+        Label2.Size = New Size(294, 38)
         Label2.TabIndex = 1
         Label2.Text = "History"
         ' 
@@ -146,12 +146,12 @@ Partial Class History
         ' 
         ' TransactionSidebar
         ' 
-        TransactionSidebar.AutoSize = True
         TransactionSidebar.Font = New Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         TransactionSidebar.ForeColor = Color.White
-        TransactionSidebar.Location = New Point(87, 6)
+        TransactionSidebar.Location = New Point(3, 6)
         TransactionSidebar.Name = "TransactionSidebar"
-        TransactionSidebar.Size = New Size(157, 38)
+        TransactionSidebar.Padding = New Padding(90, 0, 0, 0)
+        TransactionSidebar.Size = New Size(294, 38)
         TransactionSidebar.TabIndex = 1
         TransactionSidebar.Text = "Transaction"
         ' 
@@ -259,10 +259,8 @@ Partial Class History
         LogoutSidebar.ResumeLayout(False)
         CType(PictureBox7, ComponentModel.ISupportInitialize).EndInit()
         HistorySidebar.ResumeLayout(False)
-        HistorySidebar.PerformLayout()
         CType(PictureBox3, ComponentModel.ISupportInitialize).EndInit()
         Panel2.ResumeLayout(False)
-        Panel2.PerformLayout()
         CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         CType(dgvHistory, ComponentModel.ISupportInitialize).EndInit()

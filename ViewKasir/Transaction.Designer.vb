@@ -96,10 +96,10 @@ Partial Class Transaction
         Label6.ForeColor = Color.Red
         Label6.Location = New Point(0, 6)
         Label6.Name = "Label6"
+        Label6.Padding = New Padding(90, 0, 0, 0)
         Label6.Size = New Size(297, 38)
         Label6.TabIndex = 1
         Label6.Text = "Logout"
-        Label6.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' Panel3
         ' 
@@ -126,10 +126,10 @@ Partial Class Transaction
         HistorySidebar.ForeColor = Color.White
         HistorySidebar.Location = New Point(3, 6)
         HistorySidebar.Name = "HistorySidebar"
+        HistorySidebar.Padding = New Padding(90, 0, 0, 0)
         HistorySidebar.Size = New Size(297, 38)
         HistorySidebar.TabIndex = 1
         HistorySidebar.Text = "History"
-        HistorySidebar.TextAlign = ContentAlignment.TopCenter
         ' 
         ' Panel2
         ' 
@@ -152,14 +152,14 @@ Partial Class Transaction
         ' 
         ' TransactionSidebar
         ' 
-        TransactionSidebar.Font = New Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        TransactionSidebar.Font = New Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         TransactionSidebar.ForeColor = Color.White
         TransactionSidebar.Location = New Point(3, 6)
         TransactionSidebar.Name = "TransactionSidebar"
+        TransactionSidebar.Padding = New Padding(90, 0, 0, 0)
         TransactionSidebar.Size = New Size(294, 38)
         TransactionSidebar.TabIndex = 1
         TransactionSidebar.Text = "Transaction"
-        TransactionSidebar.TextAlign = ContentAlignment.TopCenter
         ' 
         ' PictureBox1
         ' 
@@ -295,6 +295,9 @@ Partial Class Transaction
         lblTotal.Size = New Size(63, 28)
         lblTotal.TabIndex = 37
         lblTotal.Text = "Total :"
+        ' 
+        ' PrintDocument1
+        ' 
         ' 
         ' PrintPreviewDialog1
         ' 

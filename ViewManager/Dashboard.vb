@@ -2,6 +2,7 @@
 
     Private Sub Dashboard_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         TampilDashboard()
+        Label1.Text = SessionInfo.NamaKaryawan
     End Sub
 
     Private Sub TampilDashboard()

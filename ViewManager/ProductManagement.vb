@@ -5,7 +5,7 @@ Public Class ProductManagement
 
     Private Sub TampilData()
         dgvProduk.DataSource = GetAllProduk()
-        dgvProduk.Columns("id_produk").Visible = False
+        dgvProduk.Columns("id_produk").Visible = True
     End Sub
 
     Private Sub ProductManagement_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -100,6 +100,22 @@ Public Class ProductManagement
     End Sub
 
     Private Sub LogoutSidebar_Click(sender As Object, e As EventArgs) Handles LogoutSidebar.Click
+        Dim hasil As DialogResult = MessageBox.Show("Yakin ingin logout?", "Konfirmasi", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+        If hasil = DialogResult.Yes Then
+            SessionInfo.ClearSession()
+            Dim f As New FormLogin()
+            f.Show()
+            Me.Close()
+        End If
+    End Sub
+
+    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
+        Dim f As New StaffManagement()
+        f.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub Label6_Click(sender As Object, e As EventArgs) Handles Label6.Click
         Dim hasil As DialogResult = MessageBox.Show("Yakin ingin logout?", "Konfirmasi", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
         If hasil = DialogResult.Yes Then
             SessionInfo.ClearSession()

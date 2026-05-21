@@ -105,4 +105,10 @@ Public Class StaffManagement
             Me.Close()
         End If
     End Sub
+
+    Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
+        Dim f As New StockSupplying()
+        f.Show()
+        Me.Hide()
+    End Sub
 End Class

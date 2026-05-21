@@ -61,9 +61,9 @@ Partial Class Dashboard
         PictureBox11 = New PictureBox()
         Label15 = New Label()
         PictureBox12 = New PictureBox()
-        TextBox1 = New TextBox()
         dgvTopSelling = New DataGridView()
         Label16 = New Label()
+        Label1 = New Label()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         Panel1.SuspendLayout()
         Panel7.SuspendLayout()
@@ -170,10 +170,11 @@ Partial Class Dashboard
         StockSidebar.ForeColor = Color.White
         StockSidebar.Location = New Point(3, 7)
         StockSidebar.Name = "StockSidebar"
+        StockSidebar.Padding = New Padding(88, 0, 0, 0)
         StockSidebar.Size = New Size(294, 42)
         StockSidebar.TabIndex = 1
         StockSidebar.Text = "Stock"
-        StockSidebar.TextAlign = ContentAlignment.MiddleCenter
+        StockSidebar.TextAlign = ContentAlignment.MiddleLeft
         ' 
         ' Panel5
         ' 
@@ -230,10 +231,11 @@ Partial Class Dashboard
         StaffSidebar.ForeColor = Color.White
         StaffSidebar.Location = New Point(3, 7)
         StaffSidebar.Name = "StaffSidebar"
+        StaffSidebar.Padding = New Padding(88, 0, 0, 0)
         StaffSidebar.Size = New Size(294, 42)
         StaffSidebar.TabIndex = 1
         StaffSidebar.Text = "Staff"
-        StaffSidebar.TextAlign = ContentAlignment.MiddleCenter
+        StaffSidebar.TextAlign = ContentAlignment.MiddleLeft
         ' 
         ' Panel3
         ' 
@@ -258,9 +260,9 @@ Partial Class Dashboard
         ' 
         ProductSidebar.Font = New Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         ProductSidebar.ForeColor = Color.White
-        ProductSidebar.Location = New Point(92, 8)
+        ProductSidebar.Location = New Point(3, 8)
         ProductSidebar.Name = "ProductSidebar"
-        ProductSidebar.Size = New Size(159, 37)
+        ProductSidebar.Size = New Size(294, 37)
         ProductSidebar.TabIndex = 1
         ProductSidebar.Text = "Product"
         ProductSidebar.TextAlign = ContentAlignment.MiddleCenter
@@ -333,9 +335,9 @@ Partial Class Dashboard
         Label10.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label10.Location = New Point(30, 165)
         Label10.Name = "Label10"
-        Label10.Size = New Size(91, 32)
+        Label10.Size = New Size(163, 32)
         Label10.TabIndex = 7
-        Label10.Text = "Rp xxx"
+        Label10.Text = "Today's Sales"
         ' 
         ' lblTodaySales
         ' 
@@ -344,9 +346,9 @@ Partial Class Dashboard
         lblTodaySales.ForeColor = Color.FromArgb(CByte(3), CByte(118), CByte(87))
         lblTodaySales.Location = New Point(30, 93)
         lblTodaySales.Name = "lblTodaySales"
-        lblTodaySales.Size = New Size(163, 32)
+        lblTodaySales.Size = New Size(91, 32)
         lblTodaySales.TabIndex = 7
-        lblTodaySales.Text = "Today's Sales"
+        lblTodaySales.Text = "Rp xxx"
         ' 
         ' PictureBox8
         ' 
@@ -375,9 +377,9 @@ Partial Class Dashboard
         Label11.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label11.Location = New Point(30, 165)
         Label11.Name = "Label11"
-        Label11.Size = New Size(91, 32)
+        Label11.Size = New Size(127, 32)
         Label11.TabIndex = 7
-        Label11.Text = "Rp xxx"
+        Label11.Text = "Net Profit"
         ' 
         ' lblNetProfit
         ' 
@@ -386,9 +388,9 @@ Partial Class Dashboard
         lblNetProfit.ForeColor = Color.FromArgb(CByte(3), CByte(118), CByte(87))
         lblNetProfit.Location = New Point(30, 93)
         lblNetProfit.Name = "lblNetProfit"
-        lblNetProfit.Size = New Size(127, 32)
+        lblNetProfit.Size = New Size(91, 32)
         lblNetProfit.TabIndex = 7
-        lblNetProfit.Text = "Net Profit"
+        lblNetProfit.Text = "Rp xxx"
         ' 
         ' PictureBox9
         ' 
@@ -417,9 +419,9 @@ Partial Class Dashboard
         Label13.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label13.Location = New Point(30, 165)
         Label13.Name = "Label13"
-        Label13.Size = New Size(53, 32)
+        Label13.Size = New Size(222, 32)
         Label13.TabIndex = 7
-        Label13.Text = "xxx"
+        Label13.Text = "Transaction Count"
         ' 
         ' lblTransactionCount
         ' 
@@ -428,9 +430,9 @@ Partial Class Dashboard
         lblTransactionCount.ForeColor = Color.FromArgb(CByte(3), CByte(118), CByte(87))
         lblTransactionCount.Location = New Point(30, 93)
         lblTransactionCount.Name = "lblTransactionCount"
-        lblTransactionCount.Size = New Size(222, 32)
+        lblTransactionCount.Size = New Size(53, 32)
         lblTransactionCount.TabIndex = 7
-        lblTransactionCount.Text = "Transaction Count"
+        lblTransactionCount.Text = "xxx"
         ' 
         ' PictureBox10
         ' 
@@ -483,15 +485,6 @@ Partial Class Dashboard
         PictureBox12.TabIndex = 10
         PictureBox12.TabStop = False
         ' 
-        ' TextBox1
-        ' 
-        TextBox1.ForeColor = SystemColors.ControlDark
-        TextBox1.Location = New Point(1073, 28)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(293, 31)
-        TextBox1.TabIndex = 11
-        TextBox1.Text = "Search..."
-        ' 
         ' dgvTopSelling
         ' 
         dgvTopSelling.BackgroundColor = Color.White
@@ -513,15 +506,26 @@ Partial Class Dashboard
         Label16.TabIndex = 13
         Label16.Text = "Top-Selling Products"
         ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label1.ForeColor = Color.FromArgb(CByte(3), CByte(118), CByte(87))
+        Label1.Location = New Point(1069, 27)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(53, 32)
+        Label1.TabIndex = 14
+        Label1.Text = "xxx"
+        ' 
         ' Dashboard
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.Control
         ClientSize = New Size(1393, 838)
+        Controls.Add(Label1)
         Controls.Add(Label16)
         Controls.Add(dgvTopSelling)
-        Controls.Add(TextBox1)
         Controls.Add(PictureBox12)
         Controls.Add(Label15)
         Controls.Add(PictureBox11)
@@ -603,7 +607,7 @@ Partial Class Dashboard
     Friend WithEvents PictureBox11 As PictureBox
     Friend WithEvents Label15 As Label
     Friend WithEvents PictureBox12 As PictureBox
-    Friend WithEvents TextBox1 As TextBox
     Friend WithEvents dgvTopSelling As DataGridView
     Friend WithEvents Label16 As Label
+    Friend WithEvents Label1 As Label
 End Class

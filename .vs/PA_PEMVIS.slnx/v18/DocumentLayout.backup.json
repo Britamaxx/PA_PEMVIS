@@ -3,20 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\VECTOR\\OneDrive\\Documents\\GitHub\\PA_PEMVIS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|c:\\users\\vector\\onedrive\\documents\\github\\pa_pemvis\\viewkasir\\transaction.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:viewkasir\\transaction.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|c:\\users\\vector\\onedrive\\documents\\github\\pa_pemvis\\viewmanager\\dashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:viewmanager\\dashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|c:\\users\\vector\\onedrive\\documents\\github\\pa_pemvis\\viewkasir\\transaction.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:viewkasir\\transaction.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|c:\\users\\vector\\onedrive\\documents\\github\\pa_pemvis\\viewmanager\\dashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:viewmanager\\dashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|c:\\users\\vector\\onedrive\\documents\\github\\pa_pemvis\\viewkasir\\history.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:viewkasir\\history.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|c:\\users\\vector\\onedrive\\documents\\github\\pa_pemvis\\viewmanager\\productmanagement.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:viewmanager\\productmanagement.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|c:\\users\\vector\\onedrive\\documents\\github\\pa_pemvis\\viewkasir\\history.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:viewkasir\\history.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|c:\\users\\vector\\onedrive\\documents\\github\\pa_pemvis\\viewmanager\\staffmanagement.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:viewmanager\\staffmanagement.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|c:\\users\\vector\\onedrive\\documents\\github\\pa_pemvis\\viewmanager\\stocksupplying.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:viewmanager\\stocksupplying.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|c:\\users\\vector\\onedrive\\documents\\github\\pa_pemvis\\viewmanager\\suppliermanagement.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:viewmanager\\suppliermanagement.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|c:\\users\\vector\\onedrive\\documents\\github\\pa_pemvis\\viewmanager\\productmanagement.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:viewmanager\\productmanagement.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|c:\\users\\vector\\onedrive\\documents\\github\\pa_pemvis\\viewmanager\\stocksupplying.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:viewmanager\\stocksupplying.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|c:\\users\\vector\\onedrive\\documents\\github\\pa_pemvis\\viewmanager\\suppliermanagement.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:viewmanager\\suppliermanagement.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|c:\\users\\vector\\onedrive\\documents\\github\\pa_pemvis\\viewmanager\\staffmanagement.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{149CCCCE-0DCD-C09D-2B63-191F9804B2DC}|PA_PEMVIS.vbproj|solutionrelative:viewmanager\\staffmanagement.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,53 +62,128 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "History.vb",
-              "DocumentMoniker": "C:\\Users\\VECTOR\\OneDrive\\Documents\\GitHub\\PA_PEMVIS\\ViewKasir\\History.vb",
-              "RelativeDocumentMoniker": "ViewKasir\\History.vb",
-              "ToolTip": "C:\\Users\\VECTOR\\OneDrive\\Documents\\GitHub\\PA_PEMVIS\\ViewKasir\\History.vb",
-              "RelativeToolTip": "ViewKasir\\History.vb",
-              "ViewState": "AgIAAFgAAAAAAAAAAAAMwGoAAAAYAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Dashboard.vb",
+              "DocumentMoniker": "C:\\Users\\VECTOR\\OneDrive\\Documents\\GitHub\\PA_PEMVIS\\ViewManager\\Dashboard.vb",
+              "RelativeDocumentMoniker": "ViewManager\\Dashboard.vb",
+              "ToolTip": "C:\\Users\\VECTOR\\OneDrive\\Documents\\GitHub\\PA_PEMVIS\\ViewManager\\Dashboard.vb",
+              "RelativeToolTip": "ViewManager\\Dashboard.vb",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAQwAMAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-05-21T13:31:03.044Z",
+              "WhenOpened": "2026-05-21T14:53:57.815Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "History.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\VECTOR\\OneDrive\\Documents\\GitHub\\PA_PEMVIS\\ViewKasir\\History.vb",
-              "RelativeDocumentMoniker": "ViewKasir\\History.vb",
-              "ToolTip": "C:\\Users\\VECTOR\\OneDrive\\Documents\\GitHub\\PA_PEMVIS\\ViewKasir\\History.vb [Design]",
-              "RelativeToolTip": "ViewKasir\\History.vb [Design]",
+              "DocumentIndex": 7,
+              "Title": "StockSupplying.vb",
+              "DocumentMoniker": "C:\\Users\\VECTOR\\OneDrive\\Documents\\GitHub\\PA_PEMVIS\\ViewManager\\StockSupplying.vb",
+              "RelativeDocumentMoniker": "ViewManager\\StockSupplying.vb",
+              "ToolTip": "C:\\Users\\VECTOR\\OneDrive\\Documents\\GitHub\\PA_PEMVIS\\ViewManager\\StockSupplying.vb",
+              "RelativeToolTip": "ViewManager\\StockSupplying.vb",
+              "ViewState": "AgIAAM8AAAAAAAAAAAAkwOIAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-05-21T13:29:55.391Z",
+              "WhenOpened": "2026-05-21T14:45:20.738Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SupplierManagement.vb",
+              "DocumentMoniker": "C:\\Users\\VECTOR\\OneDrive\\Documents\\GitHub\\PA_PEMVIS\\ViewManager\\SupplierManagement.vb",
+              "RelativeDocumentMoniker": "ViewManager\\SupplierManagement.vb",
+              "ToolTip": "C:\\Users\\VECTOR\\OneDrive\\Documents\\GitHub\\PA_PEMVIS\\ViewManager\\SupplierManagement.vb",
+              "RelativeToolTip": "ViewManager\\SupplierManagement.vb",
+              "ViewState": "AgIAAHAAAAAAAAAAAAAQwIMAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-21T14:37:26.542Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "StaffManagement.vb",
+              "DocumentMoniker": "C:\\Users\\VECTOR\\OneDrive\\Documents\\GitHub\\PA_PEMVIS\\ViewManager\\StaffManagement.vb",
+              "RelativeDocumentMoniker": "ViewManager\\StaffManagement.vb",
+              "ToolTip": "C:\\Users\\VECTOR\\OneDrive\\Documents\\GitHub\\PA_PEMVIS\\ViewManager\\StaffManagement.vb",
+              "RelativeToolTip": "ViewManager\\StaffManagement.vb",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAQwGMAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-21T14:35:49.818Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProductManagement.vb",
+              "DocumentMoniker": "C:\\Users\\VECTOR\\OneDrive\\Documents\\GitHub\\PA_PEMVIS\\ViewManager\\ProductManagement.vb",
+              "RelativeDocumentMoniker": "ViewManager\\ProductManagement.vb",
+              "ToolTip": "C:\\Users\\VECTOR\\OneDrive\\Documents\\GitHub\\PA_PEMVIS\\ViewManager\\ProductManagement.vb",
+              "RelativeToolTip": "ViewManager\\ProductManagement.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-21T14:30:54.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SupplierManagement.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\VECTOR\\OneDrive\\Documents\\GitHub\\PA_PEMVIS\\ViewManager\\SupplierManagement.vb",
+              "RelativeDocumentMoniker": "ViewManager\\SupplierManagement.vb",
+              "ToolTip": "C:\\Users\\VECTOR\\OneDrive\\Documents\\GitHub\\PA_PEMVIS\\ViewManager\\SupplierManagement.vb [Design]",
+              "RelativeToolTip": "ViewManager\\SupplierManagement.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-21T14:29:11.088Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Transaction.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\VECTOR\\OneDrive\\Documents\\GitHub\\PA_PEMVIS\\ViewKasir\\Transaction.vb",
-              "RelativeDocumentMoniker": "ViewKasir\\Transaction.vb",
-              "ToolTip": "C:\\Users\\VECTOR\\OneDrive\\Documents\\GitHub\\PA_PEMVIS\\ViewKasir\\Transaction.vb [Design]*",
-              "RelativeToolTip": "ViewKasir\\Transaction.vb [Design]*",
+              "DocumentIndex": 4,
+              "Title": "StockSupplying.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\VECTOR\\OneDrive\\Documents\\GitHub\\PA_PEMVIS\\ViewManager\\StockSupplying.vb",
+              "RelativeDocumentMoniker": "ViewManager\\StockSupplying.vb",
+              "ToolTip": "C:\\Users\\VECTOR\\OneDrive\\Documents\\GitHub\\PA_PEMVIS\\ViewManager\\StockSupplying.vb [Design]",
+              "RelativeToolTip": "ViewManager\\StockSupplying.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-05-21T13:20:00.784Z",
+              "WhenOpened": "2026-05-21T14:28:24.934Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StaffManagement.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\VECTOR\\OneDrive\\Documents\\GitHub\\PA_PEMVIS\\ViewManager\\StaffManagement.vb",
+              "RelativeDocumentMoniker": "ViewManager\\StaffManagement.vb",
+              "ToolTip": "C:\\Users\\VECTOR\\OneDrive\\Documents\\GitHub\\PA_PEMVIS\\ViewManager\\StaffManagement.vb [Design]",
+              "RelativeToolTip": "ViewManager\\StaffManagement.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-21T14:26:31.137Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductManagement.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\VECTOR\\OneDrive\\Documents\\GitHub\\PA_PEMVIS\\ViewManager\\ProductManagement.vb",
+              "RelativeDocumentMoniker": "ViewManager\\ProductManagement.vb",
+              "ToolTip": "C:\\Users\\VECTOR\\OneDrive\\Documents\\GitHub\\PA_PEMVIS\\ViewManager\\ProductManagement.vb [Design]",
+              "RelativeToolTip": "ViewManager\\ProductManagement.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-21T14:22:53.561Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Transaction.vb",
-              "DocumentMoniker": "C:\\Users\\VECTOR\\OneDrive\\Documents\\GitHub\\PA_PEMVIS\\ViewKasir\\Transaction.vb",
-              "RelativeDocumentMoniker": "ViewKasir\\Transaction.vb",
-              "ToolTip": "C:\\Users\\VECTOR\\OneDrive\\Documents\\GitHub\\PA_PEMVIS\\ViewKasir\\Transaction.vb*",
-              "RelativeToolTip": "ViewKasir\\Transaction.vb*",
-              "ViewState": "AgIAADoBAAAAAAAAAAAMwPAAAAAAAAAAAAAAAA==",
+              "Title": "Dashboard.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\VECTOR\\OneDrive\\Documents\\GitHub\\PA_PEMVIS\\ViewManager\\Dashboard.vb",
+              "RelativeDocumentMoniker": "ViewManager\\Dashboard.vb",
+              "ToolTip": "C:\\Users\\VECTOR\\OneDrive\\Documents\\GitHub\\PA_PEMVIS\\ViewManager\\Dashboard.vb [Design]",
+              "RelativeToolTip": "ViewManager\\Dashboard.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-05-20T02:39:41.494Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-21T14:02:17.303Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

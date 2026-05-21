@@ -103,7 +103,12 @@ Public Class History
     End Sub
 
     Private Sub Label6_Click(sender As Object, e As EventArgs) Handles Label6.Click
-        Me.Close()
-        FormLogin.Show()
+        Dim hasil As DialogResult = MessageBox.Show("Yakin ingin logout?", "Konfirmasi", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+        If hasil = DialogResult.Yes Then
+            SessionInfo.ClearSession()
+            Dim f As New FormLogin()
+            f.Show()
+            Me.Close()
+        End If
     End Sub
 End Class

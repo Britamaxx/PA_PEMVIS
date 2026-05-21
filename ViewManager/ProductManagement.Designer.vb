@@ -106,12 +106,12 @@ Partial Class ProductManagement
         ' 
         ' Label6
         ' 
-        Label6.AutoSize = True
         Label6.Font = New Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label6.ForeColor = Color.Red
-        Label6.Location = New Point(87, 6)
+        Label6.Location = New Point(3, 6)
         Label6.Name = "Label6"
-        Label6.Size = New Size(103, 38)
+        Label6.Padding = New Padding(90, 0, 0, 0)
+        Label6.Size = New Size(294, 38)
         Label6.TabIndex = 1
         Label6.Text = "Logout"
         ' 
@@ -136,12 +136,12 @@ Partial Class ProductManagement
         ' 
         ' StockSidebar
         ' 
-        StockSidebar.AutoSize = True
         StockSidebar.Font = New Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         StockSidebar.ForeColor = Color.White
-        StockSidebar.Location = New Point(87, 6)
+        StockSidebar.Location = New Point(3, 6)
         StockSidebar.Name = "StockSidebar"
-        StockSidebar.Size = New Size(83, 38)
+        StockSidebar.Padding = New Padding(90, 0, 0, 0)
+        StockSidebar.Size = New Size(294, 38)
         StockSidebar.TabIndex = 1
         StockSidebar.Text = "Stock"
         ' 
@@ -166,12 +166,12 @@ Partial Class ProductManagement
         ' 
         ' SupplierSidebar
         ' 
-        SupplierSidebar.AutoSize = True
         SupplierSidebar.Font = New Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         SupplierSidebar.ForeColor = Color.White
-        SupplierSidebar.Location = New Point(87, 6)
+        SupplierSidebar.Location = New Point(3, 6)
         SupplierSidebar.Name = "SupplierSidebar"
-        SupplierSidebar.Size = New Size(119, 38)
+        SupplierSidebar.Padding = New Padding(90, 0, 0, 0)
+        SupplierSidebar.Size = New Size(294, 38)
         SupplierSidebar.TabIndex = 1
         SupplierSidebar.Text = "Supplier"
         ' 
@@ -196,12 +196,12 @@ Partial Class ProductManagement
         ' 
         ' Label3
         ' 
-        Label3.AutoSize = True
         Label3.Font = New Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label3.ForeColor = Color.White
-        Label3.Location = New Point(87, 6)
+        Label3.Location = New Point(3, 6)
         Label3.Name = "Label3"
-        Label3.Size = New Size(72, 38)
+        Label3.Padding = New Padding(90, 0, 0, 0)
+        Label3.Size = New Size(294, 38)
         Label3.TabIndex = 1
         Label3.Text = "Staff"
         ' 
@@ -226,12 +226,12 @@ Partial Class ProductManagement
         ' 
         ' ProductSidebar
         ' 
-        ProductSidebar.AutoSize = True
         ProductSidebar.Font = New Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         ProductSidebar.ForeColor = Color.White
-        ProductSidebar.Location = New Point(87, 6)
+        ProductSidebar.Location = New Point(3, 6)
         ProductSidebar.Name = "ProductSidebar"
-        ProductSidebar.Size = New Size(120, 38)
+        ProductSidebar.Padding = New Padding(90, 0, 0, 0)
+        ProductSidebar.Size = New Size(294, 38)
         ProductSidebar.TabIndex = 1
         ProductSidebar.Text = "Product"
         ' 
@@ -256,12 +256,12 @@ Partial Class ProductManagement
         ' 
         ' DashboardSidebar
         ' 
-        DashboardSidebar.AutoSize = True
         DashboardSidebar.Font = New Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         DashboardSidebar.ForeColor = Color.White
-        DashboardSidebar.Location = New Point(87, 6)
+        DashboardSidebar.Location = New Point(3, 6)
         DashboardSidebar.Name = "DashboardSidebar"
-        DashboardSidebar.Size = New Size(151, 38)
+        DashboardSidebar.Padding = New Padding(90, 0, 0, 0)
+        DashboardSidebar.Size = New Size(294, 38)
         DashboardSidebar.TabIndex = 1
         DashboardSidebar.Text = "Dashboard"
         ' 
@@ -279,10 +279,10 @@ Partial Class ProductManagement
         ' 
         dgvProduk.BackgroundColor = Color.White
         dgvProduk.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        dgvProduk.Location = New Point(317, 137)
+        dgvProduk.Location = New Point(317, 152)
         dgvProduk.Name = "dgvProduk"
         dgvProduk.RowHeadersWidth = 62
-        dgvProduk.Size = New Size(1049, 695)
+        dgvProduk.Size = New Size(1049, 680)
         dgvProduk.TabIndex = 3
         ' 
         ' Label7
@@ -393,22 +393,16 @@ Partial Class ProductManagement
         Text = "Form3"
         Panel1.ResumeLayout(False)
         LogoutSidebar.ResumeLayout(False)
-        LogoutSidebar.PerformLayout()
         CType(PictureBox7, ComponentModel.ISupportInitialize).EndInit()
         Panel6.ResumeLayout(False)
-        Panel6.PerformLayout()
         CType(PictureBox6, ComponentModel.ISupportInitialize).EndInit()
         Panel5.ResumeLayout(False)
-        Panel5.PerformLayout()
         CType(PictureBox5, ComponentModel.ISupportInitialize).EndInit()
         StaffSidebar.ResumeLayout(False)
-        StaffSidebar.PerformLayout()
         CType(PictureBox4, ComponentModel.ISupportInitialize).EndInit()
         Panel3.ResumeLayout(False)
-        Panel3.PerformLayout()
         CType(PictureBox3, ComponentModel.ISupportInitialize).EndInit()
         Panel2.ResumeLayout(False)
-        Panel2.PerformLayout()
         CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         CType(dgvProduk, ComponentModel.ISupportInitialize).EndInit()

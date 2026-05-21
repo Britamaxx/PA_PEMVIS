@@ -115,12 +115,12 @@ Partial Class StockSupplying
         ' 
         ' LogoutSidebar
         ' 
-        LogoutSidebar.AutoSize = True
         LogoutSidebar.Font = New Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         LogoutSidebar.ForeColor = Color.Red
-        LogoutSidebar.Location = New Point(87, 6)
+        LogoutSidebar.Location = New Point(0, 6)
         LogoutSidebar.Name = "LogoutSidebar"
-        LogoutSidebar.Size = New Size(103, 38)
+        LogoutSidebar.Padding = New Padding(90, 0, 0, 0)
+        LogoutSidebar.Size = New Size(297, 38)
         LogoutSidebar.TabIndex = 1
         LogoutSidebar.Text = "Logout"
         ' 
@@ -145,12 +145,12 @@ Partial Class StockSupplying
         ' 
         ' StockSidebar
         ' 
-        StockSidebar.AutoSize = True
         StockSidebar.Font = New Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         StockSidebar.ForeColor = Color.White
-        StockSidebar.Location = New Point(87, 6)
+        StockSidebar.Location = New Point(3, 6)
         StockSidebar.Name = "StockSidebar"
-        StockSidebar.Size = New Size(89, 38)
+        StockSidebar.Padding = New Padding(90, 0, 0, 0)
+        StockSidebar.Size = New Size(294, 38)
         StockSidebar.TabIndex = 1
         StockSidebar.Text = "Stock"
         ' 
@@ -175,12 +175,12 @@ Partial Class StockSupplying
         ' 
         ' SupplierSidebar
         ' 
-        SupplierSidebar.AutoSize = True
         SupplierSidebar.Font = New Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         SupplierSidebar.ForeColor = Color.White
-        SupplierSidebar.Location = New Point(87, 6)
+        SupplierSidebar.Location = New Point(3, 6)
         SupplierSidebar.Name = "SupplierSidebar"
-        SupplierSidebar.Size = New Size(119, 38)
+        SupplierSidebar.Padding = New Padding(90, 0, 0, 0)
+        SupplierSidebar.Size = New Size(294, 38)
         SupplierSidebar.TabIndex = 1
         SupplierSidebar.Text = "Supplier"
         ' 
@@ -205,12 +205,12 @@ Partial Class StockSupplying
         ' 
         ' StaffSidebar
         ' 
-        StaffSidebar.AutoSize = True
         StaffSidebar.Font = New Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         StaffSidebar.ForeColor = Color.White
-        StaffSidebar.Location = New Point(87, 6)
+        StaffSidebar.Location = New Point(3, 6)
         StaffSidebar.Name = "StaffSidebar"
-        StaffSidebar.Size = New Size(72, 38)
+        StaffSidebar.Padding = New Padding(90, 0, 0, 0)
+        StaffSidebar.Size = New Size(294, 38)
         StaffSidebar.TabIndex = 1
         StaffSidebar.Text = "Staff"
         ' 
@@ -235,12 +235,12 @@ Partial Class StockSupplying
         ' 
         ' ProductSidebar
         ' 
-        ProductSidebar.AutoSize = True
         ProductSidebar.Font = New Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         ProductSidebar.ForeColor = Color.White
-        ProductSidebar.Location = New Point(87, 6)
+        ProductSidebar.Location = New Point(3, 6)
         ProductSidebar.Name = "ProductSidebar"
-        ProductSidebar.Size = New Size(113, 38)
+        ProductSidebar.Padding = New Padding(90, 0, 0, 0)
+        ProductSidebar.Size = New Size(294, 38)
         ProductSidebar.TabIndex = 1
         ProductSidebar.Text = "Product"
         ' 
@@ -265,12 +265,12 @@ Partial Class StockSupplying
         ' 
         ' DashboardSidebar
         ' 
-        DashboardSidebar.AutoSize = True
         DashboardSidebar.Font = New Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         DashboardSidebar.ForeColor = Color.White
-        DashboardSidebar.Location = New Point(87, 6)
+        DashboardSidebar.Location = New Point(3, 6)
         DashboardSidebar.Name = "DashboardSidebar"
-        DashboardSidebar.Size = New Size(151, 38)
+        DashboardSidebar.Padding = New Padding(90, 0, 0, 0)
+        DashboardSidebar.Size = New Size(294, 38)
         DashboardSidebar.TabIndex = 1
         DashboardSidebar.Text = "Dashboard"
         ' 
@@ -309,10 +309,10 @@ Partial Class StockSupplying
         ' 
         dgvProduk.BackgroundColor = Color.White
         dgvProduk.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        dgvProduk.Location = New Point(319, 193)
+        dgvProduk.Location = New Point(319, 206)
         dgvProduk.Name = "dgvProduk"
         dgvProduk.RowHeadersWidth = 62
-        dgvProduk.Size = New Size(450, 581)
+        dgvProduk.Size = New Size(450, 568)
         dgvProduk.TabIndex = 19
         ' 
         ' cboSupplier
@@ -475,22 +475,16 @@ Partial Class StockSupplying
         Text = "Form9"
         Panel1.ResumeLayout(False)
         Panel7.ResumeLayout(False)
-        Panel7.PerformLayout()
         CType(PictureBox7, ComponentModel.ISupportInitialize).EndInit()
         Panel6.ResumeLayout(False)
-        Panel6.PerformLayout()
         CType(PictureBox6, ComponentModel.ISupportInitialize).EndInit()
         Panel5.ResumeLayout(False)
-        Panel5.PerformLayout()
         CType(PictureBox5, ComponentModel.ISupportInitialize).EndInit()
         Panel4.ResumeLayout(False)
-        Panel4.PerformLayout()
         CType(PictureBox4, ComponentModel.ISupportInitialize).EndInit()
         Panel3.ResumeLayout(False)
-        Panel3.PerformLayout()
         CType(PictureBox3, ComponentModel.ISupportInitialize).EndInit()
         Panel2.ResumeLayout(False)
-        Panel2.PerformLayout()
         CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         CType(dgvProduk, ComponentModel.ISupportInitialize).EndInit()
