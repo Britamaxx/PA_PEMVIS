@@ -22,6 +22,8 @@
         txtStaffID.Text = row("id_karyawan").ToString()
         txtStaffID.Enabled = False
         txtStaffName.Text = row("nama_karyawan").ToString()
+        txtUsername.Text = row("username").ToString()
+        txtPassword.Text = row("password").ToString()
         txtStaffPhone.Text = row("telepon_karyawan").ToString()
         txtNetSalary.Text = row("gaji_bersih").ToString()
 
@@ -55,27 +57,25 @@
         If Not ValidasiStaff(txtStaffID, txtStaffName, txtStaffPhone, txtNetSalary, GetShiftTerpilih()) Then Exit Sub
         Dim id As String = txtStaffID.Text.Trim()
         Dim nama As String = txtStaffName.Text.Trim()
+        Dim username As String = txtUsername.Text.Trim()
+        Dim password As String = txtPassword.Text.Trim()
         Dim telepon As String = txtStaffPhone.Text.Trim()
         Dim gaji As Long = Convert.ToInt64(txtNetSalary.Text.Trim())
         Dim shift As String = GetShiftTerpilih()
 
         If Mode = "Tambah" Then
-            If SimpanKaryawan(id, nama, "Kasir", telepon, gaji, shift) Then
+            If SimpanKaryawan(id, nama, "Kasir", username, password, telepon, gaji, shift) Then
                 MessageBox.Show("Data staff berhasil disimpan", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 Me.DialogResult = DialogResult.OK
                 Me.Close()
             End If
         Else
-            If UbahKaryawan(id, nama, "Kasir", telepon, gaji, shift) Then
+            If UbahKaryawan(id, nama, "Kasir", username, password, telepon, gaji, shift) Then
                 MessageBox.Show("Data staff berhasil diubah", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 Me.DialogResult = DialogResult.OK
                 Me.Close()
             End If
         End If
-    End Sub
-
-    Private Sub txtStaffPhone_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtStaffPhone.KeyPress
-        BatinHanyaDigit(e)
     End Sub
 
     Private Sub txtNetSalary_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtNetSalary.KeyPress

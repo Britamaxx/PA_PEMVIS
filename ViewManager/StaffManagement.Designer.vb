@@ -304,7 +304,7 @@ Partial Class StaffManagement
         btnAddStaff.Name = "btnAddStaff"
         btnAddStaff.Size = New Size(146, 40)
         btnAddStaff.TabIndex = 8
-        btnAddStaff.Text = "+ Add Product"
+        btnAddStaff.Text = "+ Add Staff"
         btnAddStaff.UseVisualStyleBackColor = False
         ' 
         ' btnEdit

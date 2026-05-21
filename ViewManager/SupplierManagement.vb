@@ -6,7 +6,7 @@ Public Class SupplierManagement
 
     Private Sub TampilData()
         dgvSupplier.DataSource = GetAllSupplier()
-        dgvSupplier.Columns("id_supplier").Visible = False
+        dgvSupplier.Columns("id_supplier").Visible = True
     End Sub
 
     Private Sub SupplierManagement_Load(sender As Object, e As EventArgs) Handles MyBase.Load

@@ -82,16 +82,18 @@ Module KaryawanModule
         Return dt
     End Function
 
-    Public Function SimpanKaryawan(id As String, nama As String, jabatan As String, telepon As String, gaji As Long, shift As String) As Boolean
+    Public Function SimpanKaryawan(id As String, nama As String, jabatan As String, username As String, password As String, telepon As String, gaji As Long, shift As String) As Boolean
         Try
             Dim query As String =
-            "INSERT INTO tbkaryawan (id_karyawan, nama_karyawan, username, password, jabatan, telepon_karyawan, gaji_bersih, shift) " &
-            "VALUES (@id, @nama, @id, @id, @jabatan, @telepon, @gaji, @shift)"
+        "INSERT INTO tbkaryawan (id_karyawan, nama_karyawan, username, password, jabatan, telepon_karyawan, gaji_bersih, shift) " &
+        "VALUES (@id, @nama, @username, @password, @jabatan, @telepon, @gaji, @shift)"
             Using conn As MySqlConnection = GetConnection()
                 conn.Open()
                 Using cmd As New MySqlCommand(query, conn)
                     cmd.Parameters.AddWithValue("@id", id)
                     cmd.Parameters.AddWithValue("@nama", nama)
+                    cmd.Parameters.AddWithValue("@username", username)
+                    cmd.Parameters.AddWithValue("@password", password)
                     cmd.Parameters.AddWithValue("@jabatan", jabatan)
                     cmd.Parameters.AddWithValue("@telepon", telepon)
                     cmd.Parameters.AddWithValue("@gaji", gaji)
@@ -106,16 +108,18 @@ Module KaryawanModule
         End Try
     End Function
 
-    Public Function UbahKaryawan(id As String, nama As String, jabatan As String, telepon As String, gaji As Long, shift As String) As Boolean
+    Public Function UbahKaryawan(id As String, nama As String, jabatan As String, username As String, password As String, telepon As String, gaji As Long, shift As String) As Boolean
         Try
             Dim query As String =
-            "UPDATE tbkaryawan SET nama_karyawan=@nama, jabatan=@jabatan, " &
+            "UPDATE tbkaryawan SET nama_karyawan=@nama, jabatan=@jabatan, username=@username, password=@password, " &
             "telepon_karyawan=@telepon, gaji_bersih=@gaji, shift=@shift WHERE id_karyawan=@id"
             Using conn As MySqlConnection = GetConnection()
                 conn.Open()
                 Using cmd As New MySqlCommand(query, conn)
                     cmd.Parameters.AddWithValue("@id", id)
                     cmd.Parameters.AddWithValue("@nama", nama)
+                    cmd.Parameters.AddWithValue("@username", username)
+                    cmd.Parameters.AddWithValue("@password", password)
                     cmd.Parameters.AddWithValue("@jabatan", jabatan)
                     cmd.Parameters.AddWithValue("@telepon", telepon)
                     cmd.Parameters.AddWithValue("@gaji", gaji)

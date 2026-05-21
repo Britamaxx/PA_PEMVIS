@@ -36,6 +36,8 @@ Partial Class DialogProduct
         txtMinimumStock = New TextBox()
         btnConfirm = New Button()
         btnCancel = New Button()
+        cbSupplierID = New ComboBox()
+        Label6 = New Label()
         SuspendLayout()
         ' 
         ' Label1
@@ -52,7 +54,7 @@ Partial Class DialogProduct
         ' txtProductID
         ' 
         txtProductID.Font = New Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        txtProductID.Location = New Point(170, 12)
+        txtProductID.Location = New Point(170, 11)
         txtProductID.Margin = New Padding(2)
         txtProductID.Name = "txtProductID"
         txtProductID.Size = New Size(270, 34)
@@ -62,7 +64,7 @@ Partial Class DialogProduct
         ' 
         Label2.AutoSize = True
         Label2.Font = New Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label2.Location = New Point(12, 55)
+        Label2.Location = New Point(12, 91)
         Label2.Margin = New Padding(2, 0, 2, 0)
         Label2.Name = "Label2"
         Label2.Size = New Size(138, 28)
@@ -73,7 +75,7 @@ Partial Class DialogProduct
         ' 
         Label3.AutoSize = True
         Label3.Font = New Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label3.Location = New Point(12, 95)
+        Label3.Location = New Point(12, 129)
         Label3.Margin = New Padding(2, 0, 2, 0)
         Label3.Name = "Label3"
         Label3.Size = New Size(92, 28)
@@ -84,7 +86,7 @@ Partial Class DialogProduct
         ' 
         Label4.AutoSize = True
         Label4.Font = New Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label4.Location = New Point(12, 135)
+        Label4.Location = New Point(12, 167)
         Label4.Margin = New Padding(2, 0, 2, 0)
         Label4.Name = "Label4"
         Label4.Size = New Size(119, 28)
@@ -95,7 +97,7 @@ Partial Class DialogProduct
         ' 
         Label5.AutoSize = True
         Label5.Font = New Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label5.Location = New Point(12, 175)
+        Label5.Location = New Point(12, 205)
         Label5.Margin = New Padding(2, 0, 2, 0)
         Label5.Name = "Label5"
         Label5.Size = New Size(118, 28)
@@ -106,7 +108,7 @@ Partial Class DialogProduct
         ' 
         Label7.AutoSize = True
         Label7.Font = New Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label7.Location = New Point(11, 218)
+        Label7.Location = New Point(12, 243)
         Label7.Margin = New Padding(2, 0, 2, 0)
         Label7.Name = "Label7"
         Label7.Size = New Size(149, 28)
@@ -116,7 +118,7 @@ Partial Class DialogProduct
         ' txtProductName
         ' 
         txtProductName.Font = New Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        txtProductName.Location = New Point(170, 52)
+        txtProductName.Location = New Point(170, 91)
         txtProductName.Margin = New Padding(2)
         txtProductName.Name = "txtProductName"
         txtProductName.Size = New Size(270, 34)
@@ -125,7 +127,7 @@ Partial Class DialogProduct
         ' txtCategory
         ' 
         txtCategory.Font = New Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        txtCategory.Location = New Point(170, 92)
+        txtCategory.Location = New Point(170, 129)
         txtCategory.Margin = New Padding(2)
         txtCategory.Name = "txtCategory"
         txtCategory.Size = New Size(270, 34)
@@ -134,7 +136,7 @@ Partial Class DialogProduct
         ' txtBuyingPrice
         ' 
         txtBuyingPrice.Font = New Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        txtBuyingPrice.Location = New Point(170, 132)
+        txtBuyingPrice.Location = New Point(170, 167)
         txtBuyingPrice.Margin = New Padding(2)
         txtBuyingPrice.Name = "txtBuyingPrice"
         txtBuyingPrice.Size = New Size(270, 34)
@@ -143,7 +145,7 @@ Partial Class DialogProduct
         ' txtSellingPrice
         ' 
         txtSellingPrice.Font = New Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        txtSellingPrice.Location = New Point(170, 172)
+        txtSellingPrice.Location = New Point(170, 205)
         txtSellingPrice.Margin = New Padding(2)
         txtSellingPrice.Name = "txtSellingPrice"
         txtSellingPrice.Size = New Size(270, 34)
@@ -152,7 +154,7 @@ Partial Class DialogProduct
         ' txtMinimumStock
         ' 
         txtMinimumStock.Font = New Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        txtMinimumStock.Location = New Point(169, 215)
+        txtMinimumStock.Location = New Point(170, 243)
         txtMinimumStock.Margin = New Padding(2)
         txtMinimumStock.Name = "txtMinimumStock"
         txtMinimumStock.Size = New Size(270, 34)
@@ -163,7 +165,7 @@ Partial Class DialogProduct
         btnConfirm.BackColor = Color.LimeGreen
         btnConfirm.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         btnConfirm.ForeColor = Color.White
-        btnConfirm.Location = New Point(310, 258)
+        btnConfirm.Location = New Point(310, 281)
         btnConfirm.Margin = New Padding(2)
         btnConfirm.Name = "btnConfirm"
         btnConfirm.Size = New Size(130, 34)
@@ -176,7 +178,7 @@ Partial Class DialogProduct
         btnCancel.BackColor = Color.Red
         btnCancel.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         btnCancel.ForeColor = Color.White
-        btnCancel.Location = New Point(170, 258)
+        btnCancel.Location = New Point(170, 281)
         btnCancel.Margin = New Padding(2)
         btnCancel.Name = "btnCancel"
         btnCancel.Size = New Size(130, 34)
@@ -184,11 +186,33 @@ Partial Class DialogProduct
         btnCancel.Text = "Cancel"
         btnCancel.UseVisualStyleBackColor = False
         ' 
+        ' cbSupplierID
+        ' 
+        cbSupplierID.Font = New Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        cbSupplierID.FormattingEnabled = True
+        cbSupplierID.Location = New Point(170, 50)
+        cbSupplierID.Name = "cbSupplierID"
+        cbSupplierID.Size = New Size(270, 36)
+        cbSupplierID.TabIndex = 16
+        ' 
+        ' Label6
+        ' 
+        Label6.AutoSize = True
+        Label6.Font = New Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label6.Location = New Point(12, 50)
+        Label6.Margin = New Padding(2, 0, 2, 0)
+        Label6.Name = "Label6"
+        Label6.Size = New Size(109, 28)
+        Label6.TabIndex = 17
+        Label6.Text = "Supplier ID"
+        ' 
         ' DialogProduct
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(478, 304)
+        ClientSize = New Size(478, 324)
+        Controls.Add(Label6)
+        Controls.Add(cbSupplierID)
         Controls.Add(btnCancel)
         Controls.Add(btnConfirm)
         Controls.Add(txtMinimumStock)
@@ -224,4 +248,6 @@ Partial Class DialogProduct
     Friend WithEvents txtMinimumStock As TextBox
     Friend WithEvents btnConfirm As Button
     Friend WithEvents btnCancel As Button
+    Friend WithEvents cbSupplierID As ComboBox
+    Friend WithEvents Label6 As Label
 End Class

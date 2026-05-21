@@ -68,7 +68,7 @@ Partial Class DialogSupplier
         txtSupplierPhone.Font = New Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         txtSupplierPhone.Location = New Point(196, 92)
         txtSupplierPhone.Margin = New Padding(2)
-        txtSupplierPhone.Mask = "____-____-____"
+        txtSupplierPhone.Mask = "000000000000"
         txtSupplierPhone.Name = "txtSupplierPhone"
         txtSupplierPhone.Size = New Size(270, 34)
         txtSupplierPhone.TabIndex = 8
@@ -93,7 +93,7 @@ Partial Class DialogSupplier
         btnKonfirmasi.Name = "btnKonfirmasi"
         btnKonfirmasi.Size = New Size(130, 34)
         btnKonfirmasi.TabIndex = 21
-        btnKonfirmasi.Text = "Konfirmasi"
+        btnKonfirmasi.Text = "Confirm"
         btnKonfirmasi.UseVisualStyleBackColor = False
         ' 
         ' btnBatal
@@ -106,7 +106,7 @@ Partial Class DialogSupplier
         btnBatal.Name = "btnBatal"
         btnBatal.Size = New Size(130, 34)
         btnBatal.TabIndex = 22
-        btnBatal.Text = "Batal"
+        btnBatal.Text = "Cancel"
         btnBatal.UseVisualStyleBackColor = False
         ' 
         ' Label2

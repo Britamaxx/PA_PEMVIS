@@ -10,6 +10,23 @@
             txtProductID.Clear()
             txtProductID.Enabled = True
         End If
+        LoadSupplier()
+    End Sub
+
+    Private Sub LoadSupplier()
+        Try
+            Dim dt As DataTable = GetAllSupplier()
+
+            cbSupplierID.DataSource = dt
+            cbSupplierID.DisplayMember = "nama_supplier"
+            cbSupplierID.ValueMember = "id_supplier"
+
+        Catch ex As Exception
+            MessageBox.Show("Gagal memuat supplier: " & ex.Message,
+                        "Error",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Error)
+        End Try
     End Sub
 
     Private Sub TampilDataEdit()
@@ -44,6 +61,7 @@
                               txtMinimumStock) Then Exit Sub
 
         Dim id As String = txtProductID.Text.Trim()
+        Dim supplier As String = cbSupplierID.SelectedValue.ToString()
         Dim nama As String = txtProductName.Text.Trim()
         Dim kategori As String = txtCategory.Text.Trim()
         Dim hargaBeli As Long = Convert.ToInt64(txtBuyingPrice.Text.Trim())
@@ -52,7 +70,7 @@
 
         If Mode = "Tambah" Then
 
-            If SimpanProduk(id, "", nama, stokMin, hargaBeli, hargaJual, kategori) Then
+            If SimpanProduk(id, supplier, nama, stokMin, hargaBeli, hargaJual, kategori) Then
                 MessageBox.Show("Data produk berhasil disimpan", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 Me.DialogResult = DialogResult.OK
                 Me.Close()
@@ -60,7 +78,7 @@
 
         Else
 
-            If UbahProduk(id, nama, stokMin, hargaBeli, hargaJual, kategori) Then
+            If UbahProduk(id, supplier, nama, stokMin, hargaBeli, hargaJual, kategori) Then
                 MessageBox.Show("Data produk berhasil diubah", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 Me.DialogResult = DialogResult.OK
                 Me.Close()

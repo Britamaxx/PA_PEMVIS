@@ -36,6 +36,10 @@ Partial Class DialogStaff
         rbNight = New RadioButton()
         btnKonfirmasi = New Button()
         btnBatal = New Button()
+        txtUsername = New TextBox()
+        txtPassword = New TextBox()
+        Label4 = New Label()
+        Label7 = New Label()
         SuspendLayout()
         ' 
         ' Label1
@@ -83,7 +87,7 @@ Partial Class DialogStaff
         txtStaffPhone.Font = New Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         txtStaffPhone.Location = New Point(196, 92)
         txtStaffPhone.Margin = New Padding(2)
-        txtStaffPhone.Mask = "____-____-____"
+        txtStaffPhone.Mask = "000000000000"
         txtStaffPhone.Name = "txtStaffPhone"
         txtStaffPhone.Size = New Size(320, 34)
         txtStaffPhone.TabIndex = 7
@@ -91,7 +95,7 @@ Partial Class DialogStaff
         ' txtNetSalary
         ' 
         txtNetSalary.Font = New Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        txtNetSalary.Location = New Point(196, 135)
+        txtNetSalary.Location = New Point(197, 206)
         txtNetSalary.Margin = New Padding(2)
         txtNetSalary.Name = "txtNetSalary"
         txtNetSalary.Size = New Size(320, 34)
@@ -112,7 +116,7 @@ Partial Class DialogStaff
         ' 
         Label5.AutoSize = True
         Label5.Font = New Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label5.Location = New Point(12, 139)
+        Label5.Location = New Point(12, 209)
         Label5.Margin = New Padding(2, 0, 2, 0)
         Label5.Name = "Label5"
         Label5.Size = New Size(102, 28)
@@ -123,7 +127,7 @@ Partial Class DialogStaff
         ' 
         Label6.AutoSize = True
         Label6.Font = New Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label6.Location = New Point(12, 179)
+        Label6.Location = New Point(12, 243)
         Label6.Margin = New Padding(2, 0, 2, 0)
         Label6.Name = "Label6"
         Label6.Size = New Size(52, 28)
@@ -133,7 +137,7 @@ Partial Class DialogStaff
         ' rbMorning
         ' 
         rbMorning.AutoSize = True
-        rbMorning.Location = New Point(196, 179)
+        rbMorning.Location = New Point(196, 244)
         rbMorning.Margin = New Padding(2)
         rbMorning.Name = "rbMorning"
         rbMorning.Size = New Size(105, 29)
@@ -145,7 +149,7 @@ Partial Class DialogStaff
         ' rbAfternoon
         ' 
         rbAfternoon.AutoSize = True
-        rbAfternoon.Location = New Point(308, 179)
+        rbAfternoon.Location = New Point(305, 244)
         rbAfternoon.Margin = New Padding(2)
         rbAfternoon.Name = "rbAfternoon"
         rbAfternoon.Size = New Size(118, 29)
@@ -157,7 +161,7 @@ Partial Class DialogStaff
         ' rbNight
         ' 
         rbNight.AutoSize = True
-        rbNight.Location = New Point(435, 179)
+        rbNight.Location = New Point(435, 244)
         rbNight.Margin = New Padding(2)
         rbNight.Name = "rbNight"
         rbNight.Size = New Size(81, 29)
@@ -171,12 +175,12 @@ Partial Class DialogStaff
         btnKonfirmasi.BackColor = Color.LimeGreen
         btnKonfirmasi.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         btnKonfirmasi.ForeColor = Color.White
-        btnKonfirmasi.Location = New Point(362, 225)
+        btnKonfirmasi.Location = New Point(362, 277)
         btnKonfirmasi.Margin = New Padding(2)
         btnKonfirmasi.Name = "btnKonfirmasi"
         btnKonfirmasi.Size = New Size(155, 34)
         btnKonfirmasi.TabIndex = 20
-        btnKonfirmasi.Text = "Konfirmasi"
+        btnKonfirmasi.Text = "Confirm"
         btnKonfirmasi.UseVisualStyleBackColor = False
         ' 
         ' btnBatal
@@ -184,19 +188,63 @@ Partial Class DialogStaff
         btnBatal.BackColor = Color.Red
         btnBatal.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         btnBatal.ForeColor = Color.White
-        btnBatal.Location = New Point(196, 225)
+        btnBatal.Location = New Point(196, 277)
         btnBatal.Margin = New Padding(2)
         btnBatal.Name = "btnBatal"
         btnBatal.Size = New Size(155, 34)
         btnBatal.TabIndex = 21
-        btnBatal.Text = "Batal"
+        btnBatal.Text = "Cancel"
         btnBatal.UseVisualStyleBackColor = False
+        ' 
+        ' txtUsername
+        ' 
+        txtUsername.Font = New Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        txtUsername.Location = New Point(196, 130)
+        txtUsername.Margin = New Padding(2)
+        txtUsername.Name = "txtUsername"
+        txtUsername.Size = New Size(320, 34)
+        txtUsername.TabIndex = 22
+        ' 
+        ' txtPassword
+        ' 
+        txtPassword.Font = New Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        txtPassword.Location = New Point(196, 168)
+        txtPassword.Margin = New Padding(2)
+        txtPassword.Name = "txtPassword"
+        txtPassword.Size = New Size(320, 34)
+        txtPassword.TabIndex = 23
+        ' 
+        ' Label4
+        ' 
+        Label4.AutoSize = True
+        Label4.Font = New Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label4.Location = New Point(12, 133)
+        Label4.Margin = New Padding(2, 0, 2, 0)
+        Label4.Name = "Label4"
+        Label4.Size = New Size(99, 28)
+        Label4.TabIndex = 24
+        Label4.Text = "Username"
+        ' 
+        ' Label7
+        ' 
+        Label7.AutoSize = True
+        Label7.Font = New Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label7.Location = New Point(12, 171)
+        Label7.Margin = New Padding(2, 0, 2, 0)
+        Label7.Name = "Label7"
+        Label7.Size = New Size(93, 28)
+        Label7.TabIndex = 25
+        Label7.Text = "Password"
         ' 
         ' DialogStaff
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(528, 271)
+        ClientSize = New Size(528, 324)
+        Controls.Add(Label7)
+        Controls.Add(Label4)
+        Controls.Add(txtPassword)
+        Controls.Add(txtUsername)
         Controls.Add(btnBatal)
         Controls.Add(btnKonfirmasi)
         Controls.Add(rbNight)
@@ -232,4 +280,8 @@ Partial Class DialogStaff
     Friend WithEvents rbNight As RadioButton
     Friend WithEvents btnKonfirmasi As Button
     Friend WithEvents btnBatal As Button
+    Friend WithEvents txtUsername As TextBox
+    Friend WithEvents txtPassword As TextBox
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label7 As Label
 End Class
