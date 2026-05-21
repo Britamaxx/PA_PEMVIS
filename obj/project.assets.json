@@ -200,19 +200,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ASUS\\.nuget\\packages\\": {}
+    "C:\\Users\\VECTOR\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\PA_PEMVIS\\PA_PEMVIS.vbproj",
+      "projectUniqueName": "C:\\Users\\VECTOR\\OneDrive\\Documents\\GitHub\\PA_PEMVIS\\PA_PEMVIS.vbproj",
       "projectName": "PA_PEMVIS",
-      "projectPath": "D:\\PA_PEMVIS\\PA_PEMVIS.vbproj",
-      "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-      "outputPath": "D:\\PA_PEMVIS\\obj\\",
+      "projectPath": "C:\\Users\\VECTOR\\OneDrive\\Documents\\GitHub\\PA_PEMVIS\\PA_PEMVIS.vbproj",
+      "packagesPath": "C:\\Users\\VECTOR\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\VECTOR\\OneDrive\\Documents\\GitHub\\PA_PEMVIS\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\VECTOR\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

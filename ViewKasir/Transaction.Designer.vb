@@ -46,6 +46,8 @@ Partial Class Transaction
         btnConfirm = New Button()
         cboProduct = New ComboBox()
         lblTotal = New Label()
+        PrintDocument1 = New Printing.PrintDocument()
+        PrintPreviewDialog1 = New PrintPreviewDialog()
         Panel1.SuspendLayout()
         LogoutSidebar.SuspendLayout()
         CType(PictureBox7, ComponentModel.ISupportInitialize).BeginInit()
@@ -288,11 +290,21 @@ Partial Class Transaction
         ' 
         lblTotal.AutoSize = True
         lblTotal.Font = New Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        lblTotal.Location = New Point(396, 758)
+        lblTotal.Location = New Point(315, 751)
         lblTotal.Name = "lblTotal"
-        lblTotal.Size = New Size(401, 28)
+        lblTotal.Size = New Size(63, 28)
         lblTotal.TabIndex = 37
-        lblTotal.Text = "kita lihat ada gak yang ngecek perubahan ini"
+        lblTotal.Text = "Total :"
+        ' 
+        ' PrintPreviewDialog1
+        ' 
+        PrintPreviewDialog1.AutoScrollMargin = New Size(0, 0)
+        PrintPreviewDialog1.AutoScrollMinSize = New Size(0, 0)
+        PrintPreviewDialog1.ClientSize = New Size(400, 300)
+        PrintPreviewDialog1.Enabled = True
+        PrintPreviewDialog1.Icon = CType(resources.GetObject("PrintPreviewDialog1.Icon"), Icon)
+        PrintPreviewDialog1.Name = "PrintPreviewDialog1"
+        PrintPreviewDialog1.Visible = False
         ' 
         ' Transaction
         ' 
@@ -350,4 +362,6 @@ Partial Class Transaction
     Friend WithEvents btnConfirm As Button
     Friend WithEvents cboProduct As ComboBox
     Friend WithEvents lblTotal As Label
+    Friend WithEvents PrintDocument1 As Printing.PrintDocument
+    Friend WithEvents PrintPreviewDialog1 As PrintPreviewDialog
 End Class

@@ -86,14 +86,14 @@ Partial Class History
         ' 
         ' Label6
         ' 
-        Label6.AutoSize = True
         Label6.Font = New Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label6.ForeColor = Color.Red
-        Label6.Location = New Point(87, 6)
+        Label6.Location = New Point(3, 0)
         Label6.Name = "Label6"
-        Label6.Size = New Size(103, 38)
+        Label6.Size = New Size(294, 44)
         Label6.TabIndex = 1
         Label6.Text = "Logout"
+        Label6.TextAlign = ContentAlignment.TopCenter
         ' 
         ' HistorySidebar
         ' 
@@ -190,10 +190,10 @@ Partial Class History
         ' 
         dgvHistory.BackgroundColor = Color.White
         dgvHistory.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        dgvHistory.Location = New Point(317, 137)
+        dgvHistory.Location = New Point(317, 153)
         dgvHistory.Name = "dgvHistory"
         dgvHistory.RowHeadersWidth = 62
-        dgvHistory.Size = New Size(1049, 695)
+        dgvHistory.Size = New Size(1049, 679)
         dgvHistory.TabIndex = 21
         ' 
         ' PictureBox11
@@ -257,7 +257,6 @@ Partial Class History
         Text = "Form11"
         Panel1.ResumeLayout(False)
         LogoutSidebar.ResumeLayout(False)
-        LogoutSidebar.PerformLayout()
         CType(PictureBox7, ComponentModel.ISupportInitialize).EndInit()
         HistorySidebar.ResumeLayout(False)
         HistorySidebar.PerformLayout()

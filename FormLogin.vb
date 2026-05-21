@@ -5,8 +5,9 @@ Public Class FormLogin
     Private isPasswordVisible As Boolean = False
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        picShowPass.Visible = False
         picHidePass.Visible = True
+        picShowPass.Visible = False
+        txtPassword.PasswordChar = "•"c
 
         txtUsername.Focus()
     End Sub

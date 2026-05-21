@@ -1,7 +1,15 @@
 ﻿Imports System.Data.Common
 Imports MySqlConnector
+Imports System.Drawing
+Imports System.Drawing.Printing
 
 Public Class Transaction
+
+    ' Fields for printing
+    Private receiptLinesToPrint As List(Of String)
+    Private printTotalToPrint As Decimal
+    Private tanggalTransaksiToPrint As DateTime
+    Private idPenjualanToPrint As String
 
     Private Sub Transaction_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         dgvTransaction.Columns.Add("id_produk", "ID Produk")
@@ -232,7 +240,35 @@ Public Class Transaction
                     Next
 
                     transaksi.Commit()
-                    MessageBox.Show("Transaksi berhasil disimpan", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
+                    Dim tanggalTransaksi As DateTime = Date.Now
+                    Dim printTotal As Decimal = total
+
+                    Dim dlgPrintAsk As DialogResult = MessageBox.Show("Transaksi berhasil disimpan. Cetak Struk Transaksi?", "Informasi", MessageBoxButtons.YesNo, MessageBoxIcon.Information)
+                    If dlgPrintAsk = DialogResult.Yes Then
+                        receiptLinesToPrint = New List(Of String)()
+                        For Each r As DataGridViewRow In dgvTransaction.Rows
+                            If r.IsNewRow Then Continue For
+                            Dim nama As String = r.Cells("nama_produk").Value.ToString()
+                            Dim qtyItem As Integer = Convert.ToInt32(r.Cells("qty").Value)
+                            Dim subtotalItem As Decimal = Convert.ToDecimal(r.Cells("subtotal").Value)
+                            receiptLinesToPrint.Add(String.Format("{0} x{1}  Rp {2}", nama, qtyItem, subtotalItem.ToString("N0")))
+                        Next
+
+                        printTotalToPrint = printTotal
+                        tanggalTransaksiToPrint = tanggalTransaksi
+                        idPenjualanToPrint = idPenjualan
+
+                        Try
+                            PrintDocument1.DefaultPageSettings.Landscape = False
+                            PrintPreviewDialog1.Document = PrintDocument1
+                            PrintPreviewDialog1.ShowDialog()
+                        Catch ex As Exception
+                            MessageBox.Show("Gagal menampilkan preview/cetak: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                        End Try
+                    Else
+                        MessageBox.Show("Transaksi berhasil disimpan", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                    End If
 
                     dgvTransaction.Rows.Clear()
                     cboProduct.SelectedIndex = -1
@@ -270,5 +306,39 @@ Public Class Transaction
         If Not Char.IsDigit(e.KeyChar) AndAlso Not Char.IsControl(e.KeyChar) Then
             e.Handled = True
         End If
+    End Sub
+
+    Private Sub Label6_Click(sender As Object, e As EventArgs) Handles Label6.Click
+        Me.Close()
+        FormLogin.Show()
+    End Sub
+
+    Private Sub PrintDocument1_PrintPage(sender As Object, e As PrintPageEventArgs) Handles PrintDocument1.PrintPage
+        Dim g As Graphics = e.Graphics
+        Dim y As Single = 10
+        Dim headerFont As New Font("Arial", 14, FontStyle.Bold)
+        Dim bodyFont As New Font("Courier New", 12)
+
+        If receiptLinesToPrint Is Nothing Then
+            receiptLinesToPrint = New List(Of String)()
+        End If
+
+        g.DrawString("STRUK TRANSAKSI", headerFont, Brushes.Black, 10, y)
+        y += 26
+        If Not String.IsNullOrEmpty(idPenjualanToPrint) Then
+            g.DrawString("No: " & idPenjualanToPrint, bodyFont, Brushes.Black, 10, y)
+            y += 18
+        End If
+        g.DrawString("Tanggal: " & tanggalTransaksiToPrint.ToString("g"), bodyFont, Brushes.Black, 10, y)
+        y += 22
+
+        For Each line As String In receiptLinesToPrint
+            g.DrawString(line, bodyFont, Brushes.Black, 10, y)
+            y += 16
+        Next
+
+        y += 8
+        g.DrawString("Total: Rp " & printTotalToPrint.ToString("N0"), bodyFont, Brushes.Black, 10, y)
+        e.HasMorePages = False
     End Sub
 End Class
